@@ -4,8 +4,8 @@ const path = require('path');
 // Spécifiez le chemin du répertoire
 const cheminDuRepertoire = './SujetB_data';
 
-// Tableau pour stocker les tags
-const tags = [];
+// Tableau pour stocker les données (tag et texte de la question)
+const questionsData = [];
 
 // Lire le contenu du répertoire
 fs.readdir(cheminDuRepertoire, (err, fichiers) => {
@@ -28,13 +28,20 @@ fs.readdir(cheminDuRepertoire, (err, fichiers) => {
         questions.forEach(questionData => {
             // Ignorer les commentaires
             if (!questionData.startsWith('//')) {
-                // Extraire le tag
+                // Extraire le tag et le texte de la question
                 const tagMatch = questionData.match(/::(.*?)::/);
                 const tag = tagMatch ? tagMatch[1].trim() : null;
+                const questionTextMatch = questionData.match(/::.*?::(.*?)[\r\n]/);
+                const questionText = questionTextMatch ? questionTextMatch[1].trim() : null;
 
-                // Ajouter le tag au tableau si défini
-                if (tag !== null) {
-                    tags.push(tag);
+                // Supprimer les balises [html], les accolades {} et les balises <br>
+                const cleanedQuestionText = questionText
+                    ? questionText.replace(/\[html\]/g, '').replace(/{.*?}/g, '').replace(/<br>/g, '')
+                    : null;
+
+                // Ajouter les données au tableau si le tag et le texte sont définis
+                if (tag !== null && cleanedQuestionText !== null) {
+                    questionsData.push({ tag, questionText: cleanedQuestionText });
                 }
             }
         });
@@ -42,16 +49,16 @@ fs.readdir(cheminDuRepertoire, (err, fichiers) => {
         // Augmenter le compteur des fichiers traités
         filesProcessed++;
 
-        // Si tous les fichiers ont été traités, afficher les tags
+        // Si tous les fichiers ont été traités, afficher les données
         if (filesProcessed === fichiersGift.length) {
-            displayTags();
+            displayQuestionsData();
         }
     };
 
-    // Fonction pour afficher les tags
-    const displayTags = () => {
-        // Afficher les tags sous forme de tableau
-        console.table(tags);
+    // Fonction pour afficher les données
+    const displayQuestionsData = () => {
+        // Afficher les données sous forme de tableau
+        console.table(questionsData);
     };
 
     // Traiter chaque fichier .gift
