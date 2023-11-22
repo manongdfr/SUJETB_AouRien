@@ -4,21 +4,57 @@ const path = require('path');
 // Spécifiez le chemin du répertoire
 const cheminDuRepertoire = './SujetB_data';
 
-// Tableaux pour stocker les questions et les tags
-const questions = [];
-const tags = [][3];
+// Tableau pour stocker les tags
+const tags = [];
 
 // Lire le contenu du répertoire
 fs.readdir(cheminDuRepertoire, (err, fichiers) => {
     if (err) {
         console.error("Erreur lors de la lecture du répertoire :", err);
-        return
+        return;
     }
 
     // Filtrer les fichiers avec l'extension .gift
     const fichiersGift = fichiers.filter(fichier => path.extname(fichier) === '.gift');
 
-    // Afficher le contenu de chaque fichier .gift
+    // Compteur pour les fichiers
+    let filesProcessed = 0;
+
+    // Fonction pour traiter un fichier
+    const processFile = (fichier, contenu) => {
+        // Analyser le contenu GIFT
+        const questions = contenu.split('\n\n'); // Séparer les questions par une ligne vide
+
+        questions.forEach(questionData => {
+            // Ignorer les commentaires
+            if (!questionData.startsWith('//')) {
+                // Extraire le tag
+                const tagMatch = questionData.match(/::(.*?)::/);
+                const tag = tagMatch ? tagMatch[1].trim() : null;
+
+                // Ajouter le tag au tableau si défini
+                if (tag !== null) {
+                    tags.push(tag);
+                }
+            }
+        });
+
+        // Augmenter le compteur des fichiers traités
+        filesProcessed++;
+
+        // Si tous les fichiers ont été traités, afficher les tags
+        if (filesProcessed === fichiersGift.length) {
+            displayTags();
+        }
+    };
+
+    // Fonction pour afficher les tags
+    const displayTags = () => {
+        // Afficher les tags sous forme de tableau
+        console.table(tags);
+    };
+
+    // Traiter chaque fichier .gift
     fichiersGift.forEach((fichier) => {
         const cheminDuFichier = path.join(cheminDuRepertoire, fichier);
 
@@ -27,46 +63,9 @@ fs.readdir(cheminDuRepertoire, (err, fichiers) => {
             if (err) {
                 console.error(`Erreur lors de la lecture du fichier ${fichier} :`, err);
             } else {
-                // Ajouter le nom du fichier et son contenu
-                console.log(`Fichier : ${fichier}, Contenu : ${contenu}`);
-
-                // Analyser le contenu GIFT
-                const lignes = contenu.split('\n');
-                let tag = null;
-                let question = null;
-                let reponses = [];
-
-                for (let ligne of lignes) {
-                    // Extraire le tag
-                    const tagMatch = ligne.match(/^::(.*?)::/);
-                    if (tagMatch) {
-                        tag = tagMatch[1];
-                        tags.push(tag);
-                    }
-
-                    // Extraire la question
-                    const questionMatch = ligne.match(/^{(.*?)}/);
-                    if (questionMatch) {
-                        // Extraire le titre de la question
-                        question = questionMatch[1].trim();
-                        questions.push({ tag, question, reponses });
-                        console.log(`  Titre de la question : ${question}`);
-                    }
-
-                    // Extraire les réponses
-                    const reponseMatch = ligne.match(/^[=~].*?(\b.*)/);
-                    if (reponseMatch) {
-                        reponses.push(reponseMatch[1].trim());
-                    }
-                }
+                // Appeler la fonction pour traiter le fichier
+                processFile(fichier, contenu);
             }
         });
     });
 });
-
-// Attendre la fin de l'exécution de toutes les lectures de fichiers
-setTimeout(() => {
-    // Afficher les questions et les tags
-    console.log('\nTags :', tags);
-    console.log('\nQuestions :', questions);
-}, 1000); // Utilisez une temporisation pour attendre la fin des lectures de fichiers (peut nécessiter ajustement)
