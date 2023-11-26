@@ -1,0 +1,718 @@
+[
+  {
+    "tag": "EM U4 p33 Review 4.1 more irritating than",
+    "questionText": "Nothing irritates me more than getting hundreds of spam emails."
+  },
+  {
+    "tag": "EM U4 p33 Review 4.3 so excited by/about",
+    "questionText": "The tennis game was so exciting that the spectators cheered loudly at the end."
+  },
+  {
+    "tag": "EM U4 p33 Review 4.2 interesting for/to",
+    "questionText": "I'm very interesled in learning about the culture of other countries"
+  },
+  {
+    "tag": "EM U4 p33 Review 4.4 worried by",
+    "questionText": "I find it very worrying if things go wrong on holiday."
+  },
+  {
+    "tag": "EM U4 p33 Review 4.5 boring",
+    "questionText": "I get bored by people who talk too much."
+  },
+  {
+    "tag": "EM U4 p33 Review 4.6 for the first time",
+    "questionText": "I had never seen a glacier before I went to Norway"
+  },
+  {
+    "tag": "EM U5 p37 Reading 1.0 Text",
+    "questionText": "<p><i>You are going to read an article about a woman who tried out a new kind of food. Read the text once quickly and answer the first question below.</i></p>"
+  },
+  {
+    "tag": "EM U5 p37 Reading 1.1",
+    "questionText": "Choose the best title for the text.{"
+  },
+  {
+    "tag": "EM U5 p37 Reading 2.1",
+    "questionText": "What does the author think about Julian Hearn´s claims for his product? {"
+  },
+  {
+    "tag": "EM U5 p37 Reading 2.2",
+    "questionText": "Why did the author start to eat Huel on the first evening? {"
+  },
+  {
+    "tag": "EM U5 p37 Reading 2.3",
+    "questionText": "[markdown] What does '_these_' in line 38 refer to?  {"
+  },
+  {
+    "tag": "EM U5 p37 Reading 2.4",
+    "questionText": "What does the phrase' got the hang of hang of it' in line 40 mean? {"
+  },
+  {
+    "tag": "EM U5 p37 Reading 2.5",
+    "questionText": "How did things change for the author in week two? {"
+  },
+  {
+    "tag": "EM U5 p37 Reading 2.6",
+    "questionText": "At the end of the experiment, what did the author decide about Huel {"
+  },
+  {
+    "tag": "EM U5 p37 Reading 4 collocations",
+    "questionText": "Match an element from each side to make collocations from the text.{"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.1 passive",
+    "questionText": "The chef gave him the recipe."
+  },
+  {
+    "tag": "EM U5 p38 Gra3.2 passive",
+    "questionText": "The lecture about healthy food raised many interesting issues."
+  },
+  {
+    "tag": "EM U5 p38 Gra3.3 passive",
+    "questionText": "Mary baked the cake using six eggs."
+  },
+  {
+    "tag": "EM U5 p38 Gra3.4 passive",
+    "questionText": "You can't smoke anywhere in the restaurant."
+  },
+  {
+    "tag": "EM U5 p38 Gra3.5 passive",
+    "questionText": "Please check that someone has washed up before you leave!"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.6 passive",
+    "questionText": "Jo had opened the restaurant by himself before Rafa joined him as hs business partner."
+  },
+  {
+    "tag": "EM U42 Ultimate q1",
+    "questionText": "What's the answer to this multiple-choice question? {"
+  },
+  {
+    "tag": "U1 p10 GR2.8 Present tenses & habits",
+    "questionText": "It seemed very cold at first but now we  used to the weather. (<i>get</i>)"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.1",
+    "questionText": "Does she come by car? (<i>generally</i>) {"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.2",
+    "questionText": "Take care when using this machinery. (<i>always</i>) {"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.3",
+    "questionText": "They're a little nervous at the beginning. (<i>sometimes</i>) {"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.4",
+    "questionText": "I don't go to the gym on Fridays. (<i>usually</i>) {"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.5",
+    "questionText": "They've been told that. (<i>often</i>) {"
+  },
+  {
+    "tag": "EM U5 p34 Gra2.8",
+    "questionText": "People say that  knowledge goes a long way!"
+  },
+  {
+    "tag": "EM U6 p46-47 4.0 UoE Key word transformation",
+    "questionText": "Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given.You must use between two and five words, including the word given."
+  },
+  {
+    "tag": "EM U6 p46-47 4.1",
+    "questionText": "I couldn't wait to see my friend again after her long trip abroad. (<b>LOOKING</b>)"
+  },
+  {
+    "tag": "EM U6 p46-47 4.2",
+    "questionText": "The last time Joe saw Carlos was the day they both graduated from university. (<b>SEEN</b>)"
+  },
+  {
+    "tag": "EM U6 p46-47 4.3",
+    "questionText": "‘You must do your homework, Tom’, said Carol. (<b>REMINDED</b>)"
+  },
+  {
+    "tag": "EM U6 p46-47 4.4",
+    "questionText": "I never seem to find the time to read newspapers these days. (<b>ROUND</b>)"
+  },
+  {
+    "tag": "EM U6 p46-47 4.5",
+    "questionText": "Nothing irritates me as much as getting piles of junk mail through the post. (<b>MORE</b>)"
+  },
+  {
+    "tag": "EM U6 p46-47 4.6",
+    "questionText": "The idea of flying is very frightening for some people. (<b>ARE</b>)"
+  },
+  {
+    "tag": "U1 p8-9 9 Vocabulary",
+    "questionText": "<em>Look at the following words and phrases from the article and at the meaning options. Try to work out the meaning from the context or from the word itself. Then match each one to a definition.</em>{"
+  },
+  {
+    "tag": "U10 p106-7 Reading Text",
+    "questionText": "<h4>A match made in heaven</h4>"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.1",
+    "questionText": "What point is the writer making in the first paragraph? {"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.2",
+    "questionText": "What does ‘this’ refer to in “...popular works of contemporary fiction such as <i>One Day</i> and <i>Twilight</i>. <u>This</u> isn’t a preoccupation found only in Western cultures either”? {"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.3",
+    "questionText": "What does the writer say about the use of the word 'soulmate' in paragraph three? {"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.4",
+    "questionText": "According to the study, how do people in long-term relationships react to the way romance is portrayed in popular culture? {"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.5",
+    "questionText": "What conclusion can be drawn from the university research? {"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.6",
+    "questionText": "The writer says that online dating agencies are popular because they {"
+  },
+  {
+    "tag": "U10 p106-7 Reading Prepositions RS.8",
+    "questionText": "A Chinese story about lovers destined to be together (…) dates  to the ninth century"
+  },
+  {
+    "tag": "EM U5 p35 Gra3.5",
+    "questionText": "It's good that there  lots of advice about healthy lifestyles."
+  },
+  {
+    "tag": "U11 p114 Mixed conditionals 4.5",
+    "questionText": "I  (<i>might/earn</i>) more now if I'd gone to university."
+  },
+  {
+    "tag": "U2 p22 3 – Verb patterns -ing or inf",
+    "questionText": "Match the clauses to make sentences.{"
+  },
+  {
+    "tag": "U2 p22 6.5b – Verb patterns -ing or inf",
+    "questionText": "I forgot  my teacher my essay and she wasn't happy when I handed it in late."
+  },
+  {
+    "tag": "U3 p30 4.1",
+    "questionText": "What is the writer's attitude towards football fans attending matches? {"
+  },
+  {
+    "tag": "U3 p30 4.2",
+    "questionText": "The writer mentions people who live ‘in a dream state’ in order to {"
+  },
+  {
+    "tag": "U3 p30 4.3",
+    "questionText": "The writer thinks having a passion is a good thing because {"
+  },
+  {
+    "tag": "U3 p30 4.4",
+    "questionText": "What does the writer mean by ‘thin on the ground’ in line 30? {"
+  },
+  {
+    "tag": "U3 p30 4.5",
+    "questionText": "The writer mentions Wimbledon to show that {"
+  },
+  {
+    "tag": "U3 p30 4.6",
+    "questionText": "What was the writer's purpose in writing this text? {"
+  },
+  {
+    "tag": "U4 p38-9 Reading Text 'Real-life superhumans'",
+    "questionText": "<h4>X-Men: The Real-life Superhumans</h4>"
+  },
+  {
+    "tag": "U4 p38 Reading 4.01",
+    "questionText": "Which person's superpower may be shared by other people who don't realise they have it {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.02",
+    "questionText": "Which person's superpower is beneficial for the person's mental and physical health {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.03",
+    "questionText": "Which person's superpower could potentially affect a person's mental development {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.04",
+    "questionText": "Which person's superpower requires theoretically impossibly quick reactions? {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.05",
+    "questionText": "Which person's superpower may have inspired the story of a legendary character {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.06",
+    "questionText": "Which person's superpower may help give an insight into curing certain illnesses {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.07",
+    "questionText": "Which person's superpower was eventually discovered by chance? {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.08",
+    "questionText": "Which person's superpower is believed by the person to be a question of mind over body {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.09",
+    "questionText": "Which person's superpower could be acquired by whoever is prepared to believe in it {"
+  },
+  {
+    "tag": "U4 p38 Reading 4.10",
+    "questionText": "Which person's superpower cannot be explained by scientists? {"
+  },
+  {
+    "tag": "U4 p39 Voc 7 Compound words",
+    "questionText": "Match to make compound words from the article.{"
+  },
+  {
+    "tag": "U4 p39 Voc 8 Compound words",
+    "questionText": "Match the compound words to their synonyms.{"
+  },
+  {
+    "tag": "U4 p47 Rev1 Articles indefinite, definitie, zero (review)",
+    "questionText": "Complete the text with a/an, the or — (no article)."
+  },
+  {
+    "tag": "U4 p47 Rev2 Word formation, incl negative prefixes",
+    "questionText": "Complete the sentences with the correct form of the word in brackets (you might need to use the negative form)."
+  },
+  {
+    "tag": "U4 p47 Rev3 Idioms",
+    "questionText": "Match the fragments to make sentences. {"
+  },
+  {
+    "tag": "U4 p47 Rev4 Past tenses, past perfect",
+    "questionText": "Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Use between two and five words, including the word given."
+  },
+  {
+    "tag": "U5 p52 2 Reading: compr questions",
+    "questionText": "Read the article:"
+  },
+  {
+    "tag": "U5 p52 3.1 Reading compr",
+    "questionText": "Why did Rob Rhinehart initially create Soylent? {"
+  },
+  {
+    "tag": "U5 p52 3.2 Reading compr",
+    "questionText": "Following the interest in his blog, Rhinehart {"
+  },
+  {
+    "tag": "U5 p52 3.3 Reading compr",
+    "questionText": "The writer was surprised by the public reaction to Soylent because {"
+  },
+  {
+    "tag": "U5 p52 3.4 Reading compr",
+    "questionText": "What does Rhinehart say about people's eating habits in the future? {"
+  },
+  {
+    "tag": "U5 p52 3.5 Reading compr",
+    "questionText": "What point is made in the fifth paragraph? {"
+  },
+  {
+    "tag": "U5 p52 3.6 Reading compr",
+    "questionText": "In the final paragraph, the writer expresses {"
+  },
+  {
+    "tag": "U5 p52 6 Reading/Vocab expressions",
+    "questionText": "Match the underlined phrases in the article to their meanings:{"
+  },
+  {
+    "tag": "U5 p52 7.1 Collocations",
+    "questionText": "Their crop of soya beans has ______ in size.{"
+  },
+  {
+    "tag": "U5 p52 7.2 Collocations",
+    "questionText": "The business ______ rapidly.{"
+  },
+  {
+    "tag": "U5 p52 7.3 Collocations",
+    "questionText": "They ______ a huge family on very little money.{"
+  },
+  {
+    "tag": "U5 p52 7.4 Collocations",
+    "questionText": "No one ______ any objections to the plan.{"
+  },
+  {
+    "tag": "U5 p52 7.5 Collocations",
+    "questionText": "The company had to ______ production to meet demand for the product.{"
+  },
+  {
+    "tag": "U5 p50 0/4 Text",
+    "questionText": "<p><small><i>Read the text and fill in each gap with a single word. It can be an expression of quantity for some of the gaps.</i></small></p>"
+  },
+  {
+    "tag": "U5 p50 5.4 lots of",
+    "questionText": "<u>Lots</u> of our favourite dishes "
+  },
+  {
+    "tag": "U5 p54 6.1 Passive",
+    "questionText": "People expect tourists to carry sticks to protect themselves from curious monkeys.<br />"
+  },
+  {
+    "tag": "U5 p54 6.2 Passive",
+    "questionText": "Most people think monkeys are a huge tourist attraction. <b>BE</b> <br />"
+  },
+  {
+    "tag": "U5 p54 6.3 Passive",
+    "questionText": "Newspapers claim that twenty top chefs have been invited to prepare the meal. <b>BY</b> <br />"
+  },
+  {
+    "tag": "U5 p54 6.4 Passive",
+    "questionText": "The tourist office has estimated that over 10,000 visitors watch the feast. <b>BEEN</b> <br />"
+  },
+  {
+    "tag": "U5 p54 6.5 Passive",
+    "questionText": "Everyone says monkeys can be very aggressive around food. <b>TO</b> <br />"
+  },
+  {
+    "tag": "U4 p42 1.1 Pre-listening Antartica",
+    "questionText": "Antarctica has the world’s largest {"
+  },
+  {
+    "tag": "U4 p42 1.2 Pre-listening Antartica",
+    "questionText": "Has Antarctica always been cold? {"
+  },
+  {
+    "tag": "U4 p42 1.3 Pre-listening Antartica",
+    "questionText": "Which of these animals do you NOT get in Antarctica? {"
+  },
+  {
+    "tag": "U4 p42 1.4 Pre-listening Antartica",
+    "questionText": "Who led the first team to reach the South Pole in 1911? {"
+  },
+  {
+    "tag": "U4 p42 1.5 Pre-listening Antartica",
+    "questionText": "Why is Ernest Shackleton’s 1908 expedition famous? {"
+  },
+  {
+    "tag": "U4 p43 3.1",
+    "questionText": "What was unusual about Leo's team?{"
+  },
+  {
+    "tag": "U4 p43 3.2",
+    "questionText": "What does Leo say wasthe hardest thing for the team before the expedition?{"
+  },
+  {
+    "tag": "U4 p43 3.3",
+    "questionText": "What does Leo say was easier for the 21st-century expedition than for Shackleton’s expedition?{"
+  },
+  {
+    "tag": "U4 p43 3.4",
+    "questionText": "What problem did both expeditions experience?{"
+  },
+  {
+    "tag": "U4 p43 3.5",
+    "questionText": "How did Leo feel when he was crossing the Antarctic plateau?{"
+  },
+  {
+    "tag": "U4 p43 3.6",
+    "questionText": "The part of the trip Leo enjoyed the most was when they{"
+  },
+  {
+    "tag": "U4 p43 3.7",
+    "questionText": "What does Leo admire about Shackleton?{"
+  },
+  {
+    "tag": "U5 p54 GR4.1 Passive reporting forms",
+    "questionText": "People reported that there were gunshots."
+  },
+  {
+    "tag": "U5 p54 GR4.2 Passive reporting forms",
+    "questionText": "People claim that the money was stolen."
+  },
+  {
+    "tag": "U5 p54 GR4.3 Passive reporting forms",
+    "questionText": "People think that the suspect has left the country."
+  },
+  {
+    "tag": "U5 p54 GR4.4 Passive reporting forms",
+    "questionText": "People say that the police made a lot of mistakes."
+  },
+  {
+    "tag": "U5 p54 GR4.5 Passive reporting forms",
+    "questionText": "People believe that the criminal had a false passport."
+  },
+  {
+    "tag": "U5 p57 Rev4.6 Passive forms",
+    "questionText": "Only fifty people  <i>(invite)</i> to their wedding, which is on Saturday"
+  },
+  {
+    "tag": "U6 p59 Voc10.1 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>"
+  },
+  {
+    "tag": "U6 p59 Voc10.2 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>"
+  },
+  {
+    "tag": "U6 p59 Voc10.3 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>"
+  },
+  {
+    "tag": "U6 p59 Voc10.4 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>"
+  },
+  {
+    "tag": "U6 p59 Voc10.5 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>"
+  },
+  {
+    "tag": "U6 p59 Voc10.6 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>"
+  },
+  {
+    "tag": "U6 p60 Listening Audio1",
+    "questionText": "You will hear people talking in eight different situations. First, identify the key words in the question below. Then listen and choose the best answer."
+  },
+  {
+    "tag": "U6 p60 Listening 1.1",
+    "questionText": "You hear a woman talking about a play. What did she dislike about it?{"
+  },
+  {
+    "tag": "U6 p60 Listening Audio2",
+    "questionText": "Identify the key words in the following questions. Then listen and choose the best answer."
+  },
+  {
+    "tag": "U6 p60 Listening 3.2",
+    "questionText": "You hear a man and a woman talking about a visit to the theatre. How does the woman feel about the arrangements? {"
+  },
+  {
+    "tag": "U6 p60 Listening 3.3",
+    "questionText": "You hear part of a radio programme. What kind of programme is it? {"
+  },
+  {
+    "tag": "U6 p60 Listening 3.4",
+    "questionText": "You hear a woman giving some information on the radio about a comedy festival. Why is it going to be different this year? {"
+  },
+  {
+    "tag": "U6 p60 Listening 3.5",
+    "questionText": "You hear a man interviewing a ballet dancer on the radio. Why has she decided to retire later this year? {"
+  },
+  {
+    "tag": "U6 p60 Listening 3.6",
+    "questionText": "You hear a man and a woman talking on the radio about a new art exhibition. What do they agree is special about it? {"
+  },
+  {
+    "tag": "U6 p60 Listening 3.7",
+    "questionText": "You hear an actress being interviewed on the radio. What is she doing? {"
+  },
+  {
+    "tag": "U6 p60 Listening 3.8",
+    "questionText": "You hear a man and a woman talking. Who is the man? {"
+  },
+  {
+    "tag": "U6 p61 GR 2 Future forms",
+    "questionText": "Match the uses of future forms to the examples. {"
+  },
+  {
+    "tag": "U6 p64 6.6 Future perfect & continuous",
+    "questionText": "By 2050, holographic TV screens will  (<i>project</i>) images around our rooms at home."
+  },
+  {
+    "tag": "U3 p32 GR2 Present perfect vs past simple",
+    "questionText": "[markdown]Match the phrases in bold in the following sentences to the respective tense and use. {"
+  },
+  {
+    "tag": "U3 p32 CD.30 Present perfect vs past simple",
+    "questionText": "You _____ in lots of different countries, haven't you?"
+  },
+  {
+    "tag": "U7 p76 5 Relative clauses – Open writing",
+    "questionText": "Describe a popular place in your country and why people go there. Use the phrases below."
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.0",
+    "questionText": "Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given."
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.1",
+    "questionText": "It was too foggy for us to ski."
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.2",
+    "questionText": "He couldn't afford a taxi, so he went by bus."
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.3",
+    "questionText": "There was so much traffic that we missed the show."
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.4",
+    "questionText": "I had a wonderful time and I really enjoyed seeing everyone again."
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.5",
+    "questionText": "He said I didn't need to make an appointment."
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.6",
+    "questionText": "I think that taking your coat is unnecessary."
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.1",
+    "questionText": "You will get the results by Friday. <b>GIVEN</b>"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.2",
+    "questionText": "A fast-food chain has taken over two of our local restaurants. <b>BY</b>"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.3",
+    "questionText": "Nearly all the shops in this town are expensive. <b>HARDLY</b>"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.4",
+    "questionText": "Many people believe that too much sugar is bad for your health. <b>TO</b>"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.5",
+    "questionText": "George hadn't finished doing his homework when I went to pick him up. <b>STILL</b>"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.6",
+    "questionText": "My brother often arrives unexpectedly. <b>TURNING</b>"
+  },
+  {
+    "tag": "U7 p77 [So,such,too,enough,very] 1.8",
+    "questionText": "It's a  interesting book."
+  },
+  {
+    "tag": "U7 p79 Review 3.1",
+    "questionText": "The fishing village was _________ far away to visit one day.  {"
+  },
+  {
+    "tag": "U7 p79 Review 3.2",
+    "questionText": "I need to get a _________ ticket because I am coming back this evening.{"
+  },
+  {
+    "tag": "U7 p79 Review 3.3",
+    "questionText": "There's no ________ buying a car if you're never going to drive it.{"
+  },
+  {
+    "tag": "U7 p79 Review 3.4",
+    "questionText": "It was ______ a beautiful place that they decided to stay there longer.{"
+  },
+  {
+    "tag": "U7 p79 Review 3.5",
+    "questionText": "It's a very ___________ location, cut off from the outside world.<div id\\=\"gtx-trans\" style\\=\"position\\: absolute; left\\: 76px; top\\: 23px;\"> </div>{"
+  },
+  {
+    "tag": "U7 p79 Review 3.6",
+    "questionText": "You can' t just turn ___________ like this, unexpectedly, and expect me to be free.{"
+  },
+  {
+    "tag": "U6 p67 Rev4.8",
+    "questionText": "Let's hurry! They  the theatre doors at 7.30 and then you have to wait until the interval to go in."
+  },
+  {
+    "tag": "U6 p65 Voc1.1",
+    "questionText": "Was there a subject at school that you really didn't <i>get</i>?"
+  },
+  {
+    "tag": "U6 p65 Voc1.2",
+    "questionText": "What techniques do you use to <i>get</i> people to do what you want?"
+  },
+  {
+    "tag": "U6 p65 Voc1.3",
+    "questionText": "When do you normally <i>get</i> the time to relax?"
+  },
+  {
+    "tag": "U6 p65 Voc1.4",
+    "questionText": "In which situations do you <i>get</i> angry?"
+  },
+  {
+    "tag": "U6 p65 Voc1.5",
+    "questionText": "How do you <i>get</i> from one place to another?"
+  },
+  {
+    "tag": "U6 p65 Voc1.6",
+    "questionText": "How many texts do you <i>get</i> in an average day?"
+  },
+  {
+    "tag": "U6 p62 Reading - Text: Sharing the self love",
+    "questionText": "<h4>Sharing the (self) love: the rise of the selfie and digital narcissism</h4>"
+  },
+  {
+    "tag": "U6 p62 Reading 2",
+    "questionText": "<b>Complete this sentence to summarise the writer’s main point.</b>"
+  },
+  {
+    "tag": "U6 p62 Reading 4",
+    "questionText": "For the gaps in the text (1-6), choose the sentence that fits each gap. There is one extra sentence which you do not need to use. {"
+  },
+  {
+    "tag": "U6 p63 Reading Voc6.A0 word formation",
+    "questionText": "<p>Make adjectives from each of the following nouns/verbs.</p>"
+  },
+  {
+    "tag": "U6 p63 Reading Voc6.B0 word formation",
+    "questionText": "Make nouns from each of the adjectives/verbs."
+  },
+  {
+    "tag": "U6 p63 Reading Voc8.6",
+    "questionText": "There is no  (<i>evident</i>) that sugar is bad for you."
+  },
+  {
+    "tag": "U5 p49 GR1.8 Expressions of quantity",
+    "questionText": "There isn't  chocolate left."
+  },
+  {
+    "tag": "U8 p84 Voc Linking words 5.8",
+    "questionText": "I enjoyed my time at the law firm. I made a lot of friends there ."
+  },
+  {
+    "tag": "U9 p95 4.0 Third conditional",
+    "questionText": "<b>Complete the sentences below to express criticism. Use the third conditional and the cues in brackets. Write the <u>full B response</u> (full sentence) in the field below each question.</b>"
+  },
+  {
+    "tag": "U9 p95 4.2 Third conditional",
+    "questionText": ""
+  },
+  {
+    "tag": "U9 p95 4.3 Third conditional",
+    "questionText": ""
+  },
+  {
+    "tag": "U9 p95 4.4 Third conditional",
+    "questionText": ""
+  },
+  {
+    "tag": "U9 p95 4.5 Third conditional",
+    "questionText": ""
+  },
+  {
+    "tag": "U9 p95 4.6 Third conditional",
+    "questionText": ""
+  },
+  {
+    "tag": "U9 p94 Listening 4.1",
+    "questionText": "Max says that top sportspeople usually believe their success is due to {"
+  },
+  {
+    "tag": "U9 p94 Listening 4.2",
+    "questionText": "According to Max, sportspeople are achieving more these days because {"
+  },
+  {
+    "tag": "U9 p94 Listening 4.3",
+    "questionText": "What does Max say about very talented young children? {"
+  },
+  {
+    "tag": "U9 p94 Listening 4.4",
+    "questionText": "According to Max, in his book <i>Bounce</i>, Matthew Syed says he had a greater chance of success  because of {"
+  },
+  {
+    "tag": "U9 p94 Listening 4.5",
+    "questionText": "For Matthew, the advantage of joining the Omega Club was that {"
+  },
+  {
+    "tag": "U9 p94 Listening 4.6",
+    "questionText": "Matthew thinks the reason Omega Club members have been so successful is {"
+  },
+  {
+    "tag": "U9 p94 Listening 4.7",
+    "questionText": "Max says that a ten-year investigation has shown that lucky people {"
+  }
+]
