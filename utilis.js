@@ -15,4 +15,3 @@ module.exports = {
     json_to_tab,
     cheminVersFichierJSON,
 };
-

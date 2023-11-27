@@ -32,12 +32,21 @@ const extractionDesDonnees = () => {
                         const questionTextMatch = questionData.match(/::.*?::(.*?)[\r\n]/);
                         const questionText = questionTextMatch ? questionTextMatch[1].trim() : null;
 
+                        // Extraire les réponses entre {}
+                        const reponsesMatches = questionData.match(/\{(.*?)\}/gs);
+                        const reponses = reponsesMatches
+                            ? reponsesMatches[0].split('\n')
+                                .map(match => match.trim())
+                                .filter(line => line !== '' && line !== '{}') // Supprimer les lignes vides et les lignes avec {}
+                                .map(line => line.replace(/[{}]/g, '')) // Supprimer { et }
+                            : [];
+
                         const cleanedQuestionText = questionText
                             ? questionText.replace(/\[html\]/g, '').replace(/{.*?}/g, '').replace(/<br>/g, '')
                             : null;
 
                         if (tag !== null && cleanedQuestionText !== null) {
-                            questionsData.push({ tag, questionText: cleanedQuestionText });
+                            questionsData.push({ tag, questionText: cleanedQuestionText, reponses });
                         }
                     }
                 });
@@ -93,4 +102,4 @@ const extractionDesDonnees = () => {
 };
 
 module.exports = extractionDesDonnees;
-
+extractionDesDonnees()
