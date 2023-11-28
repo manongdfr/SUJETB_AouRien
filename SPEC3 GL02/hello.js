@@ -10,15 +10,17 @@ function exam(tableauDeDonnees) {
     let tableauQuestionJoint = [];
 
     for (let j = 0; j < tableauDeDonnees.length; j++) {
-        tableauDeDonnees[j][0] = "::" + tableauDeDonnees[j][0] + "::";
-        tableauDeDonnees[j][2] = "{" + tableauDeDonnees[j][2] + "}";
-        tableauQuestionJoint[j] = tableauDeDonnees[j].join("\n");
+        tableauDeDonnees[j].tag = "::" + tableauDeDonnees[j].tag + "::";
+        tableauDeDonnees[j].reponses = "{" + tableauDeDonnees[j].reponses + "}";
+        //tableauQuestionJoint[j] = tableauDeDonnees[j].join("\n");
     }
-
+    for (let u = 0; u < tableauDeDonnees.length; u++) {
+        console.log(tableauDeDonnees[u]);
+    }
     // Afficher les éléments du tableau tableauQuestionJoint
-    for (let u = 0; u < tableauQuestionJoint.length; u++) {
+  /*  for (let u = 0; u < tableauQuestionJoint.length; u++) {
         console.log(tableauQuestionJoint[u]);
-    }
+    }*/
 }
 
 // Appeler la fonction exam avec le tableau tableauDeDonnees
