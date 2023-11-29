@@ -34,7 +34,7 @@ async function simuleexam(tableauDeDonnees) {
             }
         });
         let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse :");
-        console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
+        console.log(`Vous avez choisi la réponse numéro : ${reponse}`);
     }
     rl.close();
 }
