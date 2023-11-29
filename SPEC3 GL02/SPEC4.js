@@ -28,15 +28,27 @@ async function simuleexam(tableauDeDonnees) {
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\<[^>]*\> */g, "");
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\[[^]*\] */g, "");
         console.log(tableauDeDonnees[i].questionText);
-        tableauDeDonnees[i].reponses.forEach((reponse, index) => {
-            if (tableauDeDonnees[i]1.reponses.includes("~")) {
-                console.log(`${index + 1}. ${reponse.replace("~", "")}`);
+        let correctAnswer;
+        for (let index = 0; index < tableauDeDonnees[i].reponses.length; index++) {
+            let reponse = tableauDeDonnees[i].reponses[index];
+            if (reponse.includes("~") || reponse.includes("=")) {
+                console.log(`${index + 1}. ${reponse.replace("~", "").replace("=", "")}`);
+                if (reponse.includes("=")) {
+                    correctAnswer = `${index + 1}`;
+                    break;
+                }
             }
-        });
+        }
         let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse :");
         console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
+        if (reponse == correctAnswer) {
+            console.log('Bonne réponse');
+        } else {
+            console.log('Mauvaise réponse');
+        }
     }
     rl.close();
 }
 
 simuleexam(tableauDeDonnees);
+1
