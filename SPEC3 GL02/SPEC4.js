@@ -29,12 +29,12 @@ async function simuleexam(tableauDeDonnees) {
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\[[^]*\] */g, "");
         console.log(tableauDeDonnees[i].questionText);
         tableauDeDonnees[i].reponses.forEach((reponse, index) => {
-            if (reponse.includes("~")) {
+            if (tableauDeDonnees[i]1.reponses.includes("~")) {
                 console.log(`${index + 1}. ${reponse.replace("~", "")}`);
             }
         });
         let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse :");
-        console.log(`Vous avez choisi la réponse numéro : ${reponse}`);
+        console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
     }
     rl.close();
 }
