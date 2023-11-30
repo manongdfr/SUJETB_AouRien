@@ -51,4 +51,3 @@ async function simuleexam(tableauDeDonnees) {
 }
 
 simuleexam(tableauDeDonnees);
-1
