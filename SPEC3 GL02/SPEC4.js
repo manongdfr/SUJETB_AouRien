@@ -27,8 +27,9 @@ async function simuleexam(tableauDeDonnees) {
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\([^)]*\) */g, "");
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\<[^>]*\> */g, "");
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\[[^]*\] */g, "");
-        console.log(tableauDeDonnees[i].questionText);
         let correctAnswer;
+        //Type question choix multiple
+        /*
         for (let index = 0; index < tableauDeDonnees[i].reponses.length; index++) {
             let reponse = tableauDeDonnees[i].reponses[index];
             if (reponse.includes("~") || reponse.includes("=")) {
@@ -45,9 +46,36 @@ async function simuleexam(tableauDeDonnees) {
             console.log('Bonne réponse');
         } else {
             console.log('Mauvaise réponse');
+        }*/
+
+        // question Type Vrai ou faux
+        /*
+            if (tableauDeDonnees.type == 'T/F') {
+                correctAnswer = tableauDeDonnees[i].reponses
+                let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse : \n1 pour TRUE \n2 pour FALSE:");
+                console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
+                if (reponse == '1') {
+                    reponse = 'T';
+                } else if (reponse == '2') {
+                    reponse = 'F';
+                }
+                if (reponse == correctAnswer) {
+                    console.log('Bonne réponse');
+                } else {
+                    console.log('Mauvaise réponse');
+                }
+            }
         }
+        */
+        //Question type texte à trou
+        correctAnswer = tableauDeDonnees[i].reponses
+        let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse : \n1 pour TRUE \n2 pour FALSE:");
+        console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
+        if  (reponse == )
     }
-    rl.close();
+    rl.close();{
+
+    }
 }
 
 simuleexam(tableauDeDonnees);
