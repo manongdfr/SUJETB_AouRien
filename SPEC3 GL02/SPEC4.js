@@ -27,6 +27,7 @@ async function simuleexam(tableauDeDonnees) {
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\([^)]*\) */g, "");
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\<[^>]*\> */g, "");
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\[[^]*\] */g, "");
+        console.log(tableauDeDonnees[i].questionText)
         let correctAnswer;
         //Type question choix multiple
         /*
@@ -51,7 +52,7 @@ async function simuleexam(tableauDeDonnees) {
         // question Type Vrai ou faux
         /*
             if (tableauDeDonnees.type == 'T/F') {
-                correctAnswer = tableauDeDonnees[i].reponses
+                correctAnswer = tableauDeDonnees[i].reponses.substring(1).split('=')
                 let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse : \n1 pour TRUE \n2 pour FALSE:");
                 console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
                 if (reponse == '1') {
@@ -68,10 +69,16 @@ async function simuleexam(tableauDeDonnees) {
         }
         */
         //Question type texte à trou
-        correctAnswer = tableauDeDonnees[i].reponses
-        let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse : \n1 pour TRUE \n2 pour FALSE:");
-        console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
-        if  (reponse == )
+        /*
+            correctAnswers = tableauDeDonnees[i].reponses[0].substring(1).split('=').map(answer => answer.trim().toLowerCase()); // Supprime le signe égal, divise les réponses, supprime les espaces supplémentaires et convertit en minuscules
+            let reponse = (await demanderUneReponse("\nVeuillez entrer votre réponse :")).trim().toLowerCase(); // Supprime les espaces supplémentaires et convertit en minuscules
+            console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
+            if (correctAnswers.includes(reponse)) {
+                console.log('Bonne réponse')
+            } else {
+                console.log('Mauvaise réponse')
+            }
+*/
     }
     rl.close();{
 
