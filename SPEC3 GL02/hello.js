@@ -12,18 +12,19 @@ function exam(tableauDeDonnees) {
         tag = "::" + tag + "::";
         reponses = "{" + reponses + "}";
         return [tag, questionText, reponses].join(' ');
-    });
 
+    });
+    return tableauQuestionJoint
     console.log(tableauQuestionJoint);
 }
 
 // Appeler la fonction exam avec le tableau tableauDeDonnees
-exam(tableauDeDonnees);
+tableauQuestionJoint = exam(tableauDeDonnees);
 
-let data = tableauDeDonnees.join('\n')
+let data = tableauQuestionJoint.join('\n')
 //trouver le chemin du dossier
 let dossier = 'C:\\Users\\bapti\\Documents\\20232024\\GL02\\projet\\ProjetGIT\\SUJETB_AouRien\\SPEC3 GL02\\exam crée'
-let examen = path.join(dossier,'exam.gif')
+let examen = path.join(dossier,'exam.gift')
 //stocker l'exam dans un fichier
 fs.writeFile(examen, data, (err) => {
     if (err) throw err;
