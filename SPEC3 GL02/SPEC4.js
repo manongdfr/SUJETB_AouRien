@@ -28,7 +28,7 @@ async function simuleexam(tableauDeDonnees) {
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\<[^>]*\> */g, "");
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/ *\[[^]*\] */g, "");
         console.log(tableauDeDonnees[i].questionText)
-        let correctAnswer;
+
         //Type question choix multiple
         /*
         for (let index = 0; index < tableauDeDonnees[i].reponses.length; index++) {
@@ -78,11 +78,44 @@ async function simuleexam(tableauDeDonnees) {
             } else {
                 console.log('Mauvaise réponse')
             }
-*/
-    }
-    rl.close();{
+            */
+        let correctAnswers = tableauDeDonnees[i].reponses.map(reponse => {
+            if (reponse) { // Vérifie si la réponse n'est pas une chaîne vide
+                let [term, definition] = reponse.substring(1).split('->').map(str => str.trim().toLowerCase());
+                return {term, definition};
+            }
+        }).filter(Boolean); // Filtre les valeurs undefined du tableau
 
-    }
-}
+        for (let j = 0; j < 6; j++) {
+            console.log(`Quelle est la définition de "${correctAnswers[j].term}" ?`);
+            let availableAnswers = [...correctAnswers];
+            availableAnswers.push({definition: 'Aucune des réponses'}); // Ajoute l'option "Aucune des réponses"
 
+            for (let k = 0; k < availableAnswers.length; k++) {
+                console.log(`${k + 1}. ${availableAnswers[k].definition}`);
+            }
+
+            let reponse = (await demanderUneReponse("\nVeuillez entrer le numéro de la bonne définition :")).trim().toLowerCase();
+            if (reponse >= 1 && reponse <= availableAnswers.length) {
+                if (availableAnswers[reponse - 1].definition == correctAnswers[j].definition) {
+                    console.log('Bonne réponse');
+                } else {
+                    console.log('Mauvaise réponse');
+                }
+
+                // Supprime la réponse sélectionnée du tableau des réponses disponibles
+                if (reponse != availableAnswers.length) { // Si l'utilisateur n'a pas choisi "Aucune des réponses"
+                    correctAnswers = correctAnswers.filter(answer => answer.definition != availableAnswers[reponse - 1].definition);
+                }
+            } else {
+                console.log('Numéro de réponse non valide. Veuillez entrer un nombre entre 1 et ' + availableAnswers.length);
+            }
+
+            if (j == correctAnswers.length - 1) { // Si c'est la dernière question d'appariement
+                rl.close();
+                rl.removeAllListeners();
+            }
+        }
+    }
+    }
 simuleexam(tableauDeDonnees);
