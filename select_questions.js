@@ -9,6 +9,7 @@ function select_questions() {
     var tab_values = [];
     var tab_select = [];
     var can_create = false;
+    var first_insert = true;
     while (choix2 !== "n") {
         if (tab_select.length >= 20) {
             console.log("Nombre max de question ajoutées");
@@ -34,30 +35,52 @@ function select_questions() {
                         choix = "stop";
                         choix = prompt("Selectionner l'index de votre question a séléctionner ( stop pour arreter la selection) : ", "stop")
                         if (choix.toLowerCase() !== "stop") {
-                            if (!(tab_select["tag"].includes(tab_values[choix]["tag"]))){
                                 if (choix <= tab_values.length && choix >= 0) {
-                                    var entry = {
-                                        tag: tab_values[choix]["tag"],
-                                        questionText: tab_values[choix]["questionText"],
-                                        reponses: tab_values[choix]["reponses"]
-                                    };
-                                    tab_select.push(entry);
-                                    console.log("Votre selection actuelle : ")
-                                    console.table(tab_select);
-                                    console.log(`il vous reste encore ${20 - tab_select.length} places `)
-                                    if (tab_select.length < 15) {
-                                        console.log(`Vous devais rajouter encore ${15 - tab_select.length} au minimum pour former un exam `)
-                                    } else {
-                                        console.log("Vous avez ajouter suffisament de question pour cree un exam")
-                                        can_create = true;
+                                    if (first_insert) {
+                                        var entry = {
+                                            tag: tab_values[choix]["tag"],
+                                            questionText: tab_values[choix]["questionText"],
+                                            reponses: tab_values[choix]["reponses"]
+                                        };
+                                        first_insert = false
+                                        tab_select.push(entry);
+                                        console.log("Votre selection actuelle : ")
+                                        console.table(tab_select);
+                                        console.log(`il vous reste encore ${20 - tab_select.length} places `)
+                                        if (tab_select.length < 15) {
+                                            console.log(`Vous devais rajouter encore ${15 - tab_select.length} au minimum pour former un exam `)
+                                        } else {
+                                            console.log("Vous avez ajouter suffisament de question pour cree un exam")
+                                            can_create = true;
+                                        }
                                     }
-                                } else {
+                                    else {
+                                        if (!(tab_select.includes(tab_values[choix]))) {
+                                            var entry = {
+                                                tag: tab_values[choix]["tag"],
+                                                questionText: tab_values[choix]["questionText"],
+                                                reponses: tab_values[choix]["reponses"]
+                                            };
+                                            first_insert = false
+                                            tab_select.push(entry);
+                                            console.log("Votre selection actuelle : ")
+                                            console.table(tab_select);
+                                            console.log(`il vous reste encore ${20 - tab_select.length} places `)
+                                            if (tab_select.length < 15) {
+                                                console.log(`Vous devais rajouter encore ${15 - tab_select.length} au minimum pour former un exam `)
+                                            } else {
+                                                console.log("Vous avez ajouter suffisament de question pour cree un exam")
+                                                can_create = true;
+                                            }
+                                        }
+                                        else {
+                                            console.log("La valeur est déja dans le tableau")
+                                        }
+                                    }
+                                }
+                                    else {
                                     console.log("Veuillez choisir un index valide")
                                 }
-                            }
-                           else {
-                               console.log("Cette valeur est déja dans le tableau")
-                            }
                         }
                     }
                 }
@@ -65,10 +88,10 @@ function select_questions() {
         }
     }
     if (can_create){
-        return tab_select
+        return tab_select;
     }
     else {
-        var choix3 = prompt("Vous n'avez pas remplie les conditions necesaire pour cree l'exam voulez vous recommencer (y/n)","n")
+        var choix3 = prompt("Vous n'avez pas remplie les conditions necesaire pour cree l'exam voulez vous recommencer (y/n) : ","n")
         if (choix3.toLowerCase() === "y"){
             select_questions()
         }
