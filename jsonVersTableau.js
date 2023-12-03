@@ -1,6 +1,6 @@
-const fs = require('fs');
 
-function jsonVersTableau(cheminDuFichier) {
+function json_to_tab(cheminDuFichier) {
+    const fs = require('fs');
     try {
         // Lire le fichier JSON
         const jsonData = fs.readFileSync(cheminDuFichier, 'utf-8');
@@ -14,4 +14,4 @@ function jsonVersTableau(cheminDuFichier) {
         return null;
     }
 }
-module.exports = jsonVersTableau;
+module.exports = json_to_tab;
