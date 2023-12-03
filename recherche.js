@@ -1,14 +1,10 @@
 const {
-    fs,
-    path,
-    readline,
-    extractionDesDonnees,
-    json_to_tab,
+    jsonVersTableau,
     cheminVersFichierJSON,
 } = require('./utilis');
 
 function recherche(keyword,tag ) {
-    var tab_values = json_to_tab(cheminVersFichierJSON);
+    var tab_values = jsonVersTableau(cheminVersFichierJSON);
     var tab_result = [];
     for (var i = 0; i < tab_values.length; i++) {
         if (
@@ -28,4 +24,4 @@ function recherche(keyword,tag ) {
 
 }
 module.exports = recherche;
-//console.table(recherche("Nothing","U4"));
+console.table(recherche("Nothing","U4"));
