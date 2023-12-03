@@ -16,8 +16,8 @@ function select_questions() {
         } else {
             choix2 = prompt("Effectuer une nouvelle recherche (y/n) : ", "n");
             if (choix2.toLowerCase() === "y") {
-                var tag = prompt("Saisir le tag de la recherche : ")
-                var text_question = prompt("Saisir la chaine de caractère de la question : ")
+                var tag = prompt("Saisir le tag de la recherche : ","")
+                var text_question = prompt("Saisir la chaine de caractère de la question : ","")
                 if (tag || text_question) {
                     tab_values = recherche(text_question, tag);
                 }
@@ -34,24 +34,29 @@ function select_questions() {
                         choix = "stop";
                         choix = prompt("Selectionner l'index de votre question a séléctionner ( stop pour arreter la selection) : ", "stop")
                         if (choix.toLowerCase() !== "stop") {
-                            if (choix <= tab_values.length && choix >= 0) {
-                                var entry = {
-                                    tag: tab_values[choix]["tag"],
-                                    questionText: tab_values[choix]["questionText"],
-                                    reponses: tab_values[choix]["reponses"]
-                                };
-                                tab_select.push(entry);
-                                console.log("Votre selection actuelle : ")
-                                console.table(tab_select);
-                                console.log(`il vous reste encore ${20 - tab_select.length} places `)
-                                if (tab_select.length < 15) {
-                                    console.log(`Vous devais rajouter encore ${15 - tab_select.length} au minimum pour former un exam `)
+                            if (!(tab_select["tag"].includes(tab_values[choix]["tag"]))){
+                                if (choix <= tab_values.length && choix >= 0) {
+                                    var entry = {
+                                        tag: tab_values[choix]["tag"],
+                                        questionText: tab_values[choix]["questionText"],
+                                        reponses: tab_values[choix]["reponses"]
+                                    };
+                                    tab_select.push(entry);
+                                    console.log("Votre selection actuelle : ")
+                                    console.table(tab_select);
+                                    console.log(`il vous reste encore ${20 - tab_select.length} places `)
+                                    if (tab_select.length < 15) {
+                                        console.log(`Vous devais rajouter encore ${15 - tab_select.length} au minimum pour former un exam `)
+                                    } else {
+                                        console.log("Vous avez ajouter suffisament de question pour cree un exam")
+                                        can_create = true;
+                                    }
                                 } else {
-                                    console.log("Vous avez ajouter suffisament de question pour cree un exam")
-                                    can_create = true;
+                                    console.log("Veuillez choisir un index valide")
                                 }
-                            } else {
-                                console.log("Veuillez choisir un index valide")
+                            }
+                           else {
+                               console.log("Cette valeur est déja dans le tableau")
                             }
                         }
                     }

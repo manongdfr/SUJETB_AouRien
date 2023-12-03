@@ -18,9 +18,35 @@ function recherche(keyword,tag ) {
             };
             tab_result.push(entry);
         }
+        else if (tag && !keyword && tab_values[i]["tag"].includes(tag)){
+            var entry = {
+                tag: tab_values[i]["tag"],
+                questionText: tab_values[i]["questionText"],
+                reponses: tab_values[i]["reponses"]
+            };
+            tab_result.push(entry);
+        }
+        else if (!tag && keyword && tab_values[i]["questionText"].includes(keyword)){
+            var entry = {
+                tag: tab_values[i]["tag"],
+                questionText: tab_values[i]["questionText"],
+                reponses: tab_values[i]["reponses"]
+            };
+            tab_result.push(entry);
+        }
+        else if (!tag && !keyword) {
+            var entry = {
+                tag: tab_values[i]["tag"],
+                questionText: tab_values[i]["questionText"],
+                reponses: tab_values[i]["reponses"]
+            };
+            tab_result.push(entry);
+        }
+
     }
     return tab_result;
 
 }
 module.exports = recherche;
+//console.table(recherche( "","U4"))
 
