@@ -58,18 +58,6 @@ const extractionDesDonnees = () => {
                 }
             };
 
-            const askUserToDisplayQuestionsData = () => {
-                rl.question('Voulez-vous enregistrer les données dans un fichier JSON ? (oui/non) ', (reponse) => {
-                    if (reponse.toLowerCase() === 'oui') {
-                        writeDataToJsonFile(questionsData);
-                    } else {
-                        console.log('Données non enregistrées.');
-                    }
-
-                    rl.close();
-                });
-            };
-
             const writeDataToJsonFile = (data) => {
                 const jsonData = JSON.stringify(data, null, 2);
                 const jsonFilePath = 'data.json';
@@ -94,9 +82,7 @@ const extractionDesDonnees = () => {
                     }
                 });
             });
-
-            // Demander à l'utilisateur s'il veut enregistrer les données dans un fichier JSON.
-            askUserToDisplayQuestionsData();
+            writeDataToJsonFile(questionsData);
         });
     });
 };
