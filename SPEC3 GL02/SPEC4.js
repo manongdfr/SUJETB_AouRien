@@ -11,7 +11,13 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 function demanderUneReponse(question) {
     return new Promise((resolve) => {
         rl.question(question, (reponseUtilisateur) => {
@@ -21,6 +27,7 @@ function demanderUneReponse(question) {
 }
 
 async function simuleexam(tableauDeDonnees) {
+    let bonneReponse
     for (let i = 0; i < tableauDeDonnees.length; i++) {
         // je crée des questions propre
         tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/[{]/g, "")
@@ -45,6 +52,7 @@ async function simuleexam(tableauDeDonnees) {
         console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
         if (reponse == correctAnswer) {
             console.log('Bonne réponse');
+            bonneReponse = bonneReponse + 1
         } else {
             console.log('Mauvaise réponse');
         }*/
@@ -62,6 +70,7 @@ async function simuleexam(tableauDeDonnees) {
                 }
                 if (reponse == correctAnswer) {
                     console.log('Bonne réponse');
+                    bonneReponse = bonneReponse + 1
                 } else {
                     console.log('Mauvaise réponse');
                 }
@@ -75,47 +84,65 @@ async function simuleexam(tableauDeDonnees) {
             console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
             if (correctAnswers.includes(reponse)) {
                 console.log('Bonne réponse')
+                bonneReponse = bonneReponse + 1
             } else {
                 console.log('Mauvaise réponse')
             }
             */
-        let correctAnswers = tableauDeDonnees[i].reponses.map(reponse => {
-            if (reponse) { // Vérifie si la réponse n'est pas une chaîne vide
-                let [term, definition] = reponse.substring(1).split('->').map(str => str.trim().toLowerCase());
-                return {term, definition};
-            }
-        }).filter(Boolean); // Filtre les valeurs undefined du tableau
+        //question type relié les mots entre eux
 
-        for (let j = 0; j < 6; j++) {
-            console.log(`Quelle est la définition de "${correctAnswers[j].term}" ?`);
-            let availableAnswers = [...correctAnswers];
-            availableAnswers.push({definition: 'Aucune des réponses'}); // Ajoute l'option "Aucune des réponses"
+        for (let i = 0; i < tableauDeDonnees.length; i++) {
+            let correctAnswers = tableauDeDonnees[i].reponses.map(reponse => {
+                if (reponse) {
+                    let [term, definition] = reponse.substring(1).split('->').map(str => str.trim().toLowerCase());
+                    return {term, definition, selected: false};
+                }
+            }).filter(Boolean);
 
-            for (let k = 0; k < availableAnswers.length; k++) {
-                console.log(`${k + 1}. ${availableAnswers[k].definition}`);
-            }
+            // Mélanger l'ordre des réponses
+            correctAnswers = shuffle(correctAnswers);
 
-            let reponse = (await demanderUneReponse("\nVeuillez entrer le numéro de la bonne définition :")).trim().toLowerCase();
-            if (reponse >= 1 && reponse <= availableAnswers.length) {
-                if (availableAnswers[reponse - 1].definition == correctAnswers[j].definition) {
-                    console.log('Bonne réponse');
+            for (let j = 0; j < correctAnswers.length; j++) {
+                console.log(`Quelle est la définition de "${correctAnswers[j].term}" ?`);
+
+                let availableAnswers = correctAnswers.map(answer => ({...answer}));
+
+                availableAnswers.push({definition: 'Aucune des réponses'});
+
+                // Mélanger l'ordre des réponses disponibles
+                availableAnswers = shuffle(availableAnswers);
+
+                for (let k = 0; k < availableAnswers.length; k++) {
+                    console.log(`${k + 1}. ${availableAnswers[k].definition}`);
+                }
+
+                let reponse = (await demanderUneReponse("\nVeuillez entrer le numéro de la bonne définition :")).trim().toLowerCase();
+
+                if (reponse >= 1 && reponse <= availableAnswers.length) {
+                    if (availableAnswers[reponse - 1].definition == correctAnswers[j].definition) {
+                        console.log('Bonne réponse');
+                        correctAnswers[j].selected = true; // Marque la réponse comme sélectionnée
+                        bonneReponse = bonneReponse + 1
+                    } else {
+                        console.log('Mauvaise réponse');
+                    }
+
+                    // Mise à jour du tableau correctAnswers en fonction des réponses sélectionnées
+                    correctAnswers = correctAnswers.filter(answer => !answer.selected);
                 } else {
-                    console.log('Mauvaise réponse');
+                    console.log('Numéro de réponse non valide. Veuillez entrer un nombre entre 1 et ' + availableAnswers.length);
                 }
-
-                // Supprime la réponse sélectionnée du tableau des réponses disponibles
-                if (reponse != availableAnswers.length) { // Si l'utilisateur n'a pas choisi "Aucune des réponses"
-                    correctAnswers = correctAnswers.filter(answer => answer.definition != availableAnswers[reponse - 1].definition);
-                }
-            } else {
-                console.log('Numéro de réponse non valide. Veuillez entrer un nombre entre 1 et ' + availableAnswers.length);
             }
 
-            if (j == correctAnswers.length - 1) { // Si c'est la dernière question d'appariement
+            // Fermeture de la saisie après la dernière question
+            if (i == tableauDeDonnees.length - 1) {
                 rl.close();
                 rl.removeAllListeners();
             }
         }
     }
-    }
+    console.log("vous avez obtenu la note de :" +bonneReponse+"/"+tableauDeDonnees.length)
+}
+// Appel de la fonction simuleexam avec le tableau de données
 simuleexam(tableauDeDonnees);
+
