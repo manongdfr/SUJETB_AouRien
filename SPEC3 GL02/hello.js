@@ -1,32 +1,58 @@
 const fs = require('fs');
 const path = require('path');
+const readline = require('readline');
+
 // Lecture du fichier JSON
 const jsonFilePath = './data.json';
 const jsonData = fs.readFileSync(jsonFilePath, 'utf-8');
 const tableauDeDonnees = JSON.parse(jsonData);
 
+// Créer une interface de lecture
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+function demanderUneReponse(question) {
+    return new Promise((resolve) => {
+        rl.question(question, (reponseUtilisateur) => {
+            resolve(reponseUtilisateur);
+        });
+    });
+}
+
 // Définition de la fonction exam
 function exam(tableauDeDonnees) {
-
     let tableauQuestionJoint = tableauDeDonnees.map(({ tag, questionText, reponses }) => {
         tag = "::" + tag + "::";
         reponses = "{" + reponses + "}";
         return [tag, questionText, reponses].join(' ');
-
     });
-    return tableauQuestionJoint
-    console.log(tableauQuestionJoint);
+    return tableauQuestionJoint;
 }
 
 // Appeler la fonction exam avec le tableau tableauDeDonnees
-tableauQuestionJoint = exam(tableauDeDonnees);
+let tableauQuestionJoint = exam(tableauDeDonnees);
 
-let data = tableauQuestionJoint.join('\n')
-//trouver le chemin du dossier
-let dossier = 'C:\\Users\\bapti\\Documents\\20232024\\GL02\\projet\\ProjetGIT\\SUJETB_AouRien\\SPEC3 GL02\\exam crée'
-let examen = path.join(dossier,'exam.gift')
-//stocker l'exam dans un fichier
-fs.writeFile(examen, data, (err) => {
-    if (err) throw err;
-    console.log('Les données ont été écrites dans le fichier avec succès.');
-});
+(async () => {
+    // Poser une question à l'utilisateur
+    let chemin = await demanderUneReponse("\nVeuillez entrer le chemin du fichier ou vous voulez stocker votre exam :");
+
+    // Convertir le tableau en chaîne de texte
+    let data = tableauQuestionJoint.join('\n');
+
+    // Trouver le chemin du dossier
+    let dossier = chemin;
+
+    // Créer le chemin complet pour le fichier d'examen
+    let examen = path.join(dossier, 'exam.gift');
+
+    // Stocker l'examen dans un fichier
+    fs.writeFile(examen, data, (err) => {
+        if (err) throw err;
+        console.log('Les données ont été écrites dans le fichier avec succès.');
+
+        // Fermer l'interface de lecture
+        rl.close();
+    });
+})();
