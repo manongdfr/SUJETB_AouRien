@@ -37,48 +37,30 @@ async function simuleexam(tableauDeDonnees) {
         console.log(tableauDeDonnees[i].questionText)
 
         //Type question choix multiple
-        /*
-        for (let index = 0; index < tableauDeDonnees[i].reponses.length; index++) {
-            let reponse = tableauDeDonnees[i].reponses[index];
-            if (reponse.includes("~") || reponse.includes("=")) {
-                console.log(`${index + 1}. ${reponse.replace("~", "").replace("=", "")}`);
-                if (reponse.includes("=")) {
-                    correctAnswer = `${index + 1}`;
-                    break;
+        if (tableauDeDonnees[i].typeDeQuestion == "Question classique") {
+            for (let index = 0; index < tableauDeDonnees[i].reponses.length; index++) {
+                let reponse = tableauDeDonnees[i].reponses[index];
+                if (reponse === "") {
+                    console.log(`${index + 1}. Aucune réponse`);
+                } else if (reponse.includes("~") || reponse.includes("=")) {
+                    console.log(`${index + 1}. ${reponse.replace("~", "").replace("=", "")}`);
+                    if (reponse.includes("=")) {
+                        correctAnswer = `${index + 1}`;
+                    }
                 }
             }
+            reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse :");
+            if (reponse == correctAnswer) {
+                console.log('Bonne réponse');
+                bonneReponse = bonneReponse + 1
+            } else {
+                console.log('Mauvaise réponse');
+            }
         }
-        let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse :");
-        console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
-        if (reponse == correctAnswer) {
-            console.log('Bonne réponse');
-            bonneReponse = bonneReponse + 1
-        } else {
-            console.log('Mauvaise réponse');
-        }*/
 
-        // question Type Vrai ou faux
-        /*
-            if (tableauDeDonnees.type == 'T/F') {
-                correctAnswer = tableauDeDonnees[i].reponses.substring(1).split('=')
-                let reponse = await demanderUneReponse("\nVeuillez entrer le numéro de votre réponse : \n1 pour TRUE \n2 pour FALSE:");
-                console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
-                if (reponse == '1') {
-                    reponse = 'T';
-                } else if (reponse == '2') {
-                    reponse = 'F';
-                }
-                if (reponse == correctAnswer) {
-                    console.log('Bonne réponse');
-                    bonneReponse = bonneReponse + 1
-                } else {
-                    console.log('Mauvaise réponse');
-                }
-            }
-        }
-        */
+
         //Question type texte à trou
-        /*
+        else if (tableauDeDonnees[i].typeDeQuestion == "Question à trou") {
             correctAnswers = tableauDeDonnees[i].reponses[0].substring(1).split('=').map(answer => answer.trim().toLowerCase()); // Supprime le signe égal, divise les réponses, supprime les espaces supplémentaires et convertit en minuscules
             let reponse = (await demanderUneReponse("\nVeuillez entrer votre réponse :")).trim().toLowerCase(); // Supprime les espaces supplémentaires et convertit en minuscules
             console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
@@ -88,60 +70,49 @@ async function simuleexam(tableauDeDonnees) {
             } else {
                 console.log('Mauvaise réponse')
             }
-            */
+        }
         //question type relié les mots entre eux
 
-        for (let i = 0; i < tableauDeDonnees.length; i++) {
-            let correctAnswers = tableauDeDonnees[i].reponses.map(reponse => {
-                if (reponse) {
-                    let [term, definition] = reponse.substring(1).split('->').map(str => str.trim().toLowerCase());
-                    return {term, definition, selected: false};
-                }
-            }).filter(Boolean);
+        else if (tableauDeDonnees[i].typeDeQuestion == "Question à association") {
+            // Filtrer les associations pour supprimer les lignes vides
+            let associations = tableauDeDonnees[i].associations.filter(association => association.left !== "" && association.right !== "");
 
-            // Mélanger l'ordre des réponses
-            correctAnswers = shuffle(correctAnswers);
+            // Variable pour suivre si l'utilisateur a fait une erreur
+            let aFaitUneErreur = false;
 
-            for (let j = 0; j < correctAnswers.length; j++) {
-                console.log(`Quelle est la définition de "${correctAnswers[j].term}" ?`);
+            // Poser chaque question d'association à l'utilisateur
+            for (let j = 0; j < associations.length; j++) {
+                console.log(`Quelle est la bonne association pour "${associations[j].left}" ?`);
 
-                let availableAnswers = correctAnswers.map(answer => ({...answer}));
+                // Mélanger les associations de droite
+                let associationsDroites = shuffle(associations.map(association => association.right));
 
-                availableAnswers.push({definition: 'Aucune des réponses'});
-
-                // Mélanger l'ordre des réponses disponibles
-                availableAnswers = shuffle(availableAnswers);
-
-                for (let k = 0; k < availableAnswers.length; k++) {
-                    console.log(`${k + 1}. ${availableAnswers[k].definition}`);
+                // Afficher toutes les options de droite à l'utilisateur
+                for (let k = 0; k < associationsDroites.length; k++) {
+                    console.log((k + 1) + '. ' + associationsDroites[k]);
                 }
 
-                let reponse = (await demanderUneReponse("\nVeuillez entrer le numéro de la bonne dé'finition :"))'.trim().toLowerCase();
+                let reponseUtilisateur = (await demanderUneReponse('Veuillez entrer le numéro de votre réponse : ')).trim().toLowerCase();
+                console.log('Vous avez choisi : ' + associationsDroites[reponseUtilisateur - 1]);
 
-                if (reponse >= 1 && reponse <= availableAnswers.length) {
-                    if (availableAnswers[reponse - 1].definition == correctAnswers[j].definition) {
-                        console.log('Bonne réponse');
-                        correctAnswers[j].selected = true; // Marque la réponse comme sélectionnée
-                        bonneReponse = bonneReponse + 1
-                    } else {
-                        console.log('Mauvaise réponse');
-                    }
-
-                    // Mise à jour du tableau correctAnswers en fonction des réponses sélectionnées
-                    correctAnswers = correctAnswers.filter(answer => !answer.selected);
+                // Vérifier si la réponse de l'utilisateur est correcte
+                if (associationsDroites[reponseUtilisateur - 1] === associations[j].right) {
+                    console.log('Bonne réponse !');
                 } else {
-                    console.log('Numéro de réponse non valide. Veuillez entrer un nombre entre 1 et ' + availableAnswers.length);
+                    console.log('Mauvaise réponse. La bonne réponse était : ' + associations[j].right);
+                    aFaitUneErreur = true;
                 }
             }
 
-            // Fermeture de la saisie après la dernière question
-            if (i == tableauDeDonnees.length - 1) {
-                rl.close();
-                rl.removeAllListeners();
+            // Afficher le résultat final pour la question à association
+            if (!aFaitUneErreur) {
+                console.log('Vous avez répondu correctement à toutes les associations pour cette question.');
+                bonneReponse++;
+            } else {
+                console.log('Vous avez fait au moins une erreur pour cette question.');
             }
         }
     }
-    console.log("vous avez obtenu la note de :" +bonneReponse+"/"+tableauDeDonnees.length)
 }
 // Appel de la fonction simuleexam avec le tableau de données
 simuleexam(tableauDeDonnees);
