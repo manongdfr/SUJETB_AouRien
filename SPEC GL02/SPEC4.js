@@ -116,7 +116,7 @@ async function simuleexam(tableauDeDonnees) {
                     console.log(`${k + 1}. ${availableAnswers[k].definition}`);
                 }
 
-                let reponse = (await demanderUneReponse("\nVeuillez entrer le numéro de la bonne définition :")).trim().toLowerCase();
+                let reponse = (await demanderUneReponse("\nVeuillez entrer le numéro de la bonne dé'finition :"))'.trim().toLowerCase();
 
                 if (reponse >= 1 && reponse <= availableAnswers.length) {
                     if (availableAnswers[reponse - 1].definition == correctAnswers[j].definition) {
