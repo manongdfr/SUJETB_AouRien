@@ -14,7 +14,9 @@ function recherche(keyword,tag ) {
             var entry = {
                 tag: tab_values[i]["tag"],
                 questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"]
+                reponses: tab_values[i]["reponses"],
+                typeDeQuestion : tab_values[i]["typeDeQuestion"],
+                associations : tab_values[i]["associations"]
             };
             tab_result.push(entry);
         }
@@ -22,7 +24,9 @@ function recherche(keyword,tag ) {
             var entry = {
                 tag: tab_values[i]["tag"],
                 questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"]
+                reponses: tab_values[i]["reponses"],
+                typeDeQuestion : tab_values[i]["typeDeQuestion"],
+                associations : tab_values[i]["associations"]
             };
             tab_result.push(entry);
         }
@@ -30,7 +34,9 @@ function recherche(keyword,tag ) {
             var entry = {
                 tag: tab_values[i]["tag"],
                 questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"]
+                reponses: tab_values[i]["reponses"],
+                typeDeQuestion : tab_values[i]["typeDeQuestion"],
+                associations : tab_values[i]["associations"]
             };
             tab_result.push(entry);
         }
@@ -38,7 +44,9 @@ function recherche(keyword,tag ) {
             var entry = {
                 tag: tab_values[i]["tag"],
                 questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"]
+                reponses: tab_values[i]["reponses"],
+                typeDeQuestion : tab_values[i]["typeDeQuestion"],
+                associations : tab_values[i]["associations"]
             };
             tab_result.push(entry);
         }

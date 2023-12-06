@@ -62,7 +62,7 @@ const extractionDesDonnees = () => {
                                     return { left: parts[0], right: parts[1] };
                                 });
 
-                                questionsData.push({ tag, questionText: cleanedQuestionText, associations, typeDeQuestion });
+                                questionsData.push({ tag, questionText: cleanedQuestionText, associations,reponses, typeDeQuestion });
                             } else {
                                 questionsData.push({ tag, questionText: cleanedQuestionText, reponses, typeDeQuestion });
                             }

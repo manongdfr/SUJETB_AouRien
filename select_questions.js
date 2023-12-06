@@ -1,5 +1,6 @@
 
 function select_questions() {
+    const fs = require('fs');
     const {
         prompt,
         recherche,
@@ -40,7 +41,9 @@ function select_questions() {
                                         var entry = {
                                             tag: tab_values[choix]["tag"],
                                             questionText: tab_values[choix]["questionText"],
-                                            reponses: tab_values[choix]["reponses"]
+                                            reponses: tab_values[choix]["reponses"],
+                                            typeDeQuestion : tab_values[choix]["typeDeQuestion"],
+                                            associations : tab_values[choix]["associations"]
                                         };
                                         first_insert = false
                                         tab_select.push(entry);
@@ -59,7 +62,9 @@ function select_questions() {
                                             var entry = {
                                                 tag: tab_values[choix]["tag"],
                                                 questionText: tab_values[choix]["questionText"],
-                                                reponses: tab_values[choix]["reponses"]
+                                                reponses: tab_values[choix]["reponses"],
+                                                typeDeQuestion : tab_values[choix]["typeDeQuestion"],
+                                                associations : tab_values[choix]["associations"]
                                             };
                                             first_insert = false
                                             tab_select.push(entry);
@@ -88,7 +93,17 @@ function select_questions() {
         }
     }
     if (can_create){
-        return tab_select;
+
+            const jsonData = JSON.stringify(tab_select, null, 2);
+            const jsonFilePath = 'selection.json';
+
+            fs.writeFile(jsonFilePath, jsonData, 'utf-8', (err) => {
+                if (err) {
+                    console.error("Erreur lors de l'écriture dans le fichier JSON :", err);
+                } else {
+                    console.log(`Données enregistrées dans ${jsonFilePath}.`);
+                }
+            });
     }
     else {
         var choix3 = prompt("Vous n'avez pas remplie les conditions necesaire pour cree l'exam voulez vous recommencer (y/n) : ","n")
