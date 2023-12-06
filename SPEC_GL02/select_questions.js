@@ -108,4 +108,4 @@ var choix = prompt("1-Créer un exam\n2-Passer un exam\nVotre choix : ","0")
     }
 }
 module.exports = select_questions;
-select_questions()
+
