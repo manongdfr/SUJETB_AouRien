@@ -34,6 +34,8 @@ function exam(tableauDeDonnees) {
 // Appeler la fonction exam avec le tableau tableauDeDonnees
 let tableauQuestionJoint = exam(tableauDeDonnees);
 
+let valeur = fs.readFileSync('valeur.txt', 'utf-8');
+
 (async () => {
     // Poser une question à l'utilisateur
     let chemin = await demanderUneReponse("\nVeuillez entrer le chemin du fichier ou vous voulez stocker votre exam :");
@@ -45,7 +47,7 @@ let tableauQuestionJoint = exam(tableauDeDonnees);
     let dossier = chemin;
 
     // Créer le chemin complet pour le fichier d'examen
-    let examen = path.join(dossier, 'exam.gift');
+    let examen = path.join(dossier, 'exam'+ valeur +'.gift');
 
     // Stocker l'examen dans un fichier
     fs.writeFile(examen, data, (err) => {
@@ -56,3 +58,6 @@ let tableauQuestionJoint = exam(tableauDeDonnees);
         rl.close();
     });
 })();
+valeur = parseInt(valeur)
+valeur += 1
+fs.writeFileSync('valeur.txt', valeur.toString());
