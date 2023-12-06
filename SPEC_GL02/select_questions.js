@@ -94,16 +94,7 @@ function select_questions() {
     }
     if (can_create){
 
-            const jsonData = JSON.stringify(tab_select, null, 2);
-            const jsonFilePath = 'selection.json';
-
-            fs.writeFile(jsonFilePath, jsonData, 'utf-8', (err) => {
-                if (err) {
-                    console.error("Erreur lors de l'écriture dans le fichier JSON :", err);
-                } else {
-                    console.log(`Données enregistrées dans ${jsonFilePath}.`);
-                }
-            });
+    return tab_select;
     }
     else {
         var choix3 = prompt("Vous n'avez pas remplie les conditions necesaire pour cree l'exam voulez vous recommencer (y/n) : ","n")

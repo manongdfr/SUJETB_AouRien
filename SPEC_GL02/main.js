@@ -33,7 +33,7 @@ async function main() {
     let continuer = true;
 
     const {
-        select_question,
+        create_exam,
         recherche,
         json_to_tab,
         prompt
@@ -48,7 +48,8 @@ async function main() {
                 console.table(recherche(text_question,tag));
                 break;
             case 'Créer un examen':
-                select_question();
+                create_exam();
+                console.log('Les données ont été écrites dans le fichier avec succès.');
                 break;
             case 'Quitter':
                 continuer = false;

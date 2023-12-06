@@ -7,6 +7,7 @@ const json_to_tab = require('./jsonVersTableau');
 const recherche = require('./recherche');
 const cheminVersFichierJSON = './data.json';
 const select_question = require('./select_questions');
+const create_exam = require('./SPEC3');
 module.exports = {
     fs,
     path,
@@ -16,5 +17,6 @@ module.exports = {
     cheminVersFichierJSON,
     recherche,
     prompt,
-    select_question
+    select_question,
+    create_exam
 };
