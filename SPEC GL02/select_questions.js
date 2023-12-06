@@ -112,4 +112,4 @@ function select_questions() {
         }
     }
 }
-select_questions()
+module.exports = select_questions;

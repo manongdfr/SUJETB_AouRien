@@ -6,7 +6,7 @@ const extractionDesDonnees = require('./extraction des données 2');
 const json_to_tab = require('./jsonVersTableau');
 const recherche = require('./recherche');
 const cheminVersFichierJSON = './data.json';
-
+const select_question = require('./select_questions');
 module.exports = {
     fs,
     path,
@@ -15,5 +15,6 @@ module.exports = {
     json_to_tab,
     cheminVersFichierJSON,
     recherche,
-    prompt
+    prompt,
+    select_question
 };
