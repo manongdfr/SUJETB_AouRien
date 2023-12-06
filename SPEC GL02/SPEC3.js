@@ -3,7 +3,7 @@ const path = require('path');
 const readline = require('readline');
 
 // Lecture du fichier JSON
-const jsonFilePath = './data.json';
+const jsonFilePath = './selection.json';
 const jsonData = fs.readFileSync(jsonFilePath, 'utf-8');
 const tableauDeDonnees = JSON.parse(jsonData);
 
