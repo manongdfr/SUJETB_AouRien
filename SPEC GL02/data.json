@@ -48,14 +48,6 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "EM U5 p34 Gra2.8",
-    "questionText": "People say that  knowledge goes a long way!",
-    "reponses": [
-      "~few~a few~little~=a little"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
     "tag": "EM U5 p35 Gra3.5",
     "questionText": "It's good that there  lots of advice about healthy lifestyles.",
     "reponses": [
@@ -124,6 +116,100 @@
     "typeDeQuestion": "Question à trou"
   },
   {
+    "tag": "EM U5 p34 Gra2.8",
+    "questionText": "People say that  knowledge goes a long way!",
+    "reponses": [
+      "~few~a few~little~=a little"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U10 p106-7 Reading Text",
+    "questionText": "<h4>A match made in heaven</h4>",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.1",
+    "questionText": "What point is the writer making in the first paragraph? {",
+    "reponses": [
+      "",
+      "~Attitudes to love are changing.",
+      "~People's lack of romance leads to divorce.",
+      "~=Accepted beliefs about love are hard to explain.",
+      "~People should forget about trying to find a soulmate."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.2",
+    "questionText": "What does ‘this’ refer to in “...popular works of contemporary fiction such as <i>One Day</i> and <i>Twilight</i>. <u>This</u> isn’t a preoccupation found only in Western cultures either”? {",
+    "reponses": [
+      "",
+      "~<i>Romeo and Juliet</i>",
+      "~a Chinese love story",
+      "~=the idea of romantic love",
+      "~contemporary fiction"
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.3",
+    "questionText": "What does the writer say about the use of the word 'soulmate' in paragraph three? {",
+    "reponses": [
+      "",
+      "~It was used earlier than was previously thought.",
+      "~It took a long time for it to be widely understood.",
+      "~The meaning has changed very recently.",
+      "~=It was first used to describe an unusual and unfamiliar concept."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.4",
+    "questionText": "According to the study, how do people in long-term relationships react to the way romance is portrayed in popular culture? {",
+    "reponses": [
+      "",
+      "~=They are able to separate fact from fiction.",
+      "~They think it is a worrying problem.",
+      "~They feel sorry for people who idealise love.",
+      "~They are disappointed that reality is different."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.5",
+    "questionText": "What conclusion can be drawn from the university research? {",
+    "reponses": [
+      "",
+      "~It is unrealistic to expect love to last.",
+      "~=It is necessary to put some effort into a relationship.",
+      "~It is impossible to give a definition of the perfect relationship.",
+      "~It is better to have low expectations of love."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U10 p106-7 Reading 2.6",
+    "questionText": "The writer says that online dating agencies are popular because they {",
+    "reponses": [
+      "",
+      "~=mean people are less reliant on chance.",
+      "~give people hope of finding the perfect soulmate.",
+      "~are more reliable than traditional ways of meeting the right person.",
+      "~give people a much wider choice of potential partners."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U10 p106-7 Reading Prepositions RS.8",
+    "questionText": "A Chinese story about lovers destined to be together (…) dates  to the ninth century",
+    "reponses": [
+      "=back"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
     "tag": "EM U6 p46-47 4.0 UoE Key word transformation",
     "questionText": "Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given.You must use between two and five words, including the word given.",
     "reponses": [],
@@ -176,6 +262,162 @@
       "=are very frightened by=are very frightened of"
     ],
     "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.1",
+    "questionText": "Does she come by car? (<i>generally</i>) {",
+    "reponses": [
+      "",
+      "=Does she generally come by car?"
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.2",
+    "questionText": "Take care when using this machinery. (<i>always</i>) {",
+    "reponses": [
+      "",
+      "=Always take care when using this machinery.",
+      "=Always take care when using this machinery"
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.3",
+    "questionText": "They're a little nervous at the beginning. (<i>sometimes</i>) {",
+    "reponses": [
+      "",
+      "=They're sometimes a little nervous at the beginning.",
+      "=They are sometimes a little nervous at the beginning.",
+      "=They're sometimes a little nervous at the beginning",
+      "=They are sometimes a little nervous at the beginning",
+      "=They’re sometimes a little nervous at the beginning",
+      "=They’re sometimes a little nervous at the beginning."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.4",
+    "questionText": "I don't go to the gym on Fridays. (<i>usually</i>) {",
+    "reponses": [
+      "",
+      "=I don't usually go to the gym on Fridays.",
+      "=I do not usually go to the gym on Fridays.",
+      "=I don't usually go to the gym on Fridays",
+      "=I do not usually go to the gym on Fridays",
+      "=I don’t usually go to the gym on Fridays",
+      "=I don’t usually go to the gym on Fridays."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.5",
+    "questionText": "They've been told that. (<i>often</i>) {",
+    "reponses": [
+      "",
+      "=They've often been told that.",
+      "=They have often been told that.",
+      "=They've often been told that",
+      "=They have often been told that",
+      "=They’ve often been told that",
+      "=They’ve often been told that."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U11 p114 Mixed conditionals 4.5",
+    "questionText": "I  (<i>might/earn</i>) more now if I'd gone to university.",
+    "reponses": [
+      "=might earn=might be earning"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U1 p8-9 9 Vocabulary",
+    "questionText": "<em>Look at the following words and phrases from the article and at the meaning options. Try to work out the meaning from the context or from the word itself. Then match each one to a definition.</em>{",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=Spend a lot of money",
+        "right": "Splash out"
+      },
+      {
+        "left": "=Show something is definitely true",
+        "right": "Confirming"
+      },
+      {
+        "left": "=Find a solution (to a problem)",
+        "right": "Resolved"
+      },
+      {
+        "left": "=Go large in numbers",
+        "right": "Flocked"
+      },
+      {
+        "left": "=Try to get as much as possible (sometimes unfairly)",
+        "right": "Exploit"
+      },
+      {
+        "left": "=Consider facts when making a decision",
+        "right": "Taken into account"
+      },
+      {
+        "left": "=Make something seem less important",
+        "right": "Overshadowing"
+      },
+      {
+        "left": "=Provide people with what they want",
+        "right": "Cater for"
+      },
+      {
+        "left": "=Give the idea for",
+        "right": "Inspired"
+      },
+      {
+        "left": "=Good but difficult",
+        "right": "Ambitious"
+      },
+      {
+        "left": "=Someone or something famous and important",
+        "right": "Iconic"
+      },
+      {
+        "left": "=Impossible to refuse",
+        "right": "Irresistible"
+      },
+      {
+        "left": "=Makes a lot of money",
+        "right": "Profitable"
+      },
+      {
+        "left": "=Very poor",
+        "right": "Impoverished"
+      },
+      {
+        "left": ""
+      }
+    ],
+    "reponses": [
+      "",
+      "=Spend a lot of money -> Splash out",
+      "=Show something is definitely true -> Confirming",
+      "=Find a solution (to a problem) -> Resolved",
+      "=Go large in numbers -> Flocked",
+      "=Try to get as much as possible (sometimes unfairly) -> Exploit",
+      "=Consider facts when making a decision -> Taken into account",
+      "=Make something seem less important -> Overshadowing",
+      "=Provide people with what they want -> Cater for",
+      "=Give the idea for -> Inspired",
+      "=Good but difficult -> Ambitious",
+      "=Someone or something famous and important -> Iconic",
+      "=Impossible to refuse -> Irresistible",
+      "=Makes a lot of money -> Profitable",
+      "=Very poor -> Impoverished",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
   },
   {
     "tag": "EM U5 p37 Reading 1.0 Text",
@@ -323,290 +565,6 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "U1 p7 Adverbs GR 1.1",
-    "questionText": "Does she come by car? (<i>generally</i>) {",
-    "reponses": [
-      "",
-      "=Does she generally come by car?"
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.2",
-    "questionText": "Take care when using this machinery. (<i>always</i>) {",
-    "reponses": [
-      "",
-      "=Always take care when using this machinery.",
-      "=Always take care when using this machinery"
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.3",
-    "questionText": "They're a little nervous at the beginning. (<i>sometimes</i>) {",
-    "reponses": [
-      "",
-      "=They're sometimes a little nervous at the beginning.",
-      "=They are sometimes a little nervous at the beginning.",
-      "=They're sometimes a little nervous at the beginning",
-      "=They are sometimes a little nervous at the beginning",
-      "=They’re sometimes a little nervous at the beginning",
-      "=They’re sometimes a little nervous at the beginning."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.4",
-    "questionText": "I don't go to the gym on Fridays. (<i>usually</i>) {",
-    "reponses": [
-      "",
-      "=I don't usually go to the gym on Fridays.",
-      "=I do not usually go to the gym on Fridays.",
-      "=I don't usually go to the gym on Fridays",
-      "=I do not usually go to the gym on Fridays",
-      "=I don’t usually go to the gym on Fridays",
-      "=I don’t usually go to the gym on Fridays."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.5",
-    "questionText": "They've been told that. (<i>often</i>) {",
-    "reponses": [
-      "",
-      "=They've often been told that.",
-      "=They have often been told that.",
-      "=They've often been told that",
-      "=They have often been told that",
-      "=They’ve often been told that",
-      "=They’ve often been told that."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U10 p106-7 Reading Text",
-    "questionText": "<h4>A match made in heaven</h4>",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U10 p106-7 Reading 2.1",
-    "questionText": "What point is the writer making in the first paragraph? {",
-    "reponses": [
-      "",
-      "~Attitudes to love are changing.",
-      "~People's lack of romance leads to divorce.",
-      "~=Accepted beliefs about love are hard to explain.",
-      "~People should forget about trying to find a soulmate."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U10 p106-7 Reading 2.2",
-    "questionText": "What does ‘this’ refer to in “...popular works of contemporary fiction such as <i>One Day</i> and <i>Twilight</i>. <u>This</u> isn’t a preoccupation found only in Western cultures either”? {",
-    "reponses": [
-      "",
-      "~<i>Romeo and Juliet</i>",
-      "~a Chinese love story",
-      "~=the idea of romantic love",
-      "~contemporary fiction"
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U10 p106-7 Reading 2.3",
-    "questionText": "What does the writer say about the use of the word 'soulmate' in paragraph three? {",
-    "reponses": [
-      "",
-      "~It was used earlier than was previously thought.",
-      "~It took a long time for it to be widely understood.",
-      "~The meaning has changed very recently.",
-      "~=It was first used to describe an unusual and unfamiliar concept."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U10 p106-7 Reading 2.4",
-    "questionText": "According to the study, how do people in long-term relationships react to the way romance is portrayed in popular culture? {",
-    "reponses": [
-      "",
-      "~=They are able to separate fact from fiction.",
-      "~They think it is a worrying problem.",
-      "~They feel sorry for people who idealise love.",
-      "~They are disappointed that reality is different."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U10 p106-7 Reading 2.5",
-    "questionText": "What conclusion can be drawn from the university research? {",
-    "reponses": [
-      "",
-      "~It is unrealistic to expect love to last.",
-      "~=It is necessary to put some effort into a relationship.",
-      "~It is impossible to give a definition of the perfect relationship.",
-      "~It is better to have low expectations of love."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U10 p106-7 Reading 2.6",
-    "questionText": "The writer says that online dating agencies are popular because they {",
-    "reponses": [
-      "",
-      "~=mean people are less reliant on chance.",
-      "~give people hope of finding the perfect soulmate.",
-      "~are more reliable than traditional ways of meeting the right person.",
-      "~give people a much wider choice of potential partners."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U10 p106-7 Reading Prepositions RS.8",
-    "questionText": "A Chinese story about lovers destined to be together (…) dates  to the ninth century",
-    "reponses": [
-      "=back"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U1 p8-9 9 Vocabulary",
-    "questionText": "<em>Look at the following words and phrases from the article and at the meaning options. Try to work out the meaning from the context or from the word itself. Then match each one to a definition.</em>{",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=Spend a lot of money",
-        "right": "Splash out"
-      },
-      {
-        "left": "=Show something is definitely true",
-        "right": "Confirming"
-      },
-      {
-        "left": "=Find a solution (to a problem)",
-        "right": "Resolved"
-      },
-      {
-        "left": "=Go large in numbers",
-        "right": "Flocked"
-      },
-      {
-        "left": "=Try to get as much as possible (sometimes unfairly)",
-        "right": "Exploit"
-      },
-      {
-        "left": "=Consider facts when making a decision",
-        "right": "Taken into account"
-      },
-      {
-        "left": "=Make something seem less important",
-        "right": "Overshadowing"
-      },
-      {
-        "left": "=Provide people with what they want",
-        "right": "Cater for"
-      },
-      {
-        "left": "=Give the idea for",
-        "right": "Inspired"
-      },
-      {
-        "left": "=Good but difficult",
-        "right": "Ambitious"
-      },
-      {
-        "left": "=Someone or something famous and important",
-        "right": "Iconic"
-      },
-      {
-        "left": "=Impossible to refuse",
-        "right": "Irresistible"
-      },
-      {
-        "left": "=Makes a lot of money",
-        "right": "Profitable"
-      },
-      {
-        "left": "=Very poor",
-        "right": "Impoverished"
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=Spend a lot of money -> Splash out",
-      "=Show something is definitely true -> Confirming",
-      "=Find a solution (to a problem) -> Resolved",
-      "=Go large in numbers -> Flocked",
-      "=Try to get as much as possible (sometimes unfairly) -> Exploit",
-      "=Consider facts when making a decision -> Taken into account",
-      "=Make something seem less important -> Overshadowing",
-      "=Provide people with what they want -> Cater for",
-      "=Give the idea for -> Inspired",
-      "=Good but difficult -> Ambitious",
-      "=Someone or something famous and important -> Iconic",
-      "=Impossible to refuse -> Irresistible",
-      "=Makes a lot of money -> Profitable",
-      "=Very poor -> Impoverished",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
-  },
-  {
-    "tag": "U2 p22 3 – Verb patterns -ing or inf",
-    "questionText": "Match the clauses to make sentences.{",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=It took me ages to have the confidence",
-        "right": "to be on my own with him."
-      },
-      {
-        "left": "=It's not worth",
-        "right": "talking to him really because he just disagrees with whatever anybody says."
-      },
-      {
-        "left": "=We both love",
-        "right": "riding, so it's great to have something in common."
-      },
-      {
-        "left": "=We'd like him",
-        "right": "to come and live nearer."
-      },
-      {
-        "left": "=I've promised",
-        "right": "to give him tennis lessons."
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=It took me ages to have the confidence -> to be on my own with him.",
-      "=It's not worth -> talking to him really because he just disagrees with whatever anybody says.",
-      "=We both love -> riding, so it's great to have something in common.",
-      "=We'd like him -> to come and live nearer.",
-      "=I've promised -> to give him tennis lessons.",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
-  },
-  {
-    "tag": "U2 p22 6.5b – Verb patterns -ing or inf",
-    "questionText": "I forgot  my teacher my essay and she wasn't happy when I handed it in late.",
-    "reponses": [
-      "~=to give~giving"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
     "tag": "U3 p30 4.1",
     "questionText": "What is the writer's attitude towards football fans attending matches? {",
     "reponses": [
@@ -685,10 +643,52 @@
     "typeDeQuestion": "Question classique"
   },
   {
-    "tag": "U11 p114 Mixed conditionals 4.5",
-    "questionText": "I  (<i>might/earn</i>) more now if I'd gone to university.",
+    "tag": "U2 p22 3 – Verb patterns -ing or inf",
+    "questionText": "Match the clauses to make sentences.{",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=It took me ages to have the confidence",
+        "right": "to be on my own with him."
+      },
+      {
+        "left": "=It's not worth",
+        "right": "talking to him really because he just disagrees with whatever anybody says."
+      },
+      {
+        "left": "=We both love",
+        "right": "riding, so it's great to have something in common."
+      },
+      {
+        "left": "=We'd like him",
+        "right": "to come and live nearer."
+      },
+      {
+        "left": "=I've promised",
+        "right": "to give him tennis lessons."
+      },
+      {
+        "left": ""
+      }
+    ],
     "reponses": [
-      "=might earn=might be earning"
+      "",
+      "=It took me ages to have the confidence -> to be on my own with him.",
+      "=It's not worth -> talking to him really because he just disagrees with whatever anybody says.",
+      "=We both love -> riding, so it's great to have something in common.",
+      "=We'd like him -> to come and live nearer.",
+      "=I've promised -> to give him tennis lessons.",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
+  },
+  {
+    "tag": "U2 p22 6.5b – Verb patterns -ing or inf",
+    "questionText": "I forgot  my teacher my essay and she wasn't happy when I handed it in late.",
+    "reponses": [
+      "~=to give~giving"
     ],
     "typeDeQuestion": "Question à trou"
   },
@@ -756,226 +756,6 @@
       "~='ve worked~worked"
     ],
     "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U4 p38-9 Reading Text 'Real-life superhumans'",
-    "questionText": "<h4>X-Men: The Real-life Superhumans</h4>",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U4 p38 Reading 4.01",
-    "questionText": "Which person's superpower may be shared by other people who don't realise they have it {",
-    "reponses": [
-      "",
-      "~A. Liam Hoekstra",
-      "~B. Wim Hof",
-      "~=C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.02",
-    "questionText": "Which person's superpower is beneficial for the person's mental and physical health {",
-    "reponses": [
-      "",
-      "~A. Liam Hoekstra",
-      "=B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.03",
-    "questionText": "Which person's superpower could potentially affect a person's mental development {",
-    "reponses": [
-      "",
-      "~=A. Liam Hoekstra",
-      "~B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.04",
-    "questionText": "Which person's superpower requires theoretically impossibly quick reactions? {",
-    "reponses": [
-      "",
-      "~A. Liam Hoekstra",
-      "~B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~=D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.05",
-    "questionText": "Which person's superpower may have inspired the story of a legendary character {",
-    "reponses": [
-      "",
-      "~=A. Liam Hoekstra",
-      "~B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.06",
-    "questionText": "Which person's superpower may help give an insight into curing certain illnesses {",
-    "reponses": [
-      "",
-      "~=A. Liam Hoekstra",
-      "~B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.07",
-    "questionText": "Which person's superpower was eventually discovered by chance? {",
-    "reponses": [
-      "",
-      "~A. Liam Hoekstra",
-      "~B. Wim Hof",
-      "~=C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.08",
-    "questionText": "Which person's superpower is believed by the person to be a question of mind over body {",
-    "reponses": [
-      "",
-      "~A. Liam Hoekstra",
-      "=B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.09",
-    "questionText": "Which person's superpower could be acquired by whoever is prepared to believe in it {",
-    "reponses": [
-      "",
-      "~A. Liam Hoekstra",
-      "=B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p38 Reading 4.10",
-    "questionText": "Which person's superpower cannot be explained by scientists? {",
-    "reponses": [
-      "",
-      "~A. Liam Hoekstra",
-      "~B. Wim Hof",
-      "~C. Dean Karnazes",
-      "~=D. Isao Machii",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U4 p39 Voc 7 Compound words",
-    "questionText": "Match to make compound words from the article.{",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=breath",
-        "right": "taking"
-      },
-      {
-        "left": "=side",
-        "right": "effect"
-      },
-      {
-        "left": "=draw",
-        "right": "back"
-      },
-      {
-        "left": "=far",
-        "right": "fetched"
-      },
-      {
-        "left": "=every",
-        "right": "day"
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=breath -> taking",
-      "=side -> effect",
-      "=draw -> back",
-      "=far -> fetched",
-      "=every -> day",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
-  },
-  {
-    "tag": "U4 p39 Voc 8 Compound words",
-    "questionText": "Match the compound words to their synonyms.{",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=ordinary",
-        "right": "everyday"
-      },
-      {
-        "left": "=disadvantage",
-        "right": "drawback"
-      },
-      {
-        "left": "=incredible",
-        "right": "breathtaking"
-      },
-      {
-        "left": "=unlikely",
-        "right": "far-fetched"
-      },
-      {
-        "left": "=impact",
-        "right": "side-effect"
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=ordinary -> everyday",
-      "=disadvantage -> drawback",
-      "=incredible -> breathtaking",
-      "=unlikely -> far-fetched",
-      "=impact -> side-effect",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
   },
   {
     "tag": "U4 p42 1.1 Pre-listening Antartica",
@@ -1122,14 +902,6 @@
     "typeDeQuestion": "Question classique"
   },
   {
-    "tag": "U5 p49 GR1.8 Expressions of quantity",
-    "questionText": "There isn't  chocolate left.",
-    "reponses": [
-      "~no =any"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
     "tag": "U4 p47 Rev1 Articles indefinite, definitie, zero (review)",
     "questionText": "Complete the text with a/an, the or — (no article).",
     "reponses": [
@@ -1207,6 +979,14 @@
     "questionText": "Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Use between two and five words, including the word given.",
     "reponses": [
       "1:SA:=had been living"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p49 GR1.8 Expressions of quantity",
+    "questionText": "There isn't  chocolate left.",
+    "reponses": [
+      "~no =any"
     ],
     "typeDeQuestion": "Question à trou"
   },
@@ -1453,6 +1233,234 @@
     "typeDeQuestion": "Question à trou"
   },
   {
+    "tag": "U4 p38-9 Reading Text 'Real-life superhumans'",
+    "questionText": "<h4>X-Men: The Real-life Superhumans</h4>",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U4 p38 Reading 4.01",
+    "questionText": "Which person's superpower may be shared by other people who don't realise they have it {",
+    "reponses": [
+      "",
+      "~A. Liam Hoekstra",
+      "~B. Wim Hof",
+      "~=C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.02",
+    "questionText": "Which person's superpower is beneficial for the person's mental and physical health {",
+    "reponses": [
+      "",
+      "~A. Liam Hoekstra",
+      "=B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.03",
+    "questionText": "Which person's superpower could potentially affect a person's mental development {",
+    "reponses": [
+      "",
+      "~=A. Liam Hoekstra",
+      "~B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.04",
+    "questionText": "Which person's superpower requires theoretically impossibly quick reactions? {",
+    "reponses": [
+      "",
+      "~A. Liam Hoekstra",
+      "~B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~=D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.05",
+    "questionText": "Which person's superpower may have inspired the story of a legendary character {",
+    "reponses": [
+      "",
+      "~=A. Liam Hoekstra",
+      "~B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.06",
+    "questionText": "Which person's superpower may help give an insight into curing certain illnesses {",
+    "reponses": [
+      "",
+      "~=A. Liam Hoekstra",
+      "~B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.07",
+    "questionText": "Which person's superpower was eventually discovered by chance? {",
+    "reponses": [
+      "",
+      "~A. Liam Hoekstra",
+      "~B. Wim Hof",
+      "~=C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.08",
+    "questionText": "Which person's superpower is believed by the person to be a question of mind over body {",
+    "reponses": [
+      "",
+      "~A. Liam Hoekstra",
+      "=B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.09",
+    "questionText": "Which person's superpower could be acquired by whoever is prepared to believe in it {",
+    "reponses": [
+      "",
+      "~A. Liam Hoekstra",
+      "=B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p38 Reading 4.10",
+    "questionText": "Which person's superpower cannot be explained by scientists? {",
+    "reponses": [
+      "",
+      "~A. Liam Hoekstra",
+      "~B. Wim Hof",
+      "~C. Dean Karnazes",
+      "~=D. Isao Machii",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U4 p39 Voc 7 Compound words",
+    "questionText": "Match to make compound words from the article.{",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=breath",
+        "right": "taking"
+      },
+      {
+        "left": "=side",
+        "right": "effect"
+      },
+      {
+        "left": "=draw",
+        "right": "back"
+      },
+      {
+        "left": "=far",
+        "right": "fetched"
+      },
+      {
+        "left": "=every",
+        "right": "day"
+      },
+      {
+        "left": ""
+      }
+    ],
+    "reponses": [
+      "",
+      "=breath -> taking",
+      "=side -> effect",
+      "=draw -> back",
+      "=far -> fetched",
+      "=every -> day",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
+  },
+  {
+    "tag": "U4 p39 Voc 8 Compound words",
+    "questionText": "Match the compound words to their synonyms.{",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=ordinary",
+        "right": "everyday"
+      },
+      {
+        "left": "=disadvantage",
+        "right": "drawback"
+      },
+      {
+        "left": "=incredible",
+        "right": "breathtaking"
+      },
+      {
+        "left": "=unlikely",
+        "right": "far-fetched"
+      },
+      {
+        "left": "=impact",
+        "right": "side-effect"
+      },
+      {
+        "left": ""
+      }
+    ],
+    "reponses": [
+      "",
+      "=ordinary -> everyday",
+      "=disadvantage -> drawback",
+      "=incredible -> breathtaking",
+      "=unlikely -> far-fetched",
+      "=impact -> side-effect",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
+  },
+  {
+    "tag": "U5 p57 Rev4.6 Passive forms",
+    "questionText": "Only fifty people  <i>(invite)</i> to their wedding, which is on Saturday",
+    "reponses": [
+      "=be invited =were invited"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
     "tag": "U5 p54 GR4.1 Passive reporting forms",
     "questionText": "People reported that there were gunshots.",
     "reponses": [
@@ -1493,12 +1501,61 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "U5 p57 Rev4.6 Passive forms",
-    "questionText": "Only fifty people  <i>(invite)</i> to their wedding, which is on Saturday",
-    "reponses": [
-      "=be invited =were invited"
+    "tag": "U6 p61 GR 2 Future forms",
+    "questionText": "Match the uses of future forms to the examples. {",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=<i>will</i> (a promise)",
+        "right": "I won't tell anyone"
+      },
+      {
+        "left": "=<i>will</i> (an expert opinion)",
+        "right": "The road will be closed."
+      },
+      {
+        "left": "=<i>will</i> (a decision made at the moment of speaking)",
+        "right": "I'll call Graham now, shall I?"
+      },
+      {
+        "left": "=<i>going to</i> (an opinion based on present evidence)",
+        "right": "She's gone very pale – she's going to faint."
+      },
+      {
+        "left": "=<i>going to</i> (a personal intention)",
+        "right": "I'm going to apply to university next year."
+      },
+      {
+        "left": "=Present continuous (a planned event)",
+        "right": "They're getting married sometime next year."
+      },
+      {
+        "left": "=Present simple (a timetabled event)",
+        "right": "The conference is in the first week of April."
+      },
+      {
+        "left": "=Present simple (a time clause with a future meaning)",
+        "right": "When you arrive at the airport, phone me."
+      },
+      {
+        "left": ""
+      }
     ],
-    "typeDeQuestion": "Question à trou"
+    "reponses": [
+      "",
+      "=<i>will</i> (a promise)                                 -> I won't tell anyone",
+      "=<i>will</i> (an expert opinion)                         -> The road will be closed.",
+      "=<i>will</i> (a decision made at the moment of speaking) -> I'll call Graham now, shall I?",
+      "=<i>going to</i> (an opinion based on present evidence)  -> She's gone very pale – she's going to faint.",
+      "=<i>going to</i> (a personal intention)                  -> I'm going to apply to university next year.",
+      "=Present continuous (a planned event)                    -> They're getting married sometime next year.",
+      "=Present simple (a timetabled event)                     -> The conference is in the first week of April.",
+      "=Present simple (a time clause with a future meaning)    -> When you arrive at the airport, phone me.",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
   },
   {
     "tag": "U6 p60 Listening Audio1",
@@ -1609,63 +1666,6 @@
     "typeDeQuestion": "Question classique"
   },
   {
-    "tag": "U6 p61 GR 2 Future forms",
-    "questionText": "Match the uses of future forms to the examples. {",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=<i>will</i> (a promise)",
-        "right": "I won't tell anyone"
-      },
-      {
-        "left": "=<i>will</i> (an expert opinion)",
-        "right": "The road will be closed."
-      },
-      {
-        "left": "=<i>will</i> (a decision made at the moment of speaking)",
-        "right": "I'll call Graham now, shall I?"
-      },
-      {
-        "left": "=<i>going to</i> (an opinion based on present evidence)",
-        "right": "She's gone very pale – she's going to faint."
-      },
-      {
-        "left": "=<i>going to</i> (a personal intention)",
-        "right": "I'm going to apply to university next year."
-      },
-      {
-        "left": "=Present continuous (a planned event)",
-        "right": "They're getting married sometime next year."
-      },
-      {
-        "left": "=Present simple (a timetabled event)",
-        "right": "The conference is in the first week of April."
-      },
-      {
-        "left": "=Present simple (a time clause with a future meaning)",
-        "right": "When you arrive at the airport, phone me."
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=<i>will</i> (a promise)                                 -> I won't tell anyone",
-      "=<i>will</i> (an expert opinion)                         -> The road will be closed.",
-      "=<i>will</i> (a decision made at the moment of speaking) -> I'll call Graham now, shall I?",
-      "=<i>going to</i> (an opinion based on present evidence)  -> She's gone very pale – she's going to faint.",
-      "=<i>going to</i> (a personal intention)                  -> I'm going to apply to university next year.",
-      "=Present continuous (a planned event)                    -> They're getting married sometime next year.",
-      "=Present simple (a timetabled event)                     -> The conference is in the first week of April.",
-      "=Present simple (a time clause with a future meaning)    -> When you arrive at the airport, phone me.",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
-  },
-  {
     "tag": "U6 p59 Voc10.1 the arts",
     "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
     "reponses": [
@@ -1712,6 +1712,384 @@
       "=blockbusters"
     ],
     "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p64 6.6 Future perfect & continuous",
+    "questionText": "By 2050, holographic TV screens will  (<i>project</i>) images around our rooms at home.",
+    "reponses": [
+      "=be projecting"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p65 Voc1.1",
+    "questionText": "Was there a subject at school that you really didn't <i>get</i>?",
+    "reponses": [
+      "~become~have~move/travel~persuade~receive~=understand"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p65 Voc1.2",
+    "questionText": "What techniques do you use to <i>get</i> people to do what you want?",
+    "reponses": [
+      "~become~have~move/travel~=persuade~receive~understand"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p65 Voc1.3",
+    "questionText": "When do you normally <i>get</i> the time to relax?",
+    "reponses": [
+      "~become~=have~move/travel~persuade~receive~understand"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p65 Voc1.4",
+    "questionText": "In which situations do you <i>get</i> angry?",
+    "reponses": [
+      "~=become~have~move/travel~persuade~receive~understand"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p65 Voc1.5",
+    "questionText": "How do you <i>get</i> from one place to another?",
+    "reponses": [
+      "~become~have~=move/travel~persuade~receive~understand"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p65 Voc1.6",
+    "questionText": "How many texts do you <i>get</i> in an average day?",
+    "reponses": [
+      "~become~have~move/travel~persuade~=receive~understand"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.1",
+    "questionText": "You will get the results by Friday. <b>GIVEN</b>",
+    "reponses": [
+      "=will have given='ll have given"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.2",
+    "questionText": "A fast-food chain has taken over two of our local restaurants. <b>BY</b>",
+    "reponses": [
+      "=have been taken over by"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.3",
+    "questionText": "Nearly all the shops in this town are expensive. <b>HARDLY</b>",
+    "reponses": [
+      "=are hardly any cheap=inexpensive"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.4",
+    "questionText": "Many people believe that too much sugar is bad for your health. <b>TO</b>",
+    "reponses": [
+      "=is believed to be"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.5",
+    "questionText": "George hadn't finished doing his homework when I went to pick him up. <b>STILL</b>",
+    "reponses": [
+      "=was still doing his homework=still hadn't finished his homework=still had not finished his homework"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p68-69 ProgressTest2 4.6",
+    "questionText": "My brother often arrives unexpectedly. <b>TURNING</b>",
+    "reponses": [
+      "=always turning up"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p76 5 Relative clauses – Open writing",
+    "questionText": "Describe a popular place in your country and why people go there. Use the phrases below.",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U7 p77 [So,such,too,enough,very] 1.8",
+    "questionText": "It's a  interesting book.",
+    "reponses": [
+      "~enough~so~such~too~=very"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.0",
+    "questionText": "Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given.",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.1",
+    "questionText": "It was too foggy for us to ski.",
+    "reponses": [
+      "=so foggy we could =so foggy that we could"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.2",
+    "questionText": "He couldn't afford a taxi, so he went by bus.",
+    "reponses": [
+      "=didn't have enough money =hadn't got enough money =did not have enough money =had not got enough money"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.3",
+    "questionText": "There was so much traffic that we missed the show.",
+    "reponses": [
+      "=such a lot of traffic"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.4",
+    "questionText": "I had a wonderful time and I really enjoyed seeing everyone again.",
+    "reponses": [
+      "=it was great to see"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.5",
+    "questionText": "He said I didn't need to make an appointment.",
+    "reponses": [
+      "=there was no need"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p77 [Key word transformation] 6.6",
+    "questionText": "I think that taking your coat is unnecessary.",
+    "reponses": [
+      "=there is no point in =there's no point in"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U9 p94 Listening 4.1",
+    "questionText": "Max says that top sportspeople usually believe their success is due to {",
+    "reponses": [
+      "",
+      "~ good fortune.",
+      "= hard work.",
+      "~ raw talent.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U9 p94 Listening 4.2",
+    "questionText": "According to Max, sportspeople are achieving more these days because {",
+    "reponses": [
+      "",
+      "~ people in general have become stronger and fitter.",
+      "= standards are getting higher.",
+      "~ technology is responsible for improved performance.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U9 p94 Listening 4.3",
+    "questionText": "What does Max say about very talented young children? {",
+    "reponses": [
+      "",
+      "~ It's easy to tell which will be the top performers.",
+      "~ They will succeed without special training.",
+      "= As they get older their development may be slower.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U9 p94 Listening 4.4",
+    "questionText": "According to Max, in his book <i>Bounce</i>, Matthew Syed says he had a greater chance of success  because of {",
+    "reponses": [
+      "",
+      "~ his parents’ love of table tennis.",
+      "= his competitive brother.",
+      "~ his own ambition.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U9 p94 Listening 4.5",
+    "questionText": "For Matthew, the advantage of joining the Omega Club was that {",
+    "reponses": [
+      "",
+      "= it was open all the time.",
+      "~ it had a lot of good players.",
+      "~ it had great facilities.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U9 p94 Listening 4.6",
+    "questionText": "Matthew thinks the reason Omega Club members have been so successful is {",
+    "reponses": [
+      "",
+      "~ hard to explain.",
+      "~ because they met famous players.",
+      "= a happy accident.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U9 p94 Listening 4.7",
+    "questionText": "Max says that a ten-year investigation has shown that lucky people {",
+    "reponses": [
+      "",
+      "~ believe they will succeed.",
+      "= look for good opportunities.",
+      "~ depend very little on talent.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U7 p79 Review 3.1",
+    "questionText": "The fishing village was _________ far away to visit one day.  {",
+    "reponses": [
+      "",
+      "~so",
+      "~very",
+      "=too",
+      "~enough",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.2",
+    "questionText": "I need to get a _________ ticket because I am coming back this evening.{",
+    "reponses": [
+      "",
+      "~round",
+      "=return",
+      "~package",
+      "~direct",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.3",
+    "questionText": "There's no ________ buying a car if you're never going to drive it.{",
+    "reponses": [
+      "",
+      "~reason",
+      "~need",
+      "=point",
+      "~objective",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.4",
+    "questionText": "It was ______ a beautiful place that they decided to stay there longer.{",
+    "reponses": [
+      "",
+      "~so",
+      "~enough",
+      "~really",
+      "=such",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.5",
+    "questionText": "It's a very ___________ location, cut off from the outside world.<div id\\=\"gtx-trans\" style\\=\"position\\: absolute; left\\: 76px; top\\: 23px;\"> </div>{",
+    "reponses": [
+      "",
+      "~alone",
+      "~far",
+      "=remote",
+      "~unconnected",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.6",
+    "questionText": "You can' t just turn ___________ like this, unexpectedly, and expect me to be free.{",
+    "reponses": [
+      "",
+      "~on",
+      "=up",
+      "~in",
+      "~off",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p67 Rev4.8",
+    "questionText": "Let's hurry! They  the theatre doors at 7.30 and then you have to wait until the interval to go in.",
+    "reponses": [
+      "~=close~are going to close~are closing"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U9 p95 4.0 Third conditional",
+    "questionText": "<b>Complete the sentences below to express criticism. Use the third conditional and the cues in brackets. Write the <u>full B response</u> (full sentence) in the field below each question.</b>",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.2 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.3 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.4 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.5 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.6 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
   },
   {
     "tag": "U6 p62 Reading - Text: Sharing the self love",
@@ -1803,389 +2181,11 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "U6 p64 6.6 Future perfect & continuous",
-    "questionText": "By 2050, holographic TV screens will  (<i>project</i>) images around our rooms at home.",
-    "reponses": [
-      "=be projecting"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p67 Rev4.8",
-    "questionText": "Let's hurry! They  the theatre doors at 7.30 and then you have to wait until the interval to go in.",
-    "reponses": [
-      "~=close~are going to close~are closing"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p65 Voc1.1",
-    "questionText": "Was there a subject at school that you really didn't <i>get</i>?",
-    "reponses": [
-      "~become~have~move/travel~persuade~receive~=understand"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p65 Voc1.2",
-    "questionText": "What techniques do you use to <i>get</i> people to do what you want?",
-    "reponses": [
-      "~become~have~move/travel~=persuade~receive~understand"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p65 Voc1.3",
-    "questionText": "When do you normally <i>get</i> the time to relax?",
-    "reponses": [
-      "~become~=have~move/travel~persuade~receive~understand"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p65 Voc1.4",
-    "questionText": "In which situations do you <i>get</i> angry?",
-    "reponses": [
-      "~=become~have~move/travel~persuade~receive~understand"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p65 Voc1.5",
-    "questionText": "How do you <i>get</i> from one place to another?",
-    "reponses": [
-      "~become~have~=move/travel~persuade~receive~understand"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p65 Voc1.6",
-    "questionText": "How many texts do you <i>get</i> in an average day?",
-    "reponses": [
-      "~become~have~move/travel~persuade~=receive~understand"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p76 5 Relative clauses – Open writing",
-    "questionText": "Describe a popular place in your country and why people go there. Use the phrases below.",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U7 p77 [So,such,too,enough,very] 1.8",
-    "questionText": "It's a  interesting book.",
-    "reponses": [
-      "~enough~so~such~too~=very"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p68-69 ProgressTest2 4.1",
-    "questionText": "You will get the results by Friday. <b>GIVEN</b>",
-    "reponses": [
-      "=will have given='ll have given"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p68-69 ProgressTest2 4.2",
-    "questionText": "A fast-food chain has taken over two of our local restaurants. <b>BY</b>",
-    "reponses": [
-      "=have been taken over by"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p68-69 ProgressTest2 4.3",
-    "questionText": "Nearly all the shops in this town are expensive. <b>HARDLY</b>",
-    "reponses": [
-      "=are hardly any cheap=inexpensive"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p68-69 ProgressTest2 4.4",
-    "questionText": "Many people believe that too much sugar is bad for your health. <b>TO</b>",
-    "reponses": [
-      "=is believed to be"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p68-69 ProgressTest2 4.5",
-    "questionText": "George hadn't finished doing his homework when I went to pick him up. <b>STILL</b>",
-    "reponses": [
-      "=was still doing his homework=still hadn't finished his homework=still had not finished his homework"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p68-69 ProgressTest2 4.6",
-    "questionText": "My brother often arrives unexpectedly. <b>TURNING</b>",
-    "reponses": [
-      "=always turning up"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p77 [Key word transformation] 6.0",
-    "questionText": "Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given.",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U7 p77 [Key word transformation] 6.1",
-    "questionText": "It was too foggy for us to ski.",
-    "reponses": [
-      "=so foggy we could =so foggy that we could"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p77 [Key word transformation] 6.2",
-    "questionText": "He couldn't afford a taxi, so he went by bus.",
-    "reponses": [
-      "=didn't have enough money =hadn't got enough money =did not have enough money =had not got enough money"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p77 [Key word transformation] 6.3",
-    "questionText": "There was so much traffic that we missed the show.",
-    "reponses": [
-      "=such a lot of traffic"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p77 [Key word transformation] 6.4",
-    "questionText": "I had a wonderful time and I really enjoyed seeing everyone again.",
-    "reponses": [
-      "=it was great to see"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p77 [Key word transformation] 6.5",
-    "questionText": "He said I didn't need to make an appointment.",
-    "reponses": [
-      "=there was no need"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p77 [Key word transformation] 6.6",
-    "questionText": "I think that taking your coat is unnecessary.",
-    "reponses": [
-      "=there is no point in =there's no point in"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.1",
-    "questionText": "The fishing village was _________ far away to visit one day.  {",
-    "reponses": [
-      "",
-      "~so",
-      "~very",
-      "=too",
-      "~enough",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.2",
-    "questionText": "I need to get a _________ ticket because I am coming back this evening.{",
-    "reponses": [
-      "",
-      "~round",
-      "=return",
-      "~package",
-      "~direct",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.3",
-    "questionText": "There's no ________ buying a car if you're never going to drive it.{",
-    "reponses": [
-      "",
-      "~reason",
-      "~need",
-      "=point",
-      "~objective",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.4",
-    "questionText": "It was ______ a beautiful place that they decided to stay there longer.{",
-    "reponses": [
-      "",
-      "~so",
-      "~enough",
-      "~really",
-      "=such",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.5",
-    "questionText": "It's a very ___________ location, cut off from the outside world.<div id\\=\"gtx-trans\" style\\=\"position\\: absolute; left\\: 76px; top\\: 23px;\"> </div>{",
-    "reponses": [
-      "",
-      "~alone",
-      "~far",
-      "=remote",
-      "~unconnected",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.6",
-    "questionText": "You can' t just turn ___________ like this, unexpectedly, and expect me to be free.{",
-    "reponses": [
-      "",
-      "~on",
-      "=up",
-      "~in",
-      "~off",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U9 p95 4.0 Third conditional",
-    "questionText": "<b>Complete the sentences below to express criticism. Use the third conditional and the cues in brackets. Write the <u>full B response</u> (full sentence) in the field below each question.</b>",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.2 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.3 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.4 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.5 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.6 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
     "tag": "U8 p84 Voc Linking words 5.8",
     "questionText": "I enjoyed my time at the law firm. I made a lot of friends there .",
     "reponses": [
       "=too."
     ],
     "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U9 p94 Listening 4.1",
-    "questionText": "Max says that top sportspeople usually believe their success is due to {",
-    "reponses": [
-      "",
-      "~ good fortune.",
-      "= hard work.",
-      "~ raw talent.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U9 p94 Listening 4.2",
-    "questionText": "According to Max, sportspeople are achieving more these days because {",
-    "reponses": [
-      "",
-      "~ people in general have become stronger and fitter.",
-      "= standards are getting higher.",
-      "~ technology is responsible for improved performance.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U9 p94 Listening 4.3",
-    "questionText": "What does Max say about very talented young children? {",
-    "reponses": [
-      "",
-      "~ It's easy to tell which will be the top performers.",
-      "~ They will succeed without special training.",
-      "= As they get older their development may be slower.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U9 p94 Listening 4.4",
-    "questionText": "According to Max, in his book <i>Bounce</i>, Matthew Syed says he had a greater chance of success  because of {",
-    "reponses": [
-      "",
-      "~ his parents’ love of table tennis.",
-      "= his competitive brother.",
-      "~ his own ambition.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U9 p94 Listening 4.5",
-    "questionText": "For Matthew, the advantage of joining the Omega Club was that {",
-    "reponses": [
-      "",
-      "= it was open all the time.",
-      "~ it had a lot of good players.",
-      "~ it had great facilities.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U9 p94 Listening 4.6",
-    "questionText": "Matthew thinks the reason Omega Club members have been so successful is {",
-    "reponses": [
-      "",
-      "~ hard to explain.",
-      "~ because they met famous players.",
-      "= a happy accident.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U9 p94 Listening 4.7",
-    "questionText": "Max says that a ten-year investigation has shown that lucky people {",
-    "reponses": [
-      "",
-      "~ believe they will succeed.",
-      "= look for good opportunities.",
-      "~ depend very little on talent.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
   }
 ]

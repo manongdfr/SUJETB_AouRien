@@ -1,5 +1,6 @@
 
 // Menu principal
+const {prompt} = require("./utilis");
 const menuPrincipal = [
     {
         type: 'list',
@@ -35,13 +36,16 @@ async function main() {
         select_question,
         recherche,
         json_to_tab,
+        prompt
     } = require('./utilis');
 
     while (continuer) {
         const reponse = await inquirer.prompt(menuPrincipal);
         switch (reponse.choix) {
             case 'Rechercher':
-                recherche();
+                var tag = prompt("Saisir le tag de la recherche : ","")
+                var text_question = prompt("Saisir la chaine de caractère de la question : ","")
+                console.table(recherche(text_question,tag));
                 break;
             case 'Créer un examen':
                 select_question();

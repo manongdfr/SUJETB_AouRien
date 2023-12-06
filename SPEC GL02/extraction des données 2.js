@@ -1,7 +1,7 @@
 const extractionDesDonnees = () => {
     const fs = require('fs');
     const path = require('path');
-    const cheminDuRepertoire = './SujetB_data';
+    const cheminDuRepertoire = '../SujetB_data';
     const questionsData = [];
     return new Promise((resolve, reject) => {
         fs.readdir(cheminDuRepertoire, (err, fichiers) => {
