@@ -1,3 +1,4 @@
+function generateur_graph(){
 const fs = require('fs').promises;
 const { compile, create, write } = require('vega-lite');
 const path = require('path');
@@ -24,7 +25,7 @@ async function analyserFichier() {
         await fs.access(NomFichier, fs.constants.F_OK);
         console.log(`${NomFichier} existe dans le répertoire de travail et va être étudié.`);
         // Paramètres permettant de lire tous les fichiers .gift dans un répertoire précis
-        const dossierAExplorer = './';
+        const dossierAExplorer = './exam';
         const extensionFichier = 'gift';
         await etudeStructFichier(dossierAExplorer, extensionFichier, String(NomFichier));
     } catch (err) {
@@ -177,3 +178,6 @@ async function creerGraph(NomGraph, Compteurs) {
 
 // Initialise le programme
 demanderNomFichier();
+}
+
+module.exports = generateur_graph;

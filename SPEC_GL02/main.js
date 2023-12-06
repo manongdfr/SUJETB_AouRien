@@ -1,6 +1,5 @@
 
 // Menu principal
-const {prompt} = require("./utilis");
 const menuPrincipal = [
     {
         type: 'list',
@@ -8,7 +7,8 @@ const menuPrincipal = [
         message: 'Que voulez-vous faire ?',
         choices: [
             'Rechercher',
-            'Créer un examen',
+            'Selectioner des questions',
+            'Generateur Exam',
             'Quitter'
         ],
     },
@@ -17,7 +17,6 @@ const menuPrincipal = [
 // Fonction principale
 async function main() {
     let inquirer;
-
     try {
         inquirer = require('inquirer');
     } catch (error) {
@@ -33,10 +32,10 @@ async function main() {
     let continuer = true;
 
     const {
-        create_exam,
+        select_question,
         recherche,
-        json_to_tab,
-        prompt
+        prompt,
+        generateur_exam
     } = require('./utilis');
 
     while (continuer) {
@@ -47,9 +46,11 @@ async function main() {
                 var text_question = prompt("Saisir la chaine de caractère de la question : ","")
                 console.table(recherche(text_question,tag));
                 break;
-            case 'Créer un examen':
-                create_exam();
-                console.log('Les données ont été écrites dans le fichier avec succès.');
+            case 'Selectioner des questions':
+                select_question();
+                break;
+            case 'Generateur Exam':
+                generateur_exam();
                 break;
             case 'Quitter':
                 continuer = false;

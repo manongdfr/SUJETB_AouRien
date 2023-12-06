@@ -1,10 +1,10 @@
-
 function select_questions() {
     const fs = require('fs');
     const {
         prompt,
         recherche,
-        json_to_tab,
+        pass_exam,
+        create_exam
     } = require('./utilis');
     let choix2 = "0";
     var tab_values = [];
@@ -93,8 +93,12 @@ function select_questions() {
         }
     }
     if (can_create){
-
-    return tab_select;
+var choix = prompt("1-Créer un exam\n2-Passer un exam\nVotre choix : ","0")
+            if (choix === "1") {
+                create_exam(tab_select);
+            } else if (choix === "2") {
+                pass_exam(tab_select);
+            }
     }
     else {
         var choix3 = prompt("Vous n'avez pas remplie les conditions necesaire pour cree l'exam voulez vous recommencer (y/n) : ","n")
@@ -104,3 +108,4 @@ function select_questions() {
     }
 }
 module.exports = select_questions;
+select_questions()

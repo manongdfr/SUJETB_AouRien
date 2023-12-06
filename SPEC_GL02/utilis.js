@@ -8,6 +8,8 @@ const recherche = require('./recherche');
 const cheminVersFichierJSON = './data.json';
 const select_question = require('./select_questions');
 const create_exam = require('./SPEC3');
+const pass_exam = require('./SPEC4')
+const generateur_exam = require('./GenerateurGraph')
 module.exports = {
     fs,
     path,
@@ -18,5 +20,7 @@ module.exports = {
     recherche,
     prompt,
     select_question,
-    create_exam
+    create_exam,
+    pass_exam,
+    generateur_exam
 };

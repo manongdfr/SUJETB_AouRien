@@ -1,15 +1,9 @@
-function create_exam() {
+function create_exam(tableau) {
     const fs = require('fs');
     const path = require('path');
     const readline = require('readline');
 
-// Lecture du fichier JSON
-    const {
-        recherche,
-        select_question,
-        prompt
-    } = require('./utilis');
-    const tableauDeDonnees = select_question()
+    const tableauDeDonnees = tableau
 
 // Créer une interface de lecture
     const rl = readline.createInterface({
@@ -57,6 +51,7 @@ function create_exam() {
             // Fermer l'interface de lecture
             rl.close();
         });
+    console.log('Les données ont été écrites dans le fichier avec succès.');
     valeur = parseInt(valeur)
     valeur += 1
     fs.writeFileSync('valeur.txt', valeur.toString());
