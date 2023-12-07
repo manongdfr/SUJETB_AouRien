@@ -1,0 +1,17 @@
+
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+                </head>
+                <body>
+                    <div id="vis"></div>
+                    <script>
+                        // Utilisation de vegaEmbed pour afficher le graphique
+                        vegaEmbed('#vis', {"$schema":"https://vega.github.io/schema/vega/v5.json","background":"white","padding":{"left":50,"right":50,"top":50,"bottom":50},"width":800,"height":400,"style":"cell","data":[{"name":"source_0","values":[{"type":"QCM","count":1},{"type":"Fill in the blank","count":3},{"type":"Matching Questions","count":1},{"type":"Essay","count":3},{"type":"Pourcentages","count":1},{"type":"Réponses partielles","count":6}]},{"name":"data_0","source":"source_0","transform":[{"type":"stack","groupby":["type"],"field":"count","sort":{"field":[],"order":[]},"as":["count_start","count_end"],"offset":"zero"},{"type":"filter","expr":"isValid(datum[\"count\"]) && isFinite(+datum[\"count\"])"}]}],"marks":[{"name":"marks","type":"rect","style":["bar"],"from":{"data":"data_0"},"encode":{"update":{"fill":{"value":"#4c78a8"},"ariaRoleDescription":{"value":"bar"},"description":{"signal":"\"type: \" + (isValid(datum[\"type\"]) ? datum[\"type\"] : \"\"+datum[\"type\"]) + \"; count: \" + (format(datum[\"count\"], \"\"))"},"x":{"scale":"x","field":"type"},"width":{"signal":"max(0.25, bandwidth('x'))"},"y":{"scale":"y","field":"count_end"},"y2":{"scale":"y","field":"count_start"}}}}],"scales":[{"name":"x","type":"band","domain":{"data":"data_0","field":"type","sort":true},"range":[0,{"signal":"width"}],"paddingInner":0.1,"paddingOuter":0.05},{"name":"y","type":"linear","domain":{"data":"data_0","fields":["count_start","count_end"]},"range":[{"signal":"height"},0],"nice":true,"zero":true}],"axes":[{"scale":"y","orient":"left","gridScale":"x","grid":true,"tickCount":{"signal":"ceil(height/40)"},"domain":false,"labels":false,"aria":false,"maxExtent":0,"minExtent":0,"ticks":false,"zindex":0},{"scale":"x","orient":"bottom","grid":false,"title":"type","labelAlign":"right","labelAngle":270,"labelBaseline":"middle","zindex":0},{"scale":"y","orient":"left","grid":false,"title":"count","labelOverlap":true,"tickCount":{"signal":"ceil(height/40)"},"zindex":0}]}, { "config": { "view": { "stroke": "transparent" } } });
+                    </script>
+                </body>
+            </html>
+        
