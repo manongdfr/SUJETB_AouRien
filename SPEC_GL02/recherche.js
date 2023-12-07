@@ -1,10 +1,14 @@
-function recherche(keyword,tag ) {
+
+function recherche(keyword,tag , tab) {
     const {
         cheminVersFichierJSON,
         json_to_tab,
     } = require('./utilis');
-
-    var tab_values = json_to_tab(cheminVersFichierJSON);
+    if (tab){
+        var tab_values = tab
+    }else {
+        var tab_values = json_to_tab(cheminVersFichierJSON);
+    }
     var tab_result = [];
     for (var i = 0; i < tab_values.length; i++) {
         if (

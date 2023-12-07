@@ -41,7 +41,7 @@ function create_exam(tableau) {
         let data = tableauQuestionJoint.join('\n');
 
         // Trouver le chemin du dossier
-        let dossier = "./exam";
+        let dossier = "../ListeExamens";
 
         // Créer le chemin complet pour le fichier d'examen
         let examen = path.join(dossier, 'exam' + valeur + '.gift');

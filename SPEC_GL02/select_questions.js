@@ -93,7 +93,8 @@ function select_questions() {
         }
     }
     if (can_create){
-var choix = prompt("1-Créer un exam\n2-Passer un exam\nVotre choix : ","0")
+        console.log("1-Créer un exam\n2-Passer un exam\n")
+var choix = prompt("Votre choix : ","0")
             if (choix === "1") {
                 create_exam(tab_select);
             } else if (choix === "2") {

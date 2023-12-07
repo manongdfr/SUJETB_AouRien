@@ -1,7 +1,9 @@
 
 
 function pass_exam(tableau) {
+    /*
     const {prompt} = require("./utilis");
+    */
     const fs = require('fs');
     const path = require('path');
     const readline = require('readline');
