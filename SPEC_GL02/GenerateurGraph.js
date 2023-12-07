@@ -1,4 +1,5 @@
 function generateur_graph(){
+const {prompt} = require("./utilis");
 const fs = require('fs').promises;
 const { compile, create, write } = require('vega-lite');
 const path = require('path');
@@ -12,14 +13,12 @@ const interfaceLecture = readline.createInterface({
 
 // Fonction permettant à l'utilisateur de choisir le nom du fichier qu'il souhaite représenter graphiquement
 function demanderNomFichier() {
-    interfaceLecture.question("Veuillez entrer le nom du fichier dont vous souhaitez visualiser la structure : \n", (choix) => {
-        NomFichier = String(choix);
-        analyserFichier();
-    });
+    NonFichier= prompt("Veuillez entrer le nom du fichier dont vous souhaitez visualiser la structure :" );
+    analyserFichier(NonFichier);
 }
 
 // Vérifie s'il est cohérent d'analyser le fichier désigné par l'utilisateur
-async function analyserFichier() {
+async function analyserFichier(NomFichier) {
     try {
         // Vérifie si le fichier existe dans le répertoire de travail
         await fs.access(NomFichier, fs.constants.F_OK);
