@@ -1,3 +1,5 @@
+function comparateur_exam() {
+    const {prompt} = require("./utilis");
 const fs = require('fs').promises;
 const path = require('path');
 const readline = require('readline');
@@ -14,20 +16,18 @@ var NomFichier;
 // Fonction permettant à l'utilisateur de choisir le nom du fichier qu'il souhaite étudier
 function demanderNomFichier() {
     // L'utilisateur sélectionne le nom du fichier qu'il recherche grâce à l'interface de lecture
-    interfaceLecture.question("Veuillez entrer le nom du fichier que vous souhaitez comparer à un examen type : \n", (choix) => {
-        NomFichier = String(choix);
-        analyserFichier();
-    });
+    let NomFichier= prompt("Veuillez entrer le nom du fichier que vous souhaitez comparer à un examen type : ")
+        analyserFichier(NomFichier);
 }
 
 // Fonction vérifiant s'il est cohérent de rechercher le fichier indiqué par l'utilisateur
-async function analyserFichier() {
+async function analyserFichier(NomFichier) {
     try {
         // Vérifie si le fichier existe dans le répertoire de travail
         await fs.access(NomFichier, fs.constants.F_OK);
         console.log(`${NomFichier} existe dans le répertoire de travail et va être étudié.`);
         // Paramètres pour uniquement lire les fichiers à l'extension .gift d'un répertoire précis
-        const dossierAExplorer = './';
+        const dossierAExplorer = './exam';
         const extensionFichier = 'gift';
         comparerFichiersDExtension(dossierAExplorer, extensionFichier, String(NomFichier));
     } catch (err) {
@@ -247,3 +247,5 @@ async function comparerFichiersDExtension(dossier, extension, NomFichier) {
 }
 // Initialise la demande d'options
 demanderNomFichier();
+}
+comparateur_exam()
