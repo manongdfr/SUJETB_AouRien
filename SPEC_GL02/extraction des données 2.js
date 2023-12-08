@@ -83,7 +83,7 @@ const extractionDesDonnees = () => {
                     if (err) {
                         console.error("Erreur lors de l'écriture dans le fichier JSON :", err);
                     } else {
-                        console.log(`Données enregistrées dans ${jsonFilePath}.`);
+
                     }
                 });
             };
