@@ -1,5 +1,17 @@
 [
   {
+    "tag": "EM U42 Ultimate q1",
+    "questionText": "What's the answer to this multiple-choice question? {",
+    "reponses": [
+      "",
+      "~wrong answer#feedback comment on the wrong answer",
+      "~another wrong answer#feedback comment on this wrong answer",
+      "=right answer#Very good!",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
     "tag": "EM U4 p33 Review 4.1 more irritating than",
     "questionText": "Nothing irritates me more than getting hundreds of spam emails.",
     "reponses": [
@@ -44,6 +56,62 @@
     "questionText": "I had never seen a glacier before I went to Norway",
     "reponses": [
       "=I saw a glacier for#I had never seen – I saw ... for the first time"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p35 Gra3.5",
+    "questionText": "It's good that there  lots of advice about healthy lifestyles.",
+    "reponses": [
+      "=is~are"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.1 passive",
+    "questionText": "The chef gave him the recipe.",
+    "reponses": [
+      "=was given the recipe by"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.2 passive",
+    "questionText": "The lecture about healthy food raised many interesting issues.",
+    "reponses": [
+      "=were brought up in =were brought up by =were brought up during"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.3 passive",
+    "questionText": "Mary baked the cake using six eggs.",
+    "reponses": [
+      "=was baked by Mary"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.4 passive",
+    "questionText": "You can't smoke anywhere in the restaurant.",
+    "reponses": [
+      "=is not permitted"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.5 passive",
+    "questionText": "Please check that someone has washed up before you leave!",
+    "reponses": [
+      "=washing-up has been done =washing up has been done"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p38 Gra3.6 passive",
+    "questionText": "Jo had opened the restaurant by himself before Rafa joined him as hs business partner.",
+    "reponses": [
+      "=had been opened by"
     ],
     "typeDeQuestion": "Question à trou"
   },
@@ -102,20 +170,73 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "EM U5 p35 Gra3.5",
-    "questionText": "It's good that there  lots of advice about healthy lifestyles.",
+    "tag": "U1 p10 GR2.8 Present tenses & habits",
+    "questionText": "It seemed very cold at first but now we  used to the weather. (<i>get</i>)",
     "reponses": [
-      "=is~are"
+      "=are getting ='re getting"
     ],
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "EM U5 p34 Gra2.8",
-    "questionText": "People say that  knowledge goes a long way!",
+    "tag": "U1 p7 Adverbs GR 1.1",
+    "questionText": "Does she come by car? (<i>generally</i>) {",
     "reponses": [
-      "~few~a few~little~=a little"
+      "",
+      "=Does she generally come by car?"
     ],
-    "typeDeQuestion": "Question à trou"
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.2",
+    "questionText": "Take care when using this machinery. (<i>always</i>) {",
+    "reponses": [
+      "",
+      "=Always take care when using this machinery.",
+      "=Always take care when using this machinery"
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.3",
+    "questionText": "They're a little nervous at the beginning. (<i>sometimes</i>) {",
+    "reponses": [
+      "",
+      "=They're sometimes a little nervous at the beginning.",
+      "=They are sometimes a little nervous at the beginning.",
+      "=They're sometimes a little nervous at the beginning",
+      "=They are sometimes a little nervous at the beginning",
+      "=They’re sometimes a little nervous at the beginning",
+      "=They’re sometimes a little nervous at the beginning."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.4",
+    "questionText": "I don't go to the gym on Fridays. (<i>usually</i>) {",
+    "reponses": [
+      "",
+      "=I don't usually go to the gym on Fridays.",
+      "=I do not usually go to the gym on Fridays.",
+      "=I don't usually go to the gym on Fridays",
+      "=I do not usually go to the gym on Fridays",
+      "=I don’t usually go to the gym on Fridays",
+      "=I don’t usually go to the gym on Fridays."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U1 p7 Adverbs GR 1.5",
+    "questionText": "They've been told that. (<i>often</i>) {",
+    "reponses": [
+      "",
+      "=They've often been told that.",
+      "=They have often been told that.",
+      "=They've often been told that",
+      "=They have often been told that",
+      "=They’ve often been told that",
+      "=They’ve often been told that."
+    ],
+    "typeDeQuestion": "Question classique"
   },
   {
     "tag": "EM U5 p37 Reading 1.0 Text",
@@ -253,66 +374,6 @@
       ""
     ],
     "typeDeQuestion": "Question à association"
-  },
-  {
-    "tag": "EM U42 Ultimate q1",
-    "questionText": "What's the answer to this multiple-choice question? {",
-    "reponses": [
-      "",
-      "~wrong answer#feedback comment on the wrong answer",
-      "~another wrong answer#feedback comment on this wrong answer",
-      "=right answer#Very good!",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "EM U5 p38 Gra3.1 passive",
-    "questionText": "The chef gave him the recipe.",
-    "reponses": [
-      "=was given the recipe by"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "EM U5 p38 Gra3.2 passive",
-    "questionText": "The lecture about healthy food raised many interesting issues.",
-    "reponses": [
-      "=were brought up in =were brought up by =were brought up during"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "EM U5 p38 Gra3.3 passive",
-    "questionText": "Mary baked the cake using six eggs.",
-    "reponses": [
-      "=was baked by Mary"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "EM U5 p38 Gra3.4 passive",
-    "questionText": "You can't smoke anywhere in the restaurant.",
-    "reponses": [
-      "=is not permitted"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "EM U5 p38 Gra3.5 passive",
-    "questionText": "Please check that someone has washed up before you leave!",
-    "reponses": [
-      "=washing-up has been done =washing up has been done"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "EM U5 p38 Gra3.6 passive",
-    "questionText": "Jo had opened the restaurant by himself before Rafa joined him as hs business partner.",
-    "reponses": [
-      "=had been opened by"
-    ],
-    "typeDeQuestion": "Question à trou"
   },
   {
     "tag": "U1 p8-9 9 Vocabulary",
@@ -488,96 +549,68 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "U1 p10 GR2.8 Present tenses & habits",
-    "questionText": "It seemed very cold at first but now we  used to the weather. (<i>get</i>)",
-    "reponses": [
-      "=are getting ='re getting"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U3 p30 4.1",
-    "questionText": "What is the writer's attitude towards football fans attending matches? {",
-    "reponses": [
-      "",
-      "~She's impressed by their behaviour.",
-      "~She's surprised by how much money they spend.",
-      "~She's embarrassed by how irresponsible they are.",
-      "~=She's sympathetic to their feelings.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U3 p30 4.2",
-    "questionText": "The writer mentions people who live ‘in a dream state’ in order to {",
-    "reponses": [
-      "",
-      "~give an example of people who have uncontrollable emotions.",
-      "~criticise people who have unrealistic expectations.",
-      "~=contrast different types of emotional attachments.",
-      "~explain why passions can be more important than real relationships.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U3 p30 4.3",
-    "questionText": "The writer thinks having a passion is a good thing because {",
-    "reponses": [
-      "",
-      "~=it helps people learn how to express their emotions.",
-      "~it encourages more considerate behaviour.",
-      "~it gives people an opportunity to act like a different person.",
-      "~it makes everything else in life seem unimportant.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U3 p30 4.4",
-    "questionText": "What does the writer mean by ‘thin on the ground’ in line 30? {",
-    "reponses": [
-      "",
-      "~Something which is easily forgotten.",
-      "~=Something which occurs infrequently.",
-      "~Something which takes place only once.",
-      "~Something which is unexpected.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U3 p30 4.5",
-    "questionText": "The writer mentions Wimbledon to show that {",
-    "reponses": [
-      "",
-      "~some sports are less likely to inspire strong feelings.",
-      "~some passions last for many years.",
-      "~=sports fans can behave uncharacteristically.",
-      "~people often behave strangely to get on TV.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U3 p30 4.6",
-    "questionText": "What was the writer's purpose in writing this text? {",
-    "reponses": [
-      "",
-      "~To encourage people to talk about their passions openly.",
-      "~To convince the reader that sports fans are normal human beings.",
-      "~To explain why the excitement of winning is worth the disappointment of losing.",
-      "~=To argue that a passion for sport provides an opportunity to experience highs and lows.",
-      ""
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
     "tag": "U11 p114 Mixed conditionals 4.5",
     "questionText": "I  (<i>might/earn</i>) more now if I'd gone to university.",
     "reponses": [
       "=might earn=might be earning"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "EM U5 p34 Gra2.8",
+    "questionText": "People say that  knowledge goes a long way!",
+    "reponses": [
+      "~few~a few~little~=a little"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U2 p22 3 – Verb patterns -ing or inf",
+    "questionText": "Match the clauses to make sentences.{",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=It took me ages to have the confidence",
+        "right": "to be on my own with him."
+      },
+      {
+        "left": "=It's not worth",
+        "right": "talking to him really because he just disagrees with whatever anybody says."
+      },
+      {
+        "left": "=We both love",
+        "right": "riding, so it's great to have something in common."
+      },
+      {
+        "left": "=We'd like him",
+        "right": "to come and live nearer."
+      },
+      {
+        "left": "=I've promised",
+        "right": "to give him tennis lessons."
+      },
+      {
+        "left": ""
+      }
+    ],
+    "reponses": [
+      "",
+      "=It took me ages to have the confidence -> to be on my own with him.",
+      "=It's not worth -> talking to him really because he just disagrees with whatever anybody says.",
+      "=We both love -> riding, so it's great to have something in common.",
+      "=We'd like him -> to come and live nearer.",
+      "=I've promised -> to give him tennis lessons.",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
+  },
+  {
+    "tag": "U2 p22 6.5b – Verb patterns -ing or inf",
+    "questionText": "I forgot  my teacher my essay and she wasn't happy when I handed it in late.",
+    "reponses": [
+      "~=to give~giving"
     ],
     "typeDeQuestion": "Question à trou"
   },
@@ -645,67 +678,6 @@
       "~='ve worked~worked"
     ],
     "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.1",
-    "questionText": "Does she come by car? (<i>generally</i>) {",
-    "reponses": [
-      "",
-      "=Does she generally come by car?"
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.2",
-    "questionText": "Take care when using this machinery. (<i>always</i>) {",
-    "reponses": [
-      "",
-      "=Always take care when using this machinery.",
-      "=Always take care when using this machinery"
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.3",
-    "questionText": "They're a little nervous at the beginning. (<i>sometimes</i>) {",
-    "reponses": [
-      "",
-      "=They're sometimes a little nervous at the beginning.",
-      "=They are sometimes a little nervous at the beginning.",
-      "=They're sometimes a little nervous at the beginning",
-      "=They are sometimes a little nervous at the beginning",
-      "=They’re sometimes a little nervous at the beginning",
-      "=They’re sometimes a little nervous at the beginning."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.4",
-    "questionText": "I don't go to the gym on Fridays. (<i>usually</i>) {",
-    "reponses": [
-      "",
-      "=I don't usually go to the gym on Fridays.",
-      "=I do not usually go to the gym on Fridays.",
-      "=I don't usually go to the gym on Fridays",
-      "=I do not usually go to the gym on Fridays",
-      "=I don’t usually go to the gym on Fridays",
-      "=I don’t usually go to the gym on Fridays."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U1 p7 Adverbs GR 1.5",
-    "questionText": "They've been told that. (<i>often</i>) {",
-    "reponses": [
-      "",
-      "=They've often been told that.",
-      "=They have often been told that.",
-      "=They've often been told that",
-      "=They have often been told that",
-      "=They’ve often been told that",
-      "=They’ve often been told that."
-    ],
-    "typeDeQuestion": "Question classique"
   },
   {
     "tag": "U4 p38-9 Reading Text 'Real-life superhumans'",
@@ -928,6 +900,22 @@
     "typeDeQuestion": "Question à association"
   },
   {
+    "tag": "U5 p50 0/4 Text",
+    "questionText": "<p><small><i>Read the text and fill in each gap with a single word. It can be an expression of quantity for some of the gaps.</i></small></p>",
+    "reponses": [
+      "1:SA:=few"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p50 5.4 lots of",
+    "questionText": "<u>Lots</u> of our favourite dishes ",
+    "reponses": [
+      "=many=a large number"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
     "tag": "U4 p42 1.1 Pre-listening Antartica",
     "questionText": "Antarctica has the world’s largest {",
     "reponses": [
@@ -1072,6 +1060,14 @@
     "typeDeQuestion": "Question classique"
   },
   {
+    "tag": "U5 p49 GR1.8 Expressions of quantity",
+    "questionText": "There isn't  chocolate left.",
+    "reponses": [
+      "~no =any"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
     "tag": "U4 p47 Rev1 Articles indefinite, definitie, zero (review)",
     "questionText": "Complete the text with a/an, the or — (no article).",
     "reponses": [
@@ -1153,310 +1149,12 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "U5 p50 0/4 Text",
-    "questionText": "<p><small><i>Read the text and fill in each gap with a single word. It can be an expression of quantity for some of the gaps.</i></small></p>",
-    "reponses": [
-      "1:SA:=few"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p50 5.4 lots of",
-    "questionText": "<u>Lots</u> of our favourite dishes ",
-    "reponses": [
-      "=many=a large number"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 GR4.1 Passive reporting forms",
-    "questionText": "People reported that there were gunshots.",
-    "reponses": [
-      "=was reported that there were gunshots=was reported that there were gunshots."
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 GR4.2 Passive reporting forms",
-    "questionText": "People claim that the money was stolen.",
-    "reponses": [
-      "=is claimed that the money was stolen='s claimed that the money was stolen=is claimed that the money was stolen.='s claimed that the money was stolen."
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 GR4.3 Passive reporting forms",
-    "questionText": "People think that the suspect has left the country.",
-    "reponses": [
-      "=is thought to have left the country=is thought to have left the country."
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 GR4.4 Passive reporting forms",
-    "questionText": "People say that the police made a lot of mistakes.",
-    "reponses": [
-      "=are said to have made a lot of mistakes=are said to have made a lot of mistakes."
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 GR4.5 Passive reporting forms",
-    "questionText": "People believe that the criminal had a false passport.",
-    "reponses": [
-      "=is believed that the criminal had a false passport='s believed that the criminal had a false passport=is believed that the criminal had a false passport.='s believed that the criminal had a false passport."
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 6.1 Passive",
-    "questionText": "People expect tourists to carry sticks to protect themselves from curious monkeys.<br />",
-    "reponses": [
-      "=are expected to carry =are expected to carry"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 6.2 Passive",
-    "questionText": "Most people think monkeys are a huge tourist attraction. <b>BE</b> <br />",
-    "reponses": [
-      "=are thought to be"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 6.3 Passive",
-    "questionText": "Newspapers claim that twenty top chefs have been invited to prepare the meal. <b>BY</b> <br />",
-    "reponses": [
-      "=is claimed by"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 6.4 Passive",
-    "questionText": "The tourist office has estimated that over 10,000 visitors watch the feast. <b>BEEN</b> <br />",
-    "reponses": [
-      "=has been estimated"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p54 6.5 Passive",
-    "questionText": "Everyone says monkeys can be very aggressive around food. <b>TO</b> <br />",
-    "reponses": [
-      "=are said to"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
     "tag": "U5 p57 Rev4.6 Passive forms",
     "questionText": "Only fifty people  <i>(invite)</i> to their wedding, which is on Saturday",
     "reponses": [
       "=be invited =were invited"
     ],
     "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p59 Voc10.1 the arts",
-    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
-    "reponses": [
-      "=contemporary"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p59 Voc10.2 the arts",
-    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
-    "reponses": [
-      "=gallery"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p59 Voc10.3 the arts",
-    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
-    "reponses": [
-      "=abstract"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p59 Voc10.4 the arts",
-    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
-    "reponses": [
-      "=cast"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p59 Voc10.5 the arts",
-    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
-    "reponses": [
-      "=productions"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p59 Voc10.6 the arts",
-    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
-    "reponses": [
-      "=blockbusters"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U5 p49 GR1.8 Expressions of quantity",
-    "questionText": "There isn't  chocolate left.",
-    "reponses": [
-      "~no =any"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p62 Reading - Text: Sharing the self love",
-    "questionText": "<h4>Sharing the (self) love: the rise of the selfie and digital narcissism</h4>",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U6 p62 Reading 2",
-    "questionText": "<b>Complete this sentence to summarise the writer’s main point.</b>",
-    "reponses": [
-      "",
-      "~get a false impression of the celebrities they follow.",
-      "~have unrealistic hopes for their own futures.",
-      "~=become too focused on the opinion others have of them."
-    ],
-    "typeDeQuestion": "Question classique"
-  },
-  {
-    "tag": "U6 p62 Reading 4",
-    "questionText": "For the gaps in the text (1-6), choose the sentence that fits each gap. There is one extra sentence which you do not need to use. {",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=1",
-        "right": "Then came reality TV, which turned the attention back to ourselves."
-      },
-      {
-        "left": "=2",
-        "right": "Interestingly, what they all seem to have in common is digital attention seeking."
-      },
-      {
-        "left": "=3",
-        "right": "Such increases pre-date social media but they have clearly worsened since its arrival."
-      },
-      {
-        "left": "=4",
-        "right": "The explanation for this is that narcissistic individuals are much more likely to use social media to portray an enviable, if unrealistic, self-image, broadcasting their life to an audience and gaining many virtual friends."
-      },
-      {
-        "left": "=5",
-        "right": "Furthermore, the need to be appreciated is a crucial part of psychological wellbeing, unless it is taken too far and becomes a nonstop search to be valued by others."
-      },
-      {
-        "left": "=6",
-        "right": "New ‘self-help’ mathematical formulas could be built into Facebook, Twitter and Instagram."
-      },
-      {
-        "left": "=",
-        "right": "However, the danger is when these efforts to compensate are supported and rewarded by others."
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=1 -> Then came reality TV, which turned the attention back to ourselves.",
-      "=2 -> Interestingly, what they all seem to have in common is digital attention seeking.",
-      "=3 -> Such increases pre-date social media but they have clearly worsened since its arrival.",
-      "=4 -> The explanation for this is that narcissistic individuals are much more likely to use social media to portray an enviable, if unrealistic, self-image, broadcasting their life to an audience and gaining many virtual friends.",
-      "=5 -> Furthermore, the need to be appreciated is a crucial part of psychological wellbeing, unless it is taken too far and becomes a nonstop search to be valued by others.",
-      "=6 -> New ‘self-help’ mathematical formulas could be built into Facebook, Twitter and Instagram.",
-      "=-> However, the danger is when these efforts to compensate are supported and rewarded by others.",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
-  },
-  {
-    "tag": "U6 p63 Reading Voc6.A0 word formation",
-    "questionText": "<p>Make adjectives from each of the following nouns/verbs.</p>",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U6 p63 Reading Voc6.B0 word formation",
-    "questionText": "Make nouns from each of the adjectives/verbs.",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U6 p63 Reading Voc8.6",
-    "questionText": "There is no  (<i>evident</i>) that sugar is bad for you.",
-    "reponses": [
-      "=evidence"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U6 p61 GR 2 Future forms",
-    "questionText": "Match the uses of future forms to the examples. {",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=<i>will</i> (a promise)",
-        "right": "I won't tell anyone"
-      },
-      {
-        "left": "=<i>will</i> (an expert opinion)",
-        "right": "The road will be closed."
-      },
-      {
-        "left": "=<i>will</i> (a decision made at the moment of speaking)",
-        "right": "I'll call Graham now, shall I?"
-      },
-      {
-        "left": "=<i>going to</i> (an opinion based on present evidence)",
-        "right": "She's gone very pale – she's going to faint."
-      },
-      {
-        "left": "=<i>going to</i> (a personal intention)",
-        "right": "I'm going to apply to university next year."
-      },
-      {
-        "left": "=Present continuous (a planned event)",
-        "right": "They're getting married sometime next year."
-      },
-      {
-        "left": "=Present simple (a timetabled event)",
-        "right": "The conference is in the first week of April."
-      },
-      {
-        "left": "=Present simple (a time clause with a future meaning)",
-        "right": "When you arrive at the airport, phone me."
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=<i>will</i> (a promise)                                 -> I won't tell anyone",
-      "=<i>will</i> (an expert opinion)                         -> The road will be closed.",
-      "=<i>will</i> (a decision made at the moment of speaking) -> I'll call Graham now, shall I?",
-      "=<i>going to</i> (an opinion based on present evidence)  -> She's gone very pale – she's going to faint.",
-      "=<i>going to</i> (a personal intention)                  -> I'm going to apply to university next year.",
-      "=Present continuous (a planned event)                    -> They're getting married sometime next year.",
-      "=Present simple (a timetabled event)                     -> The conference is in the first week of April.",
-      "=Present simple (a time clause with a future meaning)    -> When you arrive at the airport, phone me.",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
   },
   {
     "tag": "U5 p52 2 Reading: compr questions",
@@ -1645,6 +1343,46 @@
     "typeDeQuestion": "Question à trou"
   },
   {
+    "tag": "U5 p54 GR4.1 Passive reporting forms",
+    "questionText": "People reported that there were gunshots.",
+    "reponses": [
+      "=was reported that there were gunshots=was reported that there were gunshots."
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 GR4.2 Passive reporting forms",
+    "questionText": "People claim that the money was stolen.",
+    "reponses": [
+      "=is claimed that the money was stolen='s claimed that the money was stolen=is claimed that the money was stolen.='s claimed that the money was stolen."
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 GR4.3 Passive reporting forms",
+    "questionText": "People think that the suspect has left the country.",
+    "reponses": [
+      "=is thought to have left the country=is thought to have left the country."
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 GR4.4 Passive reporting forms",
+    "questionText": "People say that the police made a lot of mistakes.",
+    "reponses": [
+      "=are said to have made a lot of mistakes=are said to have made a lot of mistakes."
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 GR4.5 Passive reporting forms",
+    "questionText": "People believe that the criminal had a false passport.",
+    "reponses": [
+      "=is believed that the criminal had a false passport='s believed that the criminal had a false passport=is believed that the criminal had a false passport.='s believed that the criminal had a false passport."
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
     "tag": "U6 p60 Listening Audio1",
     "questionText": "You will hear people talking in eight different situations. First, identify the key words in the question below. Then listen and choose the best answer.",
     "reponses": [],
@@ -1753,10 +1491,244 @@
     "typeDeQuestion": "Question classique"
   },
   {
-    "tag": "U6 p67 Rev4.8",
-    "questionText": "Let's hurry! They  the theatre doors at 7.30 and then you have to wait until the interval to go in.",
+    "tag": "U5 p54 6.1 Passive",
+    "questionText": "People expect tourists to carry sticks to protect themselves from curious monkeys.<br />",
     "reponses": [
-      "~=close~are going to close~are closing"
+      "=are expected to carry =are expected to carry"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 6.2 Passive",
+    "questionText": "Most people think monkeys are a huge tourist attraction. <b>BE</b> <br />",
+    "reponses": [
+      "=are thought to be"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 6.3 Passive",
+    "questionText": "Newspapers claim that twenty top chefs have been invited to prepare the meal. <b>BY</b> <br />",
+    "reponses": [
+      "=is claimed by"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 6.4 Passive",
+    "questionText": "The tourist office has estimated that over 10,000 visitors watch the feast. <b>BEEN</b> <br />",
+    "reponses": [
+      "=has been estimated"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U5 p54 6.5 Passive",
+    "questionText": "Everyone says monkeys can be very aggressive around food. <b>TO</b> <br />",
+    "reponses": [
+      "=are said to"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p61 GR 2 Future forms",
+    "questionText": "Match the uses of future forms to the examples. {",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=<i>will</i> (a promise)",
+        "right": "I won't tell anyone"
+      },
+      {
+        "left": "=<i>will</i> (an expert opinion)",
+        "right": "The road will be closed."
+      },
+      {
+        "left": "=<i>will</i> (a decision made at the moment of speaking)",
+        "right": "I'll call Graham now, shall I?"
+      },
+      {
+        "left": "=<i>going to</i> (an opinion based on present evidence)",
+        "right": "She's gone very pale – she's going to faint."
+      },
+      {
+        "left": "=<i>going to</i> (a personal intention)",
+        "right": "I'm going to apply to university next year."
+      },
+      {
+        "left": "=Present continuous (a planned event)",
+        "right": "They're getting married sometime next year."
+      },
+      {
+        "left": "=Present simple (a timetabled event)",
+        "right": "The conference is in the first week of April."
+      },
+      {
+        "left": "=Present simple (a time clause with a future meaning)",
+        "right": "When you arrive at the airport, phone me."
+      },
+      {
+        "left": ""
+      }
+    ],
+    "reponses": [
+      "",
+      "=<i>will</i> (a promise)                                 -> I won't tell anyone",
+      "=<i>will</i> (an expert opinion)                         -> The road will be closed.",
+      "=<i>will</i> (a decision made at the moment of speaking) -> I'll call Graham now, shall I?",
+      "=<i>going to</i> (an opinion based on present evidence)  -> She's gone very pale – she's going to faint.",
+      "=<i>going to</i> (a personal intention)                  -> I'm going to apply to university next year.",
+      "=Present continuous (a planned event)                    -> They're getting married sometime next year.",
+      "=Present simple (a timetabled event)                     -> The conference is in the first week of April.",
+      "=Present simple (a time clause with a future meaning)    -> When you arrive at the airport, phone me.",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
+  },
+  {
+    "tag": "U6 p59 Voc10.1 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
+    "reponses": [
+      "=contemporary"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p59 Voc10.2 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
+    "reponses": [
+      "=gallery"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p59 Voc10.3 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
+    "reponses": [
+      "=abstract"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p59 Voc10.4 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
+    "reponses": [
+      "=cast"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p59 Voc10.5 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
+    "reponses": [
+      "=productions"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p59 Voc10.6 the arts",
+    "questionText": "<small><p><i>Complete the sentence with one of the following words: <b>abstract • blockbusters • cast • contemporary • gallery • productions</b>.</i></p></small>",
+    "reponses": [
+      "=blockbusters"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p62 Reading - Text: Sharing the self love",
+    "questionText": "<h4>Sharing the (self) love: the rise of the selfie and digital narcissism</h4>",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U6 p62 Reading 2",
+    "questionText": "<b>Complete this sentence to summarise the writer’s main point.</b>",
+    "reponses": [
+      "",
+      "~get a false impression of the celebrities they follow.",
+      "~have unrealistic hopes for their own futures.",
+      "~=become too focused on the opinion others have of them."
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U6 p62 Reading 4",
+    "questionText": "For the gaps in the text (1-6), choose the sentence that fits each gap. There is one extra sentence which you do not need to use. {",
+    "associations": [
+      {
+        "left": ""
+      },
+      {
+        "left": "=1",
+        "right": "Then came reality TV, which turned the attention back to ourselves."
+      },
+      {
+        "left": "=2",
+        "right": "Interestingly, what they all seem to have in common is digital attention seeking."
+      },
+      {
+        "left": "=3",
+        "right": "Such increases pre-date social media but they have clearly worsened since its arrival."
+      },
+      {
+        "left": "=4",
+        "right": "The explanation for this is that narcissistic individuals are much more likely to use social media to portray an enviable, if unrealistic, self-image, broadcasting their life to an audience and gaining many virtual friends."
+      },
+      {
+        "left": "=5",
+        "right": "Furthermore, the need to be appreciated is a crucial part of psychological wellbeing, unless it is taken too far and becomes a nonstop search to be valued by others."
+      },
+      {
+        "left": "=6",
+        "right": "New ‘self-help’ mathematical formulas could be built into Facebook, Twitter and Instagram."
+      },
+      {
+        "left": "=",
+        "right": "However, the danger is when these efforts to compensate are supported and rewarded by others."
+      },
+      {
+        "left": ""
+      }
+    ],
+    "reponses": [
+      "",
+      "=1 -> Then came reality TV, which turned the attention back to ourselves.",
+      "=2 -> Interestingly, what they all seem to have in common is digital attention seeking.",
+      "=3 -> Such increases pre-date social media but they have clearly worsened since its arrival.",
+      "=4 -> The explanation for this is that narcissistic individuals are much more likely to use social media to portray an enviable, if unrealistic, self-image, broadcasting their life to an audience and gaining many virtual friends.",
+      "=5 -> Furthermore, the need to be appreciated is a crucial part of psychological wellbeing, unless it is taken too far and becomes a nonstop search to be valued by others.",
+      "=6 -> New ‘self-help’ mathematical formulas could be built into Facebook, Twitter and Instagram.",
+      "=-> However, the danger is when these efforts to compensate are supported and rewarded by others.",
+      ""
+    ],
+    "typeDeQuestion": "Question à association"
+  },
+  {
+    "tag": "U6 p63 Reading Voc6.A0 word formation",
+    "questionText": "<p>Make adjectives from each of the following nouns/verbs.</p>",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U6 p63 Reading Voc6.B0 word formation",
+    "questionText": "Make nouns from each of the adjectives/verbs.",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U6 p63 Reading Voc8.6",
+    "questionText": "There is no  (<i>evident</i>) that sugar is bad for you.",
+    "reponses": [
+      "=evidence"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U6 p64 6.6 Future perfect & continuous",
+    "questionText": "By 2050, holographic TV screens will  (<i>project</i>) images around our rooms at home.",
+    "reponses": [
+      "=be projecting"
     ],
     "typeDeQuestion": "Question à trou"
   },
@@ -1809,6 +1781,14 @@
     "typeDeQuestion": "Question à trou"
   },
   {
+    "tag": "U6 p67 Rev4.8",
+    "questionText": "Let's hurry! They  the theatre doors at 7.30 and then you have to wait until the interval to go in.",
+    "reponses": [
+      "~=close~are going to close~are closing"
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
     "tag": "U6 p68-69 ProgressTest2 4.1",
     "questionText": "You will get the results by Friday. <b>GIVEN</b>",
     "reponses": [
@@ -1855,136 +1835,6 @@
       "=always turning up"
     ],
     "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p77 [So,such,too,enough,very] 1.8",
-    "questionText": "It's a  interesting book.",
-    "reponses": [
-      "~enough~so~such~too~=very"
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.1",
-    "questionText": "The fishing village was _________ far away to visit one day.  {",
-    "reponses": [
-      "",
-      "~so",
-      "~very",
-      "=too",
-      "~enough",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.2",
-    "questionText": "I need to get a _________ ticket because I am coming back this evening.{",
-    "reponses": [
-      "",
-      "~round",
-      "=return",
-      "~package",
-      "~direct",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.3",
-    "questionText": "There's no ________ buying a car if you're never going to drive it.{",
-    "reponses": [
-      "",
-      "~reason",
-      "~need",
-      "=point",
-      "~objective",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.4",
-    "questionText": "It was ______ a beautiful place that they decided to stay there longer.{",
-    "reponses": [
-      "",
-      "~so",
-      "~enough",
-      "~really",
-      "=such",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.5",
-    "questionText": "It's a very ___________ location, cut off from the outside world.<div id\\=\"gtx-trans\" style\\=\"position\\: absolute; left\\: 76px; top\\: 23px;\"> </div>{",
-    "reponses": [
-      "",
-      "~alone",
-      "~far",
-      "=remote",
-      "~unconnected",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U7 p79 Review 3.6",
-    "questionText": "You can' t just turn ___________ like this, unexpectedly, and expect me to be free.{",
-    "reponses": [
-      "",
-      "~on",
-      "=up",
-      "~in",
-      "~off",
-      ""
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U8 p84 Voc Linking words 5.8",
-    "questionText": "I enjoyed my time at the law firm. I made a lot of friends there .",
-    "reponses": [
-      "=too."
-    ],
-    "typeDeQuestion": "Question à trou"
-  },
-  {
-    "tag": "U9 p95 4.0 Third conditional",
-    "questionText": "<b>Complete the sentences below to express criticism. Use the third conditional and the cues in brackets. Write the <u>full B response</u> (full sentence) in the field below each question.</b>",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.2 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.3 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.4 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.5 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
-  },
-  {
-    "tag": "U9 p95 4.6 Third conditional",
-    "questionText": "",
-    "reponses": [],
-    "typeDeQuestion": null
   },
   {
     "tag": "U7 p77 [Key word transformation] 6.0",
@@ -2041,60 +1891,24 @@
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "U2 p22 3 – Verb patterns -ing or inf",
-    "questionText": "Match the clauses to make sentences.{",
-    "associations": [
-      {
-        "left": ""
-      },
-      {
-        "left": "=It took me ages to have the confidence",
-        "right": "to be on my own with him."
-      },
-      {
-        "left": "=It's not worth",
-        "right": "talking to him really because he just disagrees with whatever anybody says."
-      },
-      {
-        "left": "=We both love",
-        "right": "riding, so it's great to have something in common."
-      },
-      {
-        "left": "=We'd like him",
-        "right": "to come and live nearer."
-      },
-      {
-        "left": "=I've promised",
-        "right": "to give him tennis lessons."
-      },
-      {
-        "left": ""
-      }
-    ],
-    "reponses": [
-      "",
-      "=It took me ages to have the confidence -> to be on my own with him.",
-      "=It's not worth -> talking to him really because he just disagrees with whatever anybody says.",
-      "=We both love -> riding, so it's great to have something in common.",
-      "=We'd like him -> to come and live nearer.",
-      "=I've promised -> to give him tennis lessons.",
-      ""
-    ],
-    "typeDeQuestion": "Question à association"
+    "tag": "U7 p76 5 Relative clauses – Open writing",
+    "questionText": "Describe a popular place in your country and why people go there. Use the phrases below.",
+    "reponses": [],
+    "typeDeQuestion": null
   },
   {
-    "tag": "U2 p22 6.5b – Verb patterns -ing or inf",
-    "questionText": "I forgot  my teacher my essay and she wasn't happy when I handed it in late.",
+    "tag": "U7 p77 [So,such,too,enough,very] 1.8",
+    "questionText": "It's a  interesting book.",
     "reponses": [
-      "~=to give~giving"
+      "~enough~so~such~too~=very"
     ],
     "typeDeQuestion": "Question à trou"
   },
   {
-    "tag": "U6 p64 6.6 Future perfect & continuous",
-    "questionText": "By 2050, holographic TV screens will  (<i>project</i>) images around our rooms at home.",
+    "tag": "U8 p84 Voc Linking words 5.8",
+    "questionText": "I enjoyed my time at the law firm. I made a lot of friends there .",
     "reponses": [
-      "=be projecting"
+      "=too."
     ],
     "typeDeQuestion": "Question à trou"
   },
@@ -2183,9 +1997,195 @@
     "typeDeQuestion": "Question classique"
   },
   {
-    "tag": "U7 p76 5 Relative clauses – Open writing",
-    "questionText": "Describe a popular place in your country and why people go there. Use the phrases below.",
+    "tag": "U3 p30 4.1",
+    "questionText": "What is the writer's attitude towards football fans attending matches? {",
+    "reponses": [
+      "",
+      "~She's impressed by their behaviour.",
+      "~She's surprised by how much money they spend.",
+      "~She's embarrassed by how irresponsible they are.",
+      "~=She's sympathetic to their feelings.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U3 p30 4.2",
+    "questionText": "The writer mentions people who live ‘in a dream state’ in order to {",
+    "reponses": [
+      "",
+      "~give an example of people who have uncontrollable emotions.",
+      "~criticise people who have unrealistic expectations.",
+      "~=contrast different types of emotional attachments.",
+      "~explain why passions can be more important than real relationships.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U3 p30 4.3",
+    "questionText": "The writer thinks having a passion is a good thing because {",
+    "reponses": [
+      "",
+      "~=it helps people learn how to express their emotions.",
+      "~it encourages more considerate behaviour.",
+      "~it gives people an opportunity to act like a different person.",
+      "~it makes everything else in life seem unimportant.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U3 p30 4.4",
+    "questionText": "What does the writer mean by ‘thin on the ground’ in line 30? {",
+    "reponses": [
+      "",
+      "~Something which is easily forgotten.",
+      "~=Something which occurs infrequently.",
+      "~Something which takes place only once.",
+      "~Something which is unexpected.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U3 p30 4.5",
+    "questionText": "The writer mentions Wimbledon to show that {",
+    "reponses": [
+      "",
+      "~some sports are less likely to inspire strong feelings.",
+      "~some passions last for many years.",
+      "~=sports fans can behave uncharacteristically.",
+      "~people often behave strangely to get on TV.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U3 p30 4.6",
+    "questionText": "What was the writer's purpose in writing this text? {",
+    "reponses": [
+      "",
+      "~To encourage people to talk about their passions openly.",
+      "~To convince the reader that sports fans are normal human beings.",
+      "~To explain why the excitement of winning is worth the disappointment of losing.",
+      "~=To argue that a passion for sport provides an opportunity to experience highs and lows.",
+      ""
+    ],
+    "typeDeQuestion": "Question classique"
+  },
+  {
+    "tag": "U9 p95 4.0 Third conditional",
+    "questionText": "<b>Complete the sentences below to express criticism. Use the third conditional and the cues in brackets. Write the <u>full B response</u> (full sentence) in the field below each question.</b>",
     "reponses": [],
     "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.2 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.3 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.4 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.5 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U9 p95 4.6 Third conditional",
+    "questionText": "",
+    "reponses": [],
+    "typeDeQuestion": null
+  },
+  {
+    "tag": "U7 p79 Review 3.1",
+    "questionText": "The fishing village was _________ far away to visit one day.  {",
+    "reponses": [
+      "",
+      "~so",
+      "~very",
+      "=too",
+      "~enough",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.2",
+    "questionText": "I need to get a _________ ticket because I am coming back this evening.{",
+    "reponses": [
+      "",
+      "~round",
+      "=return",
+      "~package",
+      "~direct",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.3",
+    "questionText": "There's no ________ buying a car if you're never going to drive it.{",
+    "reponses": [
+      "",
+      "~reason",
+      "~need",
+      "=point",
+      "~objective",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.4",
+    "questionText": "It was ______ a beautiful place that they decided to stay there longer.{",
+    "reponses": [
+      "",
+      "~so",
+      "~enough",
+      "~really",
+      "=such",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.5",
+    "questionText": "It's a very ___________ location, cut off from the outside world.<div id\\=\"gtx-trans\" style\\=\"position\\: absolute; left\\: 76px; top\\: 23px;\"> </div>{",
+    "reponses": [
+      "",
+      "~alone",
+      "~far",
+      "=remote",
+      "~unconnected",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
+  },
+  {
+    "tag": "U7 p79 Review 3.6",
+    "questionText": "You can' t just turn ___________ like this, unexpectedly, and expect me to be free.{",
+    "reponses": [
+      "",
+      "~on",
+      "=up",
+      "~in",
+      "~off",
+      ""
+    ],
+    "typeDeQuestion": "Question à trou"
   }
 ]

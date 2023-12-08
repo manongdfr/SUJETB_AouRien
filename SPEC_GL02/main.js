@@ -72,9 +72,7 @@ function traiterOption(ChoixOption) {
             break;
         case 4:
             console.log("A la fin de l'exécution de cette section, appuyez sur la flèche du haut du clavier en cas de problèmes");
-            var choix = prompt("Indiquez le nom du fichier que vous souhaitez analyser (sans son extension) : ","");
-            var NomFichier = choix+'.gift';
-            generateur_graph(NomFichier);
+            generateur_graph();
             demanderOption();
             break;
         case 5:

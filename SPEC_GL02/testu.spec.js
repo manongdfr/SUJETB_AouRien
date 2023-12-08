@@ -61,28 +61,28 @@ describe('fonction recherche', () => {
     it("chercher les questions qui contiennent le tag et/ou le titre renseigné par l'utilisateur", () => {
         // Créez un ensemble de questions de test
         const questions = [
-            { questionText: 'Question 1', tag: 'JavaScript' },
-            { questionText: 'Question 2', tag: 'Node.js' },
-            { questionText: 'Question 3', tag: 'JavaScript' },
-            { questionText: 'Question 4', tag: 'HTML' },
-            { questionText: 'Question 5', tag: 'CSS' },
+            { tag: 'JavaScript',questionText: 'Question 1' },
+            { tag: 'Node.js',questionText: 'Question 2'  },
+            { tag: 'JavaScript', questionText: 'Question 3' },
+            {tag: 'HTML', questionText: 'Question 4'  },
+            { tag: 'CSS', questionText: 'Question 5' },
         ];
 
         // Effectuez une recherche avec un tag spécifique
-        const resultatsTag = rechercheQuestions(questions, 'JavaScript', '');
+        const resultatsTag = recherche( 'JavaScript', '', questions);
 
         // Vérifiez que les résultats contiennent les questions avec le tag spécifique
-        expect(resultatsTag).toContain({ questionText: 'Question 1', tag: 'JavaScript' });
-        expect(resultatsTag).toContain({ questionText: 'Question 3', tag: 'JavaScript' });
+        expect(resultatsTag).toContain({ tag: 'JavaScript' ,questionText: 'Question 1'});
+        expect(resultatsTag).toContain({ tag: 'JavaScript', questionText: 'Question 3' });
 
         // Effectuez une recherche avec un texte de question spécifique
-        const resultatsTexte = rechercheQuestions(questions, '', 'Question 4');
+        const resultatsTexte = recherche(questions, '', 'Question 4');
 
         // Vérifiez que les résultats contiennent la question avec le texte spécifique
         expect(resultatsTexte).toContain({ questionText: 'Question 4', tag: 'HTML' });
 
         // Effectuez une recherche avec à la fois un tag et un texte de question spécifiques
-        const resultatsTagEtTexte = rechercheQuestions(questions, 'JavaScript', 'Question 2');
+        const resultatsTagEtTexte = recherche(questions, 'JavaScript', 'Question 2');
 
         // Vérifiez que les résultats contiennent la question avec le tag et le texte spécifiques
         expect(resultatsTagEtTexte).toContain({ questionText: 'Question 2', tag: 'Node.js' });
