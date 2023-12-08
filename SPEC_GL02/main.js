@@ -15,6 +15,7 @@ const {
     exam_type,
     vcard
 } = require('./utilis');
+extractionDesDonnees();
 // Crée une interface de lecture pour que l'utilisateur puisse remplir des informations depuis le terminal
 const interfaceLecture = readline.createInterface({
     input: process.stdin,
