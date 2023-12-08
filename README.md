@@ -19,7 +19,7 @@ cd SPEC_GL02
 Le logiciel utilise plusieurs librairies, dont VegaLite, pour interagir avec la console. Pour installer ces dépendances, exécutez la commande suivante dans votre terminal (assurez-vous que votre chemin est correct) :
 
 ```bash
-npm install vega-lite vega vega-embed prompt-sync inquirer
+npm install vega-lite vega vega-embed prompt-sync
 ```
 
 Attendez que tous les modules soient téléchargés.
