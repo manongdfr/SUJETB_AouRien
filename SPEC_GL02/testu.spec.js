@@ -72,20 +72,20 @@ describe('fonction recherche', () => {
         const resultatsTag = recherche( '', 'JavaScript', questions);
 
         // Vérifiez que les résultats contiennent les questions avec le tag spécifique
-        expect(resultatsTag).toContain({ tag: 'JavaScript' ,questionText: 'Question 1'});
-        expect(resultatsTag).toContain({ tag: 'JavaScript', questionText: 'Question 3' });
+        expect(resultatsTag).toContain({ tag: 'JavaScript' ,questionText: 'Question 1', reponses: undefined, typeDeQuestion: undefined, associations: undefined});
+        expect(resultatsTag).toContain({ tag: 'JavaScript', questionText: 'Question 3' , reponses: undefined, typeDeQuestion: undefined, associations: undefined});
 
         // Effectuez une recherche avec un texte de question spécifique
         const resultatsTexte = recherche( 'Question 4', '', questions);
 
         // Vérifiez que les résultats contiennent la question avec le texte spécifique
-        expect(resultatsTexte).toContain({ tag: 'HTML',questionText: 'Question 4' });
+        expect(resultatsTexte).toContain({ tag: 'HTML',questionText: 'Question 4', reponses: undefined, typeDeQuestion: undefined, associations: undefined});
 
         // Effectuez une recherche avec à la fois un tag et un texte de question spécifiques
-        const resultatsTagEtTexte = recherche( 'Question 2', 'JavaScript',questions);
+        const resultatsTagEtTexte = recherche( 'Question 2', 'Node.js',questions);
 
         // Vérifiez que les résultats contiennent la question avec le tag et le texte spécifiques
-        expect(resultatsTagEtTexte).toContain({ tag: 'Node.js',questionText: 'Question 2' });
+        expect(resultatsTagEtTexte).toContain({ tag: 'Node.js',questionText: 'Question 2', reponses: undefined, typeDeQuestion: undefined, associations: undefined});
 
     });
 });
