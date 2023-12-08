@@ -1,7 +1,8 @@
 
 
 function pass_exam(tableau) {
-
+    var bonneReponse =0
+    var mauvaise_reponses =0
     const {prompt} = require("./utilis");
 
     const fs = require('fs');
@@ -32,8 +33,8 @@ function pass_exam(tableau) {
         });
     }
 
-    async function simuleexam(tableauDeDonnees) {
-        let bonneReponse
+  function simuleexam(tableauDeDonnees) {
+
         for (let i = 0; i < tableauDeDonnees.length; i++) {
             // je crée des questions propre
             tableauDeDonnees[i].questionText = tableauDeDonnees[i].questionText.replace(/[{]/g, "")
@@ -58,9 +59,10 @@ function pass_exam(tableau) {
                 reponse = prompt("\nVeuillez entrer le numéro de votre réponse :");
                 if (reponse == correctAnswer) {
                     console.log('Bonne réponse');
-                    bonneReponse = bonneReponse + 1
+                    bonneReponse = bonneReponse + 1;
                 } else {
                     console.log('Mauvaise réponse');
+                    mauvaise_reponses = mauvaise_reponses +1;
                 }
             }
 
@@ -69,12 +71,13 @@ function pass_exam(tableau) {
             else if (tableauDeDonnees[i].typeDeQuestion == "Question à trou") {
                 correctAnswers = tableauDeDonnees[i].reponses[0].substring(1).split('=').map(answer => answer.trim().toLowerCase()); // Supprime le signe égal, divise les réponses, supprime les espaces supplémentaires et convertit en minuscules
                 let reponse = prompt("\nVeuillez entrer votre réponse :").trim().toLowerCase(); // Supprime les espaces supplémentaires et convertit en minuscules
-                console.log(`Vous avez choisi la réponse numéro: ${reponse}`);
+                console.log(`Vous avez choisi la réponse : ${reponse}`);
                 if (correctAnswers.includes(reponse)) {
                     console.log('Bonne réponse')
                     bonneReponse = bonneReponse + 1
                 } else {
                     console.log('Mauvaise réponse')
+                    mauvaise_reponses = mauvaise_reponses +1
                 }
             }
             //question type relié les mots entre eux
@@ -107,6 +110,7 @@ function pass_exam(tableau) {
                     } else {
                         console.log('Mauvaise réponse. La bonne réponse était : ' + associations[j].right);
                         aFaitUneErreur = true;
+
                     }
                 }
 
@@ -116,9 +120,12 @@ function pass_exam(tableau) {
                     bonneReponse++;
                 } else {
                     console.log('Vous avez fait au moins une erreur pour cette question.');
+                    mauvaise_reponses = mauvaise_reponses +1
                 }
             }
         }
+
+        console.log(`Note finale : ${bonneReponse} / ${ bonneReponse + mauvaise_reponses}`)
     }
 
 // Appel de la fonction simuleexam avec le tableau de données
@@ -126,4 +133,3 @@ function pass_exam(tableau) {
 }
 
 module.exports = pass_exam;
-
