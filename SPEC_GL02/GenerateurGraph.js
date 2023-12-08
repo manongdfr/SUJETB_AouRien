@@ -8,7 +8,7 @@ function GenerateurGraph() {
 
     // Fonction permettant à l'utilisateur de choisir le nom du fichier qu'il souhaite représenter graphiquement
     function demanderNomFichier() {
-        var choix = prompt("Veuillez indiquer le nom du fichier exam qui vous intéresse (sans l'extention) : ")
+        var choix = prompt("Veuillez indiquer le nom du fichier exam qui vous intéresse (sans l'extension) : ")
         const NomFichier = choix +".gift";
         analyserFichier(NomFichier);
     }
@@ -98,7 +98,7 @@ function GenerateurGraph() {
             console.log("Votre fichier est composé de " + CompteurQuestion + " questions : \n" + CompteurQCM + " de type QCM\n" + CompteurFillInBlank + " questions de type 'Fill in the blank'\n" + CompteurMatchQ + " questions de type 'Matching Questions'\n" + CompteurEssay + " questions de type 'Essay'\n" + CompteurRepPourcent + " questions de type 'Pourcentages'\n" + CompteurQRepPart + " questions de type 'Réponses partielles'")
             // Crée un objet qui sera étudié lors de la création du graph
             let Compteurs = {CompteurQCM, CompteurFillInBlank, CompteurMatchQ, CompteurEssay, CompteurRepPourcent, CompteurQRepPart}
-            demanderNomGraphique(Compteurs);
+            demanderNomGraphique(NomFichier,Compteurs);
         } catch (erreur) {
             console.error("Erreur de lecture du dossier:", erreur);
         }
@@ -106,9 +106,8 @@ function GenerateurGraph() {
     }
 
     // Fonction pour demander le nom du graphique
-    function demanderNomGraphique(Compteurs) {
-      var choix = prompt("\nIndiquez le nom de votre graph : ")
-          var  NomGraph = String(choix) +'.html';
+    function demanderNomGraphique(NomFichier,Compteurs) {
+          var  NomGraph = 'Graph_'+String(NomFichier.slice(0,-5))+'.html';
             creerGraph(NomGraph, Compteurs);
     }
 
