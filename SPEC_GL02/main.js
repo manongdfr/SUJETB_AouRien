@@ -24,19 +24,7 @@ const interfaceLecture = readline.createInterface({
 
 // Fonction permettant à l'utilisateur de sélectionner l'option qu'il souhaite parmi une liste
 async function main() {
-    //Jsp
-    let inquirer;
-    try {
-        inquirer = require('inquirer');
-    } catch (error) {
-        if (error.code === 'ERR_REQUIRE_ESM') {
-            // Utiliser import() pour ESM
-            const inquirerModule = await import('inquirer');
-            inquirer = inquirerModule.default;
-        } else {
-            throw error;
-        }
-    }
+
 
 
     // Affiche au début du programme la liste des options disponibles pour l'utilisateur
