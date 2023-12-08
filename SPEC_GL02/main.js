@@ -24,9 +24,6 @@ const interfaceLecture = readline.createInterface({
 
 // Fonction permettant à l'utilisateur de sélectionner l'option qu'il souhaite parmi une liste
 async function main() {
-
-
-
     // Affiche au début du programme la liste des options disponibles pour l'utilisateur
     console.log("Liste des options :\n1. Rechercher des questions\n2. Sélectionner des questions\n3. Créer un examen automatiquement \n4. Générer l'histogramme d'un examen\n5. Comparer un examen à un examen type\n6. Créer des VCARDs d'enseignants\n7. Rappeler les options possibles\n8. Arrêter le programme\n");
     demanderOption()
