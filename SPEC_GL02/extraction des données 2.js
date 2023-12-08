@@ -106,3 +106,5 @@ const extractionDesDonnees = () => {
     });
 };
 
+module.exports = extractionDesDonnees;
+extractionDesDonnees()
