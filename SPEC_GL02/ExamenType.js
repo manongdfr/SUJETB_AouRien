@@ -10,34 +10,58 @@ function ExamenType() {
         // L'utilisateur sélectionne le nom du fichier qu'il recherche grâce à l'interface de lecture
         var choix = prompt("Veuillez indiquer le nom du fichier exam qui vous intéresse (sans l'extension) : ")
         var NomFichier = choix +".gift";
-            analyserFichier(NomFichier);
-
+          
+        var choixBanque = prompt("Nom des fichiers de la banque à comparer? (séparés par virgules, pas d'espace, sans extension): ")
+        choixBanque = choixBanque.split(",");
+        analyserFichier(NomFichier,choixBanque);
     }
 
     // Fonction vérifiant s'il est cohérent de rechercher le fichier indiqué par l'utilisateur
-    async function analyserFichier(NomFichier) {
+    async function analyserFichier(NomFichier,choixBanque) {
+        const dossierAExplorer = "../ListeExamens";
+        const dossierBanque = "../SujetB_data"
+        const extensionFichier = 'gift';
         try {
             // Paramètres pour uniquement lire les fichiers à l'extension .gift d'un répertoire précis
-            const dossierAExplorer = "../ListeExamens";
             /*
             console.log('Chemin :', dossierAExplorer);
             */
-            const extensionFichier = 'gift';
             const cheminComplet = path.join(dossierAExplorer, NomFichier);
             /*
             console.log('Chemin complet :', cheminComplet);
             */
             // Vérifie si le fichier existe dans le répertoire de travail
             await fs.access(cheminComplet, fs.constants.F_OK);
+            
             console.log(`${NomFichier} existe dans le répertoire de travail et va être étudié.`);
-            comparerFichiersDExtension(dossierAExplorer, extensionFichier, String(NomFichier));
         } catch (err) {
             console.error(`${NomFichier} n'existe pas dans le répertoire de travail.`);
+            //AMÉLIORATION: Inclure les messages d'erreur lorsqu'une est produise
+            console.log(err.message)
         }
+        try{
+            
+            for (i = 0; i < choixBanque.length; i++ ){
+                choixBanque[i] = path.join(dossierBanque,choixBanque[i]+'.gift')
+            }
+            for (i = 0; i < choixBanque.length; i++ ){
+                await fs.access(choixBanque[i], fs.constants.F_OK);
+            }
+            console.log("success")
+            comparerFichiersDExtension(dossierAExplorer,choixBanque, extensionFichier, String(NomFichier));
+        }catch (err) {
+            console.log("un des fichiers n'existe pas dans la banque de questions.");
+            //AMÉLIORATION: Inclure les messages d'erreur lorsqu'une est produise
+
+            console.log(err.message)
+        }
+        
     }
 
     // Fonction permettant de lire tous les fichiers d'une extension spécifique (dans notre cas .gift) d'un dossier
-    async function comparerFichiersDExtension(dossier, extension, NomFichier) {
+    async function comparerFichiersDExtension(dossier,choixBanque, extension, NomFichier) {
+        const cheminFichier = path.join(dossier, NomFichier);
+
         // Compteur du nombre total de fichiers (servira pour calculer le nombre moyen de chaque type de question)
         let nbFichiers = 0;
         // Compteur du nombre total de lignes des fichiers (et donc le nombre total de questions)
@@ -57,16 +81,51 @@ function ExamenType() {
         // Questions inconnues (permet de vérifier si toutes les questions sont catégorisées et vérifie donc s'il y a des erreurs)
         let totalCompteurInconnu = 0;
         try {
-            // Lit le contenu du dossier désigné
-            const fichiers = await fs.readdir(dossier);
-            // Filtre les fichiers par extension
-            const fichiersFiltres = fichiers.filter(fichier => path.extname(fichier).toLowerCase() === `.${extension}`.toLowerCase());
+                //AMÉLIORATION: Changement du dossier de recherche:
+                //lecture (pas de parsing, mais en utilisant la même méthode que précédemment)
+                const contenuFichier = await fs.readFile(cheminFichier, 'utf-8')
+                lignes2 = contenuFichier.split('\n') ;
+                var memoNbQ = lignes2.length;
+                var memoQCM = 0;
+                var memoFillInBlank = 0; 
+                var memoMatchQ = 0;
+                var memoEssay = 0;
+                var memoRepPourcent = 0;
+                var memoRepPart = 0;
+                var memoInconnu = 0;
+
+                //Compter les statistiques du fichier étudié (celui dans le répertoire "ListeExamens")
+                for (const ligne of lignes2) {
+                    if (ligne.toLowerCase().includes('->')) {
+                        memoMatchQ++;
+                    }
+                    else if (ligne.toLowerCase().includes('%')) {
+                        memoRepPourcent++;
+                    }
+                    else if (ligne.toLowerCase().includes('{}')) {
+                        memoEssay++;
+                    }
+                    else if (ligne.toLowerCase().includes('~=')) {
+                        memoRepPart++;
+                    }
+                    else if (!ligne.toLowerCase().includes('~') && ligne.toLowerCase().includes('=')) {
+                        memoFillInBlank++;
+                    }
+                    else if (ligne.toLowerCase().includes('~') && ligne.toLowerCase().includes('=')) {
+                        memoQCM++;
+                    }
+                    else {
+                        memoInconnu++;
+                    }
+                }
 
             // Boucle permettant de lire chaque fichier possédant la bonne extension (.gift)
-            for (const fichier of fichiersFiltres) {
-                const cheminFichier = path.join(dossier, fichier);
-                const contenu = await fs.readFile(cheminFichier, 'utf8');
-
+            for (const fichier of choixBanque) {
+                //const cheminFichier = path.join(dossier, fichier);
+                //const contenu = await fs.readFile(cheminFichier, 'utf8');
+                const contenu = await fs.readFile(fichier, 'utf8');
+                //console.log("fichier" +fichier)
+                
                 // Divise le contenu du fichier en lignes
                 const lignes = contenu.split('\n');
                 nbFichiers += 1;
@@ -107,8 +166,6 @@ function ExamenType() {
                     else {
                         CompteurInconnu++;
                     }
-
-                    
                 }
                 // Les compteurs totaux vont s'imcrémenter à la fin de chaque fichier étudié
                 totalLignes += lignes.length;
@@ -120,16 +177,8 @@ function ExamenType() {
                 totalCompteurQRepPart += CompteurQRepPart;
                 totalCompteurInconnu += CompteurInconnu;
                 // Vérifie pour chaque fichier s'il correspond au nom de fichier désigné par l'utilisateur
-                if (fichier == NomFichier){
-                    // Lorsque c'est le cas, on enregistre toutes les caractéristiques du fichier
-                    var memoNbQ = lignes.length;
-                    var memoQCM = CompteurQCM;
-                    var memoFillInBlank = CompteurFillInBlank; 
-                    var memoMatchQ = CompteurMatchQ;
-                    var memoEssay = CompteurEssay;
-                    var memoRepPourcent = CompteurRepPourcent;
-                    var memoRepPart = CompteurQRepPart;
-                }
+                
+                
                 // Bouts de codes vérifiant permettant de définir la source d'une potentielle erreur
                 /*
                 // Affiche les résultats des compteurs et vérifie leurs cohérences
@@ -156,6 +205,8 @@ function ExamenType() {
             */
         } catch (erreur) {
             console.error("Erreur de lecture du dossier:", erreur);
+            //AMÉLIORATION: Inclure les messages d'erreur lorsqu'une est produise
+            console.log(erreur.message)
         }
         /*
         // Dernier test vérifiant la cohérence des résultats
@@ -175,7 +226,7 @@ function ExamenType() {
         console.log("Un examen de " + nbTotQ +" questions est en moyenne composé de : \n" + nbQCM + " de type QCM\n" + nbFill + " questions de type 'Fill in the blank'\n" + nbMatch + " questions de type 'Matching Questions'\n" + nbEssay + " questions de type 'Essay'\n" + nbPourcent + " questions de type 'Pourcentages'\n" + nbRepPart + " questions de type 'Réponses partielles'\n");
         // Affiche les valeurs du fichier qui intéresse l'utilisateur
         console.log("Maintenant, votre fichier appelé " + NomFichier + " va être étudié");
-        console.log("Votre fichier est composé de " + memoNbQ + " questions : \n" + memoQCM + " de type QCM\n" + memoFillInBlank + " questions de type 'Fill in the blank'\n" + memoMatchQ + " questions de type 'Matching Questions'\n" + memoEssay + " questions de type 'Essay'\n" + memoRepPourcent + " questions de type 'Pourcentages'\n" + memoRepPart + " questions de type 'Réponses partielles'\n");
+        console.log("Votre fichier est composé de " + memoNbQ + " lignes : \n" + memoQCM + " de type QCM\n" + memoFillInBlank + " questions de type 'Fill in the blank'\n" + memoMatchQ + " questions de type 'Matching Questions'\n" + memoEssay + " questions de type 'Essay'\n" + memoRepPourcent + " questions de type 'Pourcentages'\n" + memoRepPart + " questions de type 'Réponses partielles'\n");
         // Etudie les différences entre le nb d'un certain types de questions d'un exam moyen et de celui sélectionné
         var diffNbQ = memoNbQ - nbTotQ;
         var diffQCM = memoQCM - nbQCM; 
