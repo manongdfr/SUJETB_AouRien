@@ -85,7 +85,7 @@ function ExamenType() {
                 //lecture (pas de parsing, mais en utilisant la même méthode que précédemment)
                 const contenuFichier = await fs.readFile(cheminFichier, 'utf-8')
                 lignes2 = contenuFichier.split('\n') ;
-                var memoNbQ = lignes2.length;
+                
                 var memoQCM = 0;
                 var memoFillInBlank = 0; 
                 var memoMatchQ = 0;
@@ -118,6 +118,7 @@ function ExamenType() {
                         memoInconnu++;
                     }
                 }
+                var memoNbQ = memoMatchQ + memoRepPourcent + memoEssay + memoRepPart + memoFillInBlank + memoQCM;
 
             // Boucle permettant de lire chaque fichier possédant la bonne extension (.gift)
             for (const fichier of choixBanque) {
@@ -223,10 +224,10 @@ function ExamenType() {
         var nbRepPart = Math.floor(totalCompteurQRepPart / nbFichiers);
         var nbTotQ = nbQCM +nbFill +nbMatch +nbEssay +nbPourcent +nbRepPart ;
         console.log("\nNous allons analyser la structure d'un examen typique aux incertitudes près.");
-        console.log("Un examen de " + nbTotQ +" questions est en moyenne composé de : \n" + nbQCM + " de type QCM\n" + nbFill + " questions de type 'Fill in the blank'\n" + nbMatch + " questions de type 'Matching Questions'\n" + nbEssay + " questions de type 'Essay'\n" + nbPourcent + " questions de type 'Pourcentages'\n" + nbRepPart + " questions de type 'Réponses partielles'\n");
+        console.log("Les examens, avec en moyenne " + nbTotQ +" questions, est en moyenne composé de : \n" + nbQCM + " de type QCM\n" + nbFill + " questions de type 'Fill in the blank'\n" + nbMatch + " questions de type 'Matching Questions'\n" + nbEssay + " questions de type 'Essay'\n" + nbPourcent + " questions de type 'Pourcentages'\n" + nbRepPart + " questions de type 'Réponses partielles'\n");
         // Affiche les valeurs du fichier qui intéresse l'utilisateur
         console.log("Maintenant, votre fichier appelé " + NomFichier + " va être étudié");
-        console.log("Votre fichier est composé de " + memoNbQ + " lignes : \n" + memoQCM + " de type QCM\n" + memoFillInBlank + " questions de type 'Fill in the blank'\n" + memoMatchQ + " questions de type 'Matching Questions'\n" + memoEssay + " questions de type 'Essay'\n" + memoRepPourcent + " questions de type 'Pourcentages'\n" + memoRepPart + " questions de type 'Réponses partielles'\n");
+        console.log("Votre fichier est composé de " + memoNbQ + " questions : \n" + memoQCM + " de type QCM\n" + memoFillInBlank + " questions de type 'Fill in the blank'\n" + memoMatchQ + " questions de type 'Matching Questions'\n" + memoEssay + " questions de type 'Essay'\n" + memoRepPourcent + " questions de type 'Pourcentages'\n" + memoRepPart + " questions de type 'Réponses partielles'\n");
         // Etudie les différences entre le nb d'un certain types de questions d'un exam moyen et de celui sélectionné
         var diffNbQ = memoNbQ - nbTotQ;
         var diffQCM = memoQCM - nbQCM; 
