@@ -70,6 +70,9 @@ function pass_exam(tableau) {
             //Question type texte à trou
             else if (tableauDeDonnees[i].typeDeQuestion == "Question à trou") {
                 correctAnswers = tableauDeDonnees[i].reponses[0].substring(1).split('=').map(answer => answer.trim().toLowerCase()); // Supprime le signe égal, divise les réponses, supprime les espaces supplémentaires et convertit en minuscules
+                //ticket correction : il aurait fallu un parseur et donc que l'élément objet du tableau de réponse soit des éléments parsés et non des chaines de caractères divisées
+                //la correction est difficile voire impossible sans changer l'entièreté du code : prendre au cas par cas manuellement au lieu de rajouter une simple règle dans le parseur par type de question..
+                console.log(tableauDeDonnees[i].reponses[0].substring(1).split('=', '#'));
                 let reponse = prompt("\nVeuillez entrer votre réponse :").trim().toLowerCase(); // Supprime les espaces supplémentaires et convertit en minuscules
                 console.log(`Vous avez choisi la réponse : ${reponse}`);
                 if (correctAnswers.includes(reponse)) {
