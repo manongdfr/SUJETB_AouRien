@@ -34,6 +34,21 @@ function pass_exam(tableau) {
     }
 
   function simuleexam(tableauDeDonnees) {
+    //ticket correction : il aurait fallu un parseur et donc que l'élément objet du tableau de réponse soit des éléments parsés et non des chaines de caractères divisées
+    //la correction est difficile voire impossible sans changer l'entièreté du code : prendre au cas par cas manuellement au lieu de rajouter une simple règle dans le parseur par type de question..
+
+    //cela pose des problèmes pour la plupart des tickets de TEST_5 :
+    /*
+    1. vérifier les bonnes/mauvaises réponse : le split ne donne toujours qu'une chaine de caractère, ne permet pas de donner une moitié de point si la réponse est partiellement juste
+    1 piste d'amélioration à mettre en place avec un parseur : typologie des questions en regex, parser l'objet réponse pour avoir un tableau de réponse [{question à 100% des points}, {questions à 50%}] par exemple
+    2. Donner plus d'information par rapport à la question posée : sansa contexte, l'utilisateur peut difficilement répondre et cela est problématique dans la simulation de l'examen.
+    Sauf qu'à force de split, des informations se perdent ou ne sont pas log dans la console : il aurait fallu un objet {question} parsé, dans lequel nous pouvions donner par exemple
+    le type de la questions displayed dans la console, des pistes de réponse personnalisé "texte à trou, remplacez le ... par une réponse" qui n'est pas lisible dans la console (il faut deviner quoi mettre et où)
+    2 piste d'amélioration : un parseur qui créer des objets construits sous le même modèles afin d'avoir des informations complémentaire à donner à l'utilisateur
+
+    lors de la résolution de ce ticket, j'aurai du pouvoir améliorer le code, mais sans parseur il m'est très difficile d'apporter plus de lumière sur ce projet. Split fait perdre des informations, les données sont à faire 
+    au cas par cas pour chaque grammaire ABNF de questions différente. J'espère que ce commentaire détaillé aura permis d'éclairé la situation.
+    */
 
         for (let i = 0; i < tableauDeDonnees.length; i++) {
             // je crée des questions propre
@@ -70,8 +85,6 @@ function pass_exam(tableau) {
             //Question type texte à trou
             else if (tableauDeDonnees[i].typeDeQuestion == "Question à trou") {
                 correctAnswers = tableauDeDonnees[i].reponses[0].substring(1).split('=').map(answer => answer.trim().toLowerCase()); // Supprime le signe égal, divise les réponses, supprime les espaces supplémentaires et convertit en minuscules
-                //ticket correction : il aurait fallu un parseur et donc que l'élément objet du tableau de réponse soit des éléments parsés et non des chaines de caractères divisées
-                //la correction est difficile voire impossible sans changer l'entièreté du code : prendre au cas par cas manuellement au lieu de rajouter une simple règle dans le parseur par type de question..
                 console.log(tableauDeDonnees[i].reponses[0].substring(1).split('=', '#'));
                 let reponse = prompt("\nVeuillez entrer votre réponse :").trim().toLowerCase(); // Supprime les espaces supplémentaires et convertit en minuscules
                 console.log(`Vous avez choisi la réponse : ${reponse}`);
