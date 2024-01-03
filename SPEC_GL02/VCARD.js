@@ -73,6 +73,15 @@ function VCARD() {
         // En fonction de la saisie de l'utilisateur, le programme va exécuter des instructions différentes
         switch (ChoixOption) {
             case 0:
+                // Issue SPEC_7 : Bloquer la génération si informations insuffisante
+                // On vient vérifier si l'utilisateur a bien rentré un prénom et un nom avant de générer une VCARD
+                console.log(Prenom, Nom);
+                if (Prenom === undefined || Nom === undefined){
+                    console.log("Impossible de générer une VCARD sans prénom ou nom");
+                    demanderOption();
+                }
+
+                else {
                 // L'utilisateur rentre le nom du fichier VCARD qui va être créé
                 var nomFichier = prompt("Entrez le nom du fichier pour sauvegarder la VCard : ",)
                     // Crée la VCARD
@@ -83,7 +92,9 @@ function VCARD() {
                     Prenom = "", Nom = "", NumTel = "", Email = "", Addresse = "", DateNaissance = "", Langue = "", Genre = "";
                     // Redemande à l'utilisateur un choix d'options
                     demanderOption();
+                }
                 break;
+                
             case 1:
                 // Remplit une variable qui sera utilisée lorsque l'on créera une VCARD
                 var prenom = prompt("Entrez le prénom de l'enseignant : ")
@@ -147,7 +158,7 @@ function VCARD() {
         }
     }
     // Affiche au début du programme la liste des options disponibles pour l'utilisateur
-    console.log("Liste des options :\n0. Générer VCARD\n1. Prénom\n2. Nom\n3. Numéro de téléphone\n4. Email\n5. Genre\n6. Date de naissance\n7. Langue\n8. Adresse\n9. Génération Automatique\n10. Rappel des options\n11. Arrêter du programme, création des VCARDs générées\n");
+    console.log("Liste des options :\n0. Générer VCARD\n1. Prénom\n2. Nom\n3. Numéro de téléphone\n4. Email\n5. Adresse\n6. Date de naissance\n7. Langue\n8. Genre\n9. Génération Automatique\n10. Rappel des options\n11. Arrêter du programme, création des VCARDs générées\n");
     // Initialise la demande d'options
     demanderOption();
 }
