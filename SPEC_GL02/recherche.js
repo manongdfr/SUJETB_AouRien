@@ -56,8 +56,10 @@ function recherche(keyword,tag , tab) {
         }
 
     }
+    if (tab_result.length === 0) {
+        return "Aucun résultat trouvé pour les critères de recherche spécifiés.";
+    }
     return tab_result;
 
 }
 module.exports = recherche;
-//console.table(recherche( "","U4"))
