@@ -1,65 +1,22 @@
+function recherche(keyword, tag, tab) {
+    const { cheminVersFichierJSON, json_to_tab } = require('./utilis');
+    let tab_values = tab || json_to_tab(cheminVersFichierJSON);
 
-function recherche(keyword,tag , tab) {
-    const {
-        cheminVersFichierJSON,
-        json_to_tab,
-    } = require('./utilis');
-    if (tab){
-        var tab_values = tab
-    }else {
-        var tab_values = json_to_tab(cheminVersFichierJSON);
-    }
-    var tab_result = [];
-    for (var i = 0; i < tab_values.length; i++) {
-        if (
-            (tag && tab_values[i]["tag"].includes(tag)) &&
-            (keyword && tab_values[i]["questionText"].includes(keyword))
-        ) {
-            var entry = {
-                tag: tab_values[i]["tag"],
-                questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"],
-                typeDeQuestion : tab_values[i]["typeDeQuestion"],
-                associations : tab_values[i]["associations"]
-            };
-            tab_result.push(entry);
-        }
-        else if (tag && !keyword && tab_values[i]["tag"].includes(tag)){
-            var entry = {
-                tag: tab_values[i]["tag"],
-                questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"],
-                typeDeQuestion : tab_values[i]["typeDeQuestion"],
-                associations : tab_values[i]["associations"]
-            };
-            tab_result.push(entry);
-        }
-        else if (!tag && keyword && tab_values[i]["questionText"].includes(keyword)){
-            var entry = {
-                tag: tab_values[i]["tag"],
-                questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"],
-                typeDeQuestion : tab_values[i]["typeDeQuestion"],
-                associations : tab_values[i]["associations"]
-            };
-            tab_result.push(entry);
-        }
-        else if (!tag && !keyword) {
-            var entry = {
-                tag: tab_values[i]["tag"],
-                questionText: tab_values[i]["questionText"],
-                reponses: tab_values[i]["reponses"],
-                typeDeQuestion : tab_values[i]["typeDeQuestion"],
-                associations : tab_values[i]["associations"]
-            };
-            tab_result.push(entry);
-        }
+    // Retourne le résultat du filtrage et du mappage du tableau 'tab_values'.
+    return tab_values.filter(item => {
+        const tagMatch = tag ? item["tag"].includes(tag) : true;
+        const keywordMatch = keyword ? item["questionText"].includes(keyword) : true;
 
-    }
-    if (tab_result.length === 0) {
-        return "Aucun résultat trouvé pour les critères de recherche spécifiés.";
-    }
-    return tab_result;
-
+        // Retourne 'true' si l'élément correspond à la fois au 'tag' et au 'keyword'.
+        return tagMatch && keywordMatch;
+    }).map(item => ({
+        // Mappage de chaque élément filtré pour structurer les données retournées.
+        tag: item["tag"],
+        questionText: item["questionText"],
+        reponses: item["reponses"],
+        typeDeQuestion: item["typeDeQuestion"],
+        associations: item["associations"]
+    }));
 }
+
 module.exports = recherche;
