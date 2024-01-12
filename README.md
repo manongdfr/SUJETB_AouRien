@@ -3,6 +3,7 @@
 
 **Auteurs (fork):**
   Manon Godefroy, Xuan Boone, Alexis Pochard, Sarah Olgard 
+  
 **Auteurs (originaux):** 
 
 **Liscence:** open liscence
