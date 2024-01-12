@@ -5,6 +5,8 @@
   Manon Godefroy, Xuan Boone, Alexis Pochard, Sarah Olgard 
 **Auteurs (originaux):** 
 
+**Liscence:** open liscence
+
 Pour exécuter correctement le logiciel répondant aux demandes du projet B de GL02, suivez les étapes ci-dessous :
 
 ## 1. Cloner le répertoire
