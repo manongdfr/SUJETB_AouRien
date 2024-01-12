@@ -1,7 +1,10 @@
 
 # SUJETB_AouRien
 
-
+**Auteurs (fork):**
+  Manon Godefroy, Xuan Boone, Alexis Pochard, Sarah Olgard 
+**  
+Auteurs (originaux):**
 
 Pour exécuter correctement le logiciel répondant aux demandes du projet B de GL02, suivez les étapes ci-dessous :
 
